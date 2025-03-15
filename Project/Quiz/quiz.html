@@ -1,0 +1,6819 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> QUIZ </title>
+		<style>
+			p{
+				font-size: 24px;
+				color: #fff;
+				font-family:DIN Next W01 Regular,Trebuchet MS,Helvetica,Arial,sans-serif;
+				margin-left: 3%;
+
+
+			}
+
+
+			.container3 p{
+				font-size: 20px;
+				color: #fff;
+
+			}
+
+			input{
+				background-color: #e5e5e5;
+				margin-left: 3%;
+
+			}
+			label{
+				color: #b5cdf1;
+				font-family:DIN Next W01 Regular,Trebuchet MS,Helvetica,Arial,sans-serif;
+
+
+			}
+			body{
+				width: 99%;
+				height: 2000px;
+				margin: auto;
+				margin-top: .5%;
+				background-color: #202020;
+				margin-bottom: .5%;
+				font-family:DIN Next W01 Regular,Trebuchet MS,Helvetica,Arial,sans-serif;
+
+			}
+			.indicator{
+				margin: auto;
+				width: 75%;
+				height: 150px;
+				margin-top: .5%;
+
+
+
+			}
+			h2{
+				text-align: center;
+				color: #fff;
+				font-family:DIN Next W01 Regular,Trebuchet MS,Helvetica,Arial,sans-serif;
+				font-size: 23px;
+
+
+
+
+			}
+			.container{
+				margin: auto;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top:0;
+				z-index:5;
+				background-color: #2b333f;
+
+
+
+
+
+			}
+			.mc{
+				border: 5px solid #e62429;
+				margin: auto;
+				width: 75%;
+				height: 87%;
+				margin-top: 1%;
+				position: relative;
+				z-index:5;
+				background-color: #2b333f;
+
+
+
+
+
+			}
+			.container2{
+				margin: auto;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				position: absolute;
+				z-index:0;
+				background-color: #2b333f;
+
+
+
+			}
+
+
+			.container2{
+				margin: auto;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				position: absolute;
+				z-index:0;
+				background-color: #2b333f;
+
+
+
+			}
+
+			.container3{
+				margin: auto;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				position: absolute;
+				z-index:-5;
+				background-color: #2b333f;
+
+
+
+			}
+			.container4{
+				margin: auto;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				position: absolute;
+				z-index:-8;
+				background-color: #2b333f;
+
+
+
+			}
+
+			.container0{
+				margin: auto;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				position: absolute;
+				z-index:6;
+				background-color: #2b333f;
+
+
+
+			}
+
+			.container5{
+				margin: auto;
+				width: 80%;
+				height: 20%;
+				position: relative;
+				z-index:-18;
+				top: 5%;
+
+				background-color: #2b333f;
+
+
+
+
+			}
+
+
+			.examdata{
+				margin: auto;
+				width: 80%;
+				height: 13%;
+				position: relative;
+				z-index:-18;
+				margin-top: 5%;
+				border-radius: 30px;
+				border: 2px solid white;
+				background-color: #2b333f;
+
+
+
+
+			}
+			.g1{
+				float: left;
+				width: 24.5%;
+				height: 100%;
+				position: relative;
+				z-index:-20;
+				border: 1.5px solid white;
+				background-color: #1e3a83;
+
+
+
+			}
+
+
+
+			.part1{
+				border-radius: 15%;
+				border: 1px solid #725d2d;
+				float: left;
+				width: 21.6%;
+				height: 100%;
+
+
+			}
+			.part2{
+				float: left;
+				width: 17%;
+				height: 100%;
+
+
+
+			}
+			h3{
+				margin-top: 25%;
+				text-align: center;
+				font-size: 28px;
+			}
+			.items{
+				border-top: 1px solid black;
+				width: 99.99%;
+				height: 9.84%;
+
+
+			}
+			.cir{
+  				height: 25px;
+ 				width: 25px;
+  				background-color: #fff;
+  				border-radius: 50%;
+  				display: inline-block;
+				margin-top: 40%;
+				margin-left: 12%;
+
+			}
+			footer{
+				margin: auto;
+				background-color: #22262a;
+				height: 64px;
+				width: 90%;
+				border-top: 2px solid white;
+			}
+			nav{
+				margin: auto;
+				background-color: #22262a;
+				height: 64px;
+				width: 90%;
+				border-bottom: 2px solid white;
+			}
+			.navbut {
+				font: 1em DIN Next W01 Regular,Trebuchet MS,Helvetica,Arial,sans-serif;
+				display: inline-block;
+				padding: 1em;
+				margin: 1em;
+				text-decoration: none;
+				color: #f8fbfa;
+			    background-image: linear-gradient(#f43f3f, #f43f3f), linear-gradient(transparent, transparent);
+			    background-size: 0 5px, auto;
+				background-repeat: no-repeat;
+				background-position: center bottom;
+				transition: all .2s ease-out;
+			}
+			.navbut:hover {
+			  background-size: 100% 5px, auto;
+			}
+		</style>
+		<script>
+			x=0,y=0,z=0,a=0,i=0,score=0,inc=0,ch=0,check=0,check1=0,done=0,aa=0,a2=0,a3=0;a4=0,a5=0,a6=0,a7=0,a8=0,a9=0,a10=0,aa1=0,a21=0,a31=0;a41=0,a51=0,a61=0,a71=0,a81=0,a91=0,a101=0;
+			b=0,a=0,c=0,d=0,e=0,f=0,g=0,h=0,ii=0,j=0,k=0,l=0,m=0,n=0,o=0,spp1=0,spp2=0,sp3=0;
+			var ans1,ans2,ans3,ans4,ans5,ans6,ans7,ans8,an9,ans10;
+			aaa11=0,aaa12=0,aaa13=0,aaa14=0,aaa15=0,aaa16=0,aaa17=0,aaa18=0,aaa19=0,aaa20=0;
+			ml1=1,ml2=1,ml3=1,ml4=1,ml5=1,ml6=1,ml7=1,ml8=1,ml9=1,ml10=1;
+			questions=["What is the name of Spider Man?","How many infinity stones are there?","What kind of God is Loki?","What do you call the hammer of Thor?","Who is the biological father of Loki?","Who is the biological father of Thor?","What is the shield of Captain America made of?","Who created Vision?","Ice Man is a member of what group?","What is the name of Iron Man's assistant?","What race is Ronan?","What is the name of Black Widow?","Which Avenger did Black Widow first date?","Which character in Marvel owns a deadly overing arrow?","What vehicle is the Avengers' primary mode of transport?"];
+			questions2=["Iron Man 3 featured Spider-Man's first appearance.","Stark Industries first manufactured weapons.","Edward Norton first played Hulk before Ruffalo.","Captain America spent 62 years of his life being frozen.","Iron Man 3 took place during Christmas time.","Star-God is Peter Quill's nickname.","Empusa was the Nazi Organization that infiltrated SHIELD.","Scott Lang worked in Jamba Juice before becoming Ant Man.","The Avengers ate shawarma after the Battle of New York.","Deadpool had cancer that's why he volunteered for the weapon x program.","Venom Symbiote is weak to fire and water.","Doctor Strange had a plane accident before becoming a super hero.","Awesome Mix Vol. 1 is the tape that Peter Quill listens to on his Walkman.","Thor and the Hulk was on Asgard during the first parts of Thor: Ragnarok.","There are 3 standalone Iron Man movies."];
+			questions3=["Where does Steve Rogers realize he's in the 21st century?","Which of these movies were released last?","Who has a cameo in every MCU movie?","Who is the main villain in the Incredible Hulk?","Who kills agent Phil Coulson in the movie The Avengers?","What is the name of Odin's first child — The Goddess of death?","Where did loki send his father when he impersonated him back in asgard?","Which of the Avengers is left half-paralyzed after the airport fight in Captain America: Civil War?","The tesseract is which infinity stone?","What weapon is Fandral best known to use?","What was the name of the group of mercenaries who raised Star-Lord?","What power source fuels Iron Man's power suit?","Which of these characters DID NOT wear an Iron Man suit in Iron Man 3?","Who killed Friga in Thor: The Dark World?","Which '80s tv star did Peter Quill name his ship after?"];
+
+			answers=["peter parker","6","god of mischief","mjolnir","laufey","odin","vibranium","ultron","x-men","jarvis","kree","natasha romanoff","hawkeye","yondu","quinjet"];
+			answers1=["false","true","true","false","true","false","false","false","true","true","false","false","true","false","true"];
+			answers2=["b","d","c","a","a","b","b","c","d","c","b","b","d","a","d"];
+
+
+			for(;inc<1;inc++){
+				a = Math.floor((Math.random()*15)+1);
+				for (i=0;i!=3;){
+				
+					b = Math.floor((Math.random()*15)+1);
+
+					if(b!=a){
+						i=3;
+					}
+				}
+				for (i=0;i!=3;){
+				
+					c = Math.floor((Math.random()*15)+1);
+					if(c!=a && c!=b){
+						i=3;
+					}
+				}
+				for (i=0;i!=3;){
+				
+					d = Math.floor((Math.random()*15)+1);
+					if(d!=a && d!=b && d!=c){
+						i=3;
+					}
+				}
+				for (i=0;i!=3;){
+				
+					e = Math.floor((Math.random()*15)+1);
+					if(e!=a && e!=b && e!=c && e!=d){
+						i=3;
+					}
+				}
+				for (i=0;i!=3;){
+				
+					f = Math.floor((Math.random()*15)+1);
+					if(f!=a && f!=b && f!=c && f!=d && f!=e){
+						i=3;
+					}
+				}
+				for (i=0;i!=3;){
+				
+					g = Math.floor((Math.random()*15)+1);
+					if(g!=a && g!=b && g!=c && g!=d && g!=e && g!=f){
+						i=3;
+					}
+				}
+				for (i=0;i!=3;){
+				
+					h = Math.floor((Math.random()*15)+1);
+					if(h!=a && h!=b && h!=c && h!=d && h!=e && h!=f && h!=g){
+						i=3;
+					}
+				}
+				for (i=0;i!=3;){
+				
+					ii = Math.floor((Math.random()*15)+1);
+					if(ii!=a && ii!=b && ii!=c && ii!=d && ii!=e && ii!=f && ii!=g && ii!=h){
+						i=3;
+					}
+				}
+				for (i=0;i!=3;){
+				
+					j = Math.floor((Math.random()*15)+1);
+					if(j!=a && j!=b && j!=c && j!=d && j!=e && j!=f && j!=g && j!=h && j!=ii){
+						i=3;
+					}
+				}
+				for (i=0;i!=3;){
+				
+					k = Math.floor((Math.random()*15)+1);
+					if(k!=a && k!=b && k!=c && k!=d && k!=e && k!=f && k!=g && k!=h && k!=ii && k!=j){
+						i=3;
+					}
+				}
+				for (i=0;i!=3;){
+				
+					l = Math.floor((Math.random()*15)+1);
+					if(l!=a && l!=b && l!=c && l!=d && l!=e && l!=f && l!=g && l!=h && l!=ii && l!=j && l!=k){
+						i=3;
+					}
+				}
+				for (i=0;i!=3;){
+				
+					m = Math.floor((Math.random()*15)+1);
+					if(m!=a && m!=b && m!=c && m!=d && m!=e && m!=f && m!=g && m!=h && m!=ii && m!=j && m!=k && m!=l){
+						i=3;
+					}
+				}
+				for (i=0;i!=3;){
+				
+					n = Math.floor((Math.random()*15)+1);
+					if(n!=a && n!=b && n!=c && n!=d && n!=e && n!=f && n!=g && n!=h && n!=ii && n!=j && n!=k && n!=l && n!=m){
+						i=3;
+					}
+				}
+				for (i=0;i!=3;){
+				
+					o = Math.floor((Math.random()*15)+1);
+					if(o!=a && o!=b && o!=c && o!=d && o!=e && o!=f && o!=g && o!=h && o!=ii && o!=j && o!=k && o!=l && o!=m && o!=n){
+						i=3;
+					}
+				}
+			}
+			function first(){
+				if(ch==0){
+					if(a==1){
+					   document.getElementById("qq1").innerHTML=questions[0];
+					   document.getElementById("qqa1").innerHTML=questions2[0];
+					   document.getElementById("qqb1").innerHTML=questions3[0];
+
+
+					   document.getElementById("m1").innerHTML="Empire State Building";
+					   document.getElementById("m2").innerHTML="Time Square";
+					   document.getElementById("m3").innerHTML="Wall Street";
+					   document.getElementById("m4").innerHTML="Baxter Building";
+
+
+									
+					}
+
+					else if(a==2){
+					   document.getElementById("qq1").innerHTML=questions[1];
+					   document.getElementById("qqa1").innerHTML=questions2[1];
+					   document.getElementById("qqb1").innerHTML=questions3[1];
+
+					   document.getElementById("m1").innerHTML="Thor: The Dark World";
+					   document.getElementById("m2").innerHTML="Captain America: The Winter Soldier";
+					   document.getElementById("m3").innerHTML="Doctor Strange"; 
+					   document.getElementById("m4").innerHTML="Guardians of the Galaxy Vol 2";
+
+
+					}	
+					else if(a==3){
+					   document.getElementById("qq1").innerHTML=questions[2];
+					   document.getElementById("qqa1").innerHTML=questions2[2];
+					   document.getElementById("qqb1").innerHTML=questions3[2];
+
+
+					   document.getElementById("m1").innerHTML="Jack Kirby";
+					   document.getElementById("m2").innerHTML="Steve Ditko";
+					   document.getElementById("m3").innerHTML="Stan Lee";
+					   document.getElementById("m4").innerHTML="Joss Whedon";
+
+
+					}	
+					else if(a==4){
+					   document.getElementById("qq1").innerHTML=questions[3];
+					   document.getElementById("qqa1").innerHTML=questions2[3];
+					   document.getElementById("qqb1").innerHTML=questions3[3];
+
+					   document.getElementById("m1").innerHTML="The Abomination";
+					   document.getElementById("m2").innerHTML="Absorbing Man";
+					   document.getElementById("m3").innerHTML="The Grandmaster";
+					   document.getElementById("m4").innerHTML="The Collector";
+
+
+					}	
+					else if(a==5){
+					   document.getElementById("qq1").innerHTML=questions[4];
+					   document.getElementById("qqa1").innerHTML=questions2[4];
+					   document.getElementById("qqb1").innerHTML=questions3[4];
+
+					   document.getElementById("m1").innerHTML="Loki";
+					   document.getElementById("m2").innerHTML="Nick";
+					   document.getElementById("m3").innerHTML="Hawkeye";
+					   document.getElementById("m4").innerHTML="Hulk";
+
+
+					}	
+					else if(a==6){
+					   document.getElementById("qq1").innerHTML=questions[5];
+					   document.getElementById("qqa1").innerHTML=questions2[5];
+					   document.getElementById("qqb1").innerHTML=questions3[5];
+
+					   document.getElementById("m1").innerHTML="Lena";
+					   document.getElementById("m2").innerHTML="Hela";
+					   document.getElementById("m3").innerHTML="Lana";
+					   document.getElementById("m4").innerHTML="Alana";
+
+
+					}	
+					else if(a==7){
+					   document.getElementById("qq1").innerHTML=questions[6];
+					   document.getElementById("qqa1").innerHTML=questions2[6];
+					   document.getElementById("qqb1").innerHTML=questions3[6];
+
+
+					   document.getElementById("m1").innerHTML="Alaska";
+					   document.getElementById("m2").innerHTML="Norway";
+					   document.getElementById("m3").innerHTML="Canada";
+					   document.getElementById("m4").innerHTML="Iceland";
+
+
+					}	
+					else if(a==8){
+					   document.getElementById("qq1").innerHTML=questions[7];
+					   document.getElementById("qqa1").innerHTML=questions2[7];
+					   document.getElementById("qqb1").innerHTML=questions3[7];
+
+
+					   document.getElementById("m1").innerHTML="Scarlet Witch";
+					   document.getElementById("m2").innerHTML="Iron Man";
+					   document.getElementById("m3").innerHTML="Rhodey";
+					   document.getElementById("m4").innerHTML="Hawkeye";
+
+
+					}	
+					else if(a==9){
+					   document.getElementById("qq1").innerHTML=questions[8];
+					   document.getElementById("qqa1").innerHTML=questions2[8];
+					   document.getElementById("qqb1").innerHTML=questions3[8];
+
+					   document.getElementById("m1").innerHTML="Reality Stone";
+					   document.getElementById("m2").innerHTML="Soul Stone";
+					   document.getElementById("m3").innerHTML="Power Stone";
+					   document.getElementById("m4").innerHTML="Space Stone";
+
+
+
+					}	
+					else if(a==10){
+					   document.getElementById("qq1").innerHTML=questions[9];
+					   document.getElementById("qqa1").innerHTML=questions2[9];
+					   document.getElementById("qqb1").innerHTML=questions3[9];
+
+					   document.getElementById("m1").innerHTML="bow and arrow";
+					   document.getElementById("m2").innerHTML="axe";
+					   document.getElementById("m3").innerHTML="rapier";
+					   document.getElementById("m4").innerHTML="daggers";
+
+
+
+					}	
+					else if(a==11){
+					   document.getElementById("qq1").innerHTML=questions[10];
+					   document.getElementById("qqa1").innerHTML=questions2[10];
+					   document.getElementById("qqb1").innerHTML=questions3[10];
+
+					   document.getElementById("m1").innerHTML="The Pillagers";
+					   document.getElementById("m2").innerHTML="The Ravagers";
+					   document.getElementById("m3").innerHTML="The Reavers";
+					   document.getElementById("m4").innerHTML="The Grievers";
+
+
+
+					}	
+					else if(a==12){
+					   document.getElementById("qq1").innerHTML=questions[11];
+					   document.getElementById("qqa1").innerHTML=questions2[11];
+					   document.getElementById("qqb1").innerHTML=questions3[11];
+
+					   document.getElementById("m1").innerHTML="Lithium ion battery";
+					   document.getElementById("m2").innerHTML="Arc Reactor";
+					   document.getElementById("m3").innerHTML="The Arkenstone";
+					   document.getElementById("m4").innerHTML="The Tesseract";
+
+
+
+					}	
+					else if(a==13){
+					   document.getElementById("qq1").innerHTML=questions[12];
+					   document.getElementById("qqa1").innerHTML=questions2[12];
+					   document.getElementById("qqb1").innerHTML=questions3[12];
+
+					   document.getElementById("m1").innerHTML="Rhodey";
+					   document.getElementById("m2").innerHTML="Pepper Potts";
+					   document.getElementById("m3").innerHTML="President Ellis";
+					   document.getElementById("m4").innerHTML="Happy Hogan";
+
+
+
+					}	
+					else if(a==14){
+					   document.getElementById("qq1").innerHTML=questions[13];
+					   document.getElementById("qqa1").innerHTML=questions2[13];
+					   document.getElementById("qqb1").innerHTML=questions3[13];
+
+					   document.getElementById("m1").innerHTML="Kurse/Algrim";
+					   document.getElementById("m2").innerHTML="Malekith";
+					   document.getElementById("m3").innerHTML="Jane Foster";
+					   document.getElementById("m4").innerHTML="Loki";
+
+
+
+					}	
+					else if(a==15){
+					   document.getElementById("qq1").innerHTML=questions[14];
+					   document.getElementById("qqa1").innerHTML=questions2[14];
+					   document.getElementById("qqb1").innerHTML=questions3[14];
+
+					   document.getElementById("m1").innerHTML="Christina Applegate";
+					   document.getElementById("m2").innerHTML="Heather Locklear";
+					   document.getElementById("m3").innerHTML="Tiffani Thiessen";
+					   document.getElementById("m4").innerHTML="Alyssa Milano";
+
+
+
+					}
+					
+					if(b==1){
+					   document.getElementById("qq2").innerHTML=questions[0];
+					   document.getElementById("qqa2").innerHTML=questions2[0];
+					   document.getElementById("qqb2").innerHTML=questions3[0];
+
+					   document.getElementById("m5").innerHTML="Empire State Building";
+					   document.getElementById("m6").innerHTML="Time Square";
+					   document.getElementById("m7").innerHTML="Wall Street";
+					   document.getElementById("m8").innerHTML="Baxter Building";
+
+
+
+					}
+
+					else if(b==2){
+					   document.getElementById("qq2").innerHTML=questions[1];
+					   document.getElementById("qqa2").innerHTML=questions2[1];
+					   document.getElementById("qqb2").innerHTML=questions3[1];
+
+
+					   document.getElementById("m5").innerHTML="Thor: The Dark World";
+					   document.getElementById("m6").innerHTML="Captain America: The Winter Soldier";
+					   document.getElementById("m7").innerHTML="Doctor Strange";
+					   document.getElementById("m8").innerHTML="Guardians of the Galaxy Vol 2";
+
+
+
+					}	
+					else if(b==3){
+					   document.getElementById("qq2").innerHTML=questions[2];
+					   document.getElementById("qqa2").innerHTML=questions2[2];
+					   document.getElementById("qqb2").innerHTML=questions3[2];
+
+
+					   document.getElementById("m5").innerHTML="Jack Kirby";
+					   document.getElementById("m6").innerHTML="Steve Ditko";
+					   document.getElementById("m7").innerHTML="Stan Lee";
+					   document.getElementById("m8").innerHTML="Joss Whedon";
+
+					}	
+					else if(b==4){
+					   document.getElementById("qq2").innerHTML=questions[3];
+					   document.getElementById("qqa2").innerHTML=questions2[3];
+					   document.getElementById("qqb2").innerHTML=questions3[3];
+
+
+					   document.getElementById("m5").innerHTML="The Abomination";
+					   document.getElementById("m6").innerHTML="Absorbing Man";
+					   document.getElementById("m7").innerHTML="The Grandmaster";
+					   document.getElementById("m8").innerHTML="The Collector";
+
+
+
+					}	
+					else if(b==5){
+					   document.getElementById("qq2").innerHTML=questions[4];
+					   document.getElementById("qqa2").innerHTML=questions2[4];
+					   document.getElementById("qqb2").innerHTML=questions3[4];
+
+					   document.getElementById("m5").innerHTML="Loki";
+					   document.getElementById("m6").innerHTML="Nick";
+					   document.getElementById("m7").innerHTML="Hawkeye";
+					   document.getElementById("m8").innerHTML="Hulk";
+
+
+
+					}	
+					else if(b==6){
+					   document.getElementById("qq2").innerHTML=questions[5];
+					   document.getElementById("qqa2").innerHTML=questions2[5];
+					   document.getElementById("qqb2").innerHTML=questions3[5];
+
+
+					   document.getElementById("m5").innerHTML="Lena";
+					   document.getElementById("m6").innerHTML="Hela";
+					   document.getElementById("m7").innerHTML="Lana";
+					   document.getElementById("m8").innerHTML="Alana";
+
+
+
+					}	
+					else if(b==7){
+					   document.getElementById("qq2").innerHTML=questions[6];
+					   document.getElementById("qqa2").innerHTML=questions2[6];
+					   document.getElementById("qqb2").innerHTML=questions3[6];
+
+					   document.getElementById("m5").innerHTML="Alaska";
+					   document.getElementById("m6").innerHTML="Norway";
+					   document.getElementById("m7").innerHTML="Canada";
+					   document.getElementById("m8").innerHTML="Iceland";
+
+
+
+					}	
+					else if(b==8){
+					   document.getElementById("qq2").innerHTML=questions[7];
+					   document.getElementById("qqa2").innerHTML=questions2[7];
+					   document.getElementById("qqb2").innerHTML=questions3[7];
+
+					   document.getElementById("m5").innerHTML="Scarlet Witch";
+					   document.getElementById("m6").innerHTML="Iron Man";
+					   document.getElementById("m7").innerHTML="Rhodey";
+					   document.getElementById("m8").innerHTML="Hawkeye";
+
+
+
+					}	
+					else if(b==9){
+					   document.getElementById("qq2").innerHTML=questions[8];
+					   document.getElementById("qqa2").innerHTML=questions2[8];
+					   document.getElementById("qqb2").innerHTML=questions3[8];
+
+					   document.getElementById("m5").innerHTML="Reality Stone";
+					   document.getElementById("m6").innerHTML="Soul Stone";
+					   document.getElementById("m7").innerHTML="Power Stone";
+					   document.getElementById("m8").innerHTML="Space Stone";
+
+
+
+					}	
+					else if(b==10){
+					   document.getElementById("qq2").innerHTML=questions[9];
+					   document.getElementById("qqa2").innerHTML=questions2[9];
+					   document.getElementById("qqb2").innerHTML=questions3[9];
+
+
+					   document.getElementById("m5").innerHTML="bow and arrow";
+					   document.getElementById("m6").innerHTML="axe";
+					   document.getElementById("m7").innerHTML="rapier";
+					   document.getElementById("m8").innerHTML="daggers";
+
+
+
+					}	
+					else if(b==11){
+					   document.getElementById("qq2").innerHTML=questions[10];
+					   document.getElementById("qqa2").innerHTML=questions2[10];
+					   document.getElementById("qqb2").innerHTML=questions3[10];
+
+
+					   document.getElementById("m5").innerHTML="The Pillagers";
+					   document.getElementById("m6").innerHTML="The Ravagers";
+					   document.getElementById("m7").innerHTML="The Reavers";
+					   document.getElementById("m8").innerHTML="The Grievers";
+
+
+
+					}	
+					else if(b==12){
+					   document.getElementById("qq2").innerHTML=questions[11];
+					   document.getElementById("qqa2").innerHTML=questions2[11];
+					   document.getElementById("qqb2").innerHTML=questions3[11];
+
+
+					   document.getElementById("m5").innerHTML="Lithium ion battery";
+					   document.getElementById("m6").innerHTML="Arc Reactor";
+					   document.getElementById("m7").innerHTML="The Arkenstone";
+					   document.getElementById("m8").innerHTML="The Tesseract";
+
+
+
+					}	
+					else if(b==13){
+					   document.getElementById("qq2").innerHTML=questions[12];
+					   document.getElementById("qqa2").innerHTML=questions2[12];
+					   document.getElementById("qqb2").innerHTML=questions3[12];
+
+					   document.getElementById("m5").innerHTML="Rhodey";
+					   document.getElementById("m6").innerHTML="Pepper Potts";
+					   document.getElementById("m7").innerHTML="President Ellis";
+					   document.getElementById("m8").innerHTML="Happy Hogan";
+
+
+
+
+					}	
+					else if(b==14){
+					   document.getElementById("qq2").innerHTML=questions[13];
+					   document.getElementById("qqa2").innerHTML=questions2[13];
+					   document.getElementById("qqb2").innerHTML=questions3[13];
+
+
+					   document.getElementById("m5").innerHTML="Kurse/Algrim";
+					   document.getElementById("m6").innerHTML="Malekith";
+					   document.getElementById("m7").innerHTML="Jane Foster";
+					   document.getElementById("m8").innerHTML="Loki";
+
+
+
+					}	
+					else if(b==15){
+					   document.getElementById("qq2").innerHTML=questions[14];
+					   document.getElementById("qqa2").innerHTML=questions2[14];
+					   document.getElementById("qqb2").innerHTML=questions3[14];
+
+
+					   document.getElementById("m5").innerHTML="Christina Applegate";
+					   document.getElementById("m6").innerHTML="Heather Locklear";
+					   document.getElementById("m7").innerHTML="Tiffani Thiessen";
+					   document.getElementById("m8").innerHTML="Alyssa Milano";
+
+
+
+
+					}
+		
+
+					if(c==1){
+					   document.getElementById("qq3").innerHTML=questions[0];
+					   document.getElementById("qqa3").innerHTML=questions2[0];
+					   document.getElementById("qqb3").innerHTML=questions3[0];
+
+
+					   document.getElementById("m9").innerHTML="Empire State Building";
+					   document.getElementById("m10").innerHTML="Time Square";
+					   document.getElementById("m11").innerHTML="Wall Street";
+					   document.getElementById("m12").innerHTML="Baxter Building";
+
+
+
+					}
+
+					else if(c==2){
+					   document.getElementById("qq3").innerHTML=questions[1];
+					   document.getElementById("qqa3").innerHTML=questions2[1];
+					   document.getElementById("qqb3").innerHTML=questions3[1];
+
+					   document.getElementById("m9").innerHTML="Thor: The Dark World";
+					   document.getElementById("m10").innerHTML="Captain America: The Winter Soldier";
+					   document.getElementById("m11").innerHTML="Doctor Strange";
+					   document.getElementById("m12").innerHTML="Guardians of the Galaxy Vol 2";
+
+					}	
+					else if(c==3){
+					   document.getElementById("qq3").innerHTML=questions[2];
+					   document.getElementById("qqa3").innerHTML=questions2[2];
+					   document.getElementById("qqb3").innerHTML=questions3[2];
+
+					   document.getElementById("m9").innerHTML="Jack Kirby";
+					   document.getElementById("m10").innerHTML="Steve Ditko";
+					   document.getElementById("m11").innerHTML="Stan Lee";
+					   document.getElementById("m12").innerHTML="Joss Whedon";
+
+
+					}	
+					else if(c==4){
+					   document.getElementById("qq3").innerHTML=questions[3];
+					   document.getElementById("qqa3").innerHTML=questions2[3];
+					   document.getElementById("qqb3").innerHTML=questions3[3];
+
+					   document.getElementById("m9").innerHTML="The Abomination";
+					   document.getElementById("m10").innerHTML="Absorbing Man";
+					   document.getElementById("m11").innerHTML="The Grandmaster";
+					   document.getElementById("m12").innerHTML="The Collector";
+
+
+
+					}	
+					else if(c==5){
+					   document.getElementById("qq3").innerHTML=questions[4];
+					   document.getElementById("qqa3").innerHTML=questions2[4];
+					   document.getElementById("qqb3").innerHTML=questions3[4];
+
+					   document.getElementById("m9").innerHTML="Loki";
+					   document.getElementById("m10").innerHTML="Nick";
+					   document.getElementById("m11").innerHTML="Hawkeye";
+					   document.getElementById("m12").innerHTML="Hulk";
+
+
+
+					}	
+					else if(c==6){
+					   document.getElementById("qq3").innerHTML=questions[5];
+					   document.getElementById("qqa3").innerHTML=questions2[5];
+					   document.getElementById("qqb3").innerHTML=questions3[5];
+
+
+					   document.getElementById("m9").innerHTML="Lena";
+					   document.getElementById("m10").innerHTML="Hela";
+					   document.getElementById("m11").innerHTML="Lana";
+					   document.getElementById("m12").innerHTML="Alana";
+
+
+
+					}	
+					else if(c==7){
+					   document.getElementById("qq3").innerHTML=questions[6];
+					   document.getElementById("qqa3").innerHTML=questions2[6];
+					   document.getElementById("qqb3").innerHTML=questions3[6];
+
+					   document.getElementById("m9").innerHTML="Alaska";
+					   document.getElementById("m10").innerHTML="Norway";
+					   document.getElementById("m11").innerHTML="Canada";
+					   document.getElementById("m12").innerHTML="Iceland";
+
+
+
+					}	
+					else if(c==8){
+					   document.getElementById("qq3").innerHTML=questions[7];
+					   document.getElementById("qqa3").innerHTML=questions2[7];
+					   document.getElementById("qqb3").innerHTML=questions3[7];
+
+					   document.getElementById("m9").innerHTML="Scarlet Witch";
+					   document.getElementById("m10").innerHTML="Iron Man";
+					   document.getElementById("m11").innerHTML="Rhodey";
+					   document.getElementById("m12").innerHTML="Hawkeye";
+
+
+
+					}	
+					else if(c==9){
+					   document.getElementById("qq3").innerHTML=questions[8];
+					   document.getElementById("qqa3").innerHTML=questions2[8];
+					   document.getElementById("qqb3").innerHTML=questions3[8];
+
+
+					   document.getElementById("m9").innerHTML="Reality Stone";
+					   document.getElementById("m10").innerHTML="Soul Stone";
+					   document.getElementById("m11").innerHTML="Power Stone";
+					   document.getElementById("m12").innerHTML="Space Stone";
+
+
+
+					}	
+					else if(c==10){
+					   document.getElementById("qq3").innerHTML=questions[9];
+					   document.getElementById("qqa3").innerHTML=questions2[9];
+					   document.getElementById("qqb3").innerHTML=questions3[9];
+
+
+					   document.getElementById("m9").innerHTML="bow and arrow";
+					   document.getElementById("m10").innerHTML="axe";
+					   document.getElementById("m11").innerHTML="rapier";
+					   document.getElementById("m12").innerHTML="daggers";
+
+
+
+					}	
+					else if(c==11){
+					   document.getElementById("qq3").innerHTML=questions[10];
+					   document.getElementById("qqa3").innerHTML=questions2[10];
+					   document.getElementById("qqb3").innerHTML=questions3[10];
+
+
+					   document.getElementById("m9").innerHTML="The Pillagers";
+					   document.getElementById("m10").innerHTML="The Ravagers";
+					   document.getElementById("m11").innerHTML="The Reavers";
+					   document.getElementById("m12").innerHTML="The Grievers";
+
+
+
+					}	
+					else if(c==12){
+					   document.getElementById("qq3").innerHTML=questions[11];
+					   document.getElementById("qqa3").innerHTML=questions2[11];
+					   document.getElementById("qqb3").innerHTML=questions3[11];
+
+					   document.getElementById("m9").innerHTML="Lithium ion battery";
+					   document.getElementById("m10").innerHTML="Arc Reactor";
+					   document.getElementById("m11").innerHTML="The Arkenstone";
+					   document.getElementById("m12").innerHTML="The Tesseract";
+
+
+
+					}	
+					else if(c==13){
+					   document.getElementById("qq3").innerHTML=questions[12];
+					   document.getElementById("qqa3").innerHTML=questions2[12];
+					   document.getElementById("qqb3").innerHTML=questions3[12];
+
+
+					   document.getElementById("m9").innerHTML="Rhodey";
+					   document.getElementById("m10").innerHTML="Pepper Potts";
+					   document.getElementById("m11").innerHTML="President Ellis";
+					   document.getElementById("m12").innerHTML="Happy Hogan";
+
+
+
+
+					}	
+					else if(c==14){
+					   document.getElementById("qq3").innerHTML=questions[13];
+					   document.getElementById("qqa3").innerHTML=questions2[13];
+					   document.getElementById("qqb3").innerHTML=questions3[13];
+
+					   document.getElementById("m9").innerHTML="Kurse/Algrim";
+					   document.getElementById("m10").innerHTML="Malekith";
+					   document.getElementById("m11").innerHTML="Jane Foster";
+					   document.getElementById("m12").innerHTML="Loki";
+
+
+
+					}	
+					else if(c==15){
+					   document.getElementById("qq3").innerHTML=questions[14];
+					   document.getElementById("qqa3").innerHTML=questions2[14];
+					   document.getElementById("qqb3").innerHTML=questions3[14];
+
+
+					   document.getElementById("m9").innerHTML="Christina Applegate";
+					   document.getElementById("m10").innerHTML="Heather Locklear";
+					   document.getElementById("m11").innerHTML="Tiffani Thiessen";
+					   document.getElementById("m12").innerHTML="Alyssa Milano";
+
+
+
+
+					}
+
+
+
+					if(d==1){
+					   document.getElementById("qq4").innerHTML=questions[0];
+					   document.getElementById("qqa4").innerHTML=questions2[0];
+					   document.getElementById("qqb4").innerHTML=questions3[0];
+
+					   document.getElementById("m13").innerHTML="Empire State Building";
+					   document.getElementById("m14").innerHTML="Time Square";
+					   document.getElementById("m15").innerHTML="Wall Street";
+					   document.getElementById("m16").innerHTML="Baxter Building";
+
+
+
+					}
+
+					else if(d==2){
+					   document.getElementById("qq4").innerHTML=questions[1];
+					   document.getElementById("qqa4").innerHTML=questions2[1];
+					   document.getElementById("qqb4").innerHTML=questions3[1];
+
+
+					   document.getElementById("m13").innerHTML="Thor: The Dark World";
+					   document.getElementById("m14").innerHTML="Captain America: The Winter Soldier";
+					   document.getElementById("m15").innerHTML="Doctor Strange";
+					   document.getElementById("m16").innerHTML="Guardians of the Galaxy Vol 2";
+
+
+					}	
+					else if(d==3){
+					   document.getElementById("qq4").innerHTML=questions[2];
+					   document.getElementById("qqa4").innerHTML=questions2[2];
+					   document.getElementById("qqb4").innerHTML=questions3[2];
+
+
+					   document.getElementById("m13").innerHTML="Jack Kirby";
+					   document.getElementById("m14").innerHTML="Steve Ditko";
+					   document.getElementById("m15").innerHTML="Stan Lee";
+					   document.getElementById("m16").innerHTML="Joss Whedon";
+
+					}	
+					else if(d==4){
+					   document.getElementById("qq4").innerHTML=questions[3];
+					   document.getElementById("qqa4").innerHTML=questions2[3];
+					   document.getElementById("qqb4").innerHTML=questions3[3];
+
+					   document.getElementById("m13").innerHTML="The Abomination";
+					   document.getElementById("m14").innerHTML="Absorbing Man";
+					   document.getElementById("m15").innerHTML="The Grandmaster";
+					   document.getElementById("m16").innerHTML="The Collector";
+
+
+					}	
+					else if(d==5){
+					   document.getElementById("qq4").innerHTML=questions[4];
+					   document.getElementById("qqa4").innerHTML=questions2[4];
+					   document.getElementById("qqb4").innerHTML=questions3[4];
+
+					   document.getElementById("m13").innerHTML="Loki";
+					   document.getElementById("m14").innerHTML="Nick";
+					   document.getElementById("m15").innerHTML="Hawkeye";
+					   document.getElementById("m16").innerHTML="Hulk";
+
+
+
+					}	
+					else if(d==6){
+					   document.getElementById("qq4").innerHTML=questions[5];
+					   document.getElementById("qqa4").innerHTML=questions2[5];
+					   document.getElementById("qqb4").innerHTML=questions3[5];
+
+					   document.getElementById("m13").innerHTML="Lena";
+					   document.getElementById("m14").innerHTML="Hela";
+					   document.getElementById("m15").innerHTML="Lana";
+					   document.getElementById("m16").innerHTML="Alana";
+
+
+
+					}	
+					else if(d==7){
+					   document.getElementById("qq4").innerHTML=questions[6];
+					   document.getElementById("qqa4").innerHTML=questions2[6];
+					   document.getElementById("qqb4").innerHTML=questions3[6];
+
+
+					   document.getElementById("m13").innerHTML="Alaska";
+					   document.getElementById("m14").innerHTML="Norway";
+					   document.getElementById("m15").innerHTML="Canada";
+					   document.getElementById("m16").innerHTML="Iceland";
+
+
+
+					}	
+					else if(d==8){
+					   document.getElementById("qq4").innerHTML=questions[7];
+					   document.getElementById("qqa4").innerHTML=questions2[7];
+					   document.getElementById("qqb4").innerHTML=questions3[7];
+
+
+					   document.getElementById("m13").innerHTML="Scarlet Witch";
+					   document.getElementById("m14").innerHTML="Iron Man";
+					   document.getElementById("m15").innerHTML="Rhodey";
+					   document.getElementById("m16").innerHTML="Hawkeye";
+
+
+
+					}	
+					else if(d==9){
+					   document.getElementById("qq4").innerHTML=questions[8];
+					   document.getElementById("qqa4").innerHTML=questions2[8];
+					   document.getElementById("qqb4").innerHTML=questions3[8];
+
+
+					   document.getElementById("m13").innerHTML="Reality Stone";
+					   document.getElementById("m14").innerHTML="Soul Stone";
+					   document.getElementById("m15").innerHTML="Power Stone";
+					   document.getElementById("m16").innerHTML="Space Stone";
+
+
+
+					}	
+					else if(d==10){
+					   document.getElementById("qq4").innerHTML=questions[9];
+					   document.getElementById("qqa4").innerHTML=questions2[9];
+					   document.getElementById("qqb4").innerHTML=questions3[9];
+
+
+					   document.getElementById("m13").innerHTML="bow and arrow";
+					   document.getElementById("m14").innerHTML="axe";
+					   document.getElementById("m15").innerHTML="rapier";
+					   document.getElementById("m16").innerHTML="daggers";
+
+
+
+					}	
+					else if(d==11){
+					   document.getElementById("qq4").innerHTML=questions[10];
+					   document.getElementById("qqa4").innerHTML=questions2[10];
+					   document.getElementById("qqb4").innerHTML=questions3[10];
+
+
+					   document.getElementById("m13").innerHTML="The Pillagers";
+					   document.getElementById("m14").innerHTML="The Ravagers";
+					   document.getElementById("m15").innerHTML="The Reavers";
+					   document.getElementById("m16").innerHTML="The Grievers";
+
+
+
+					}	
+					else if(d==12){
+					   document.getElementById("qq4").innerHTML=questions[11];
+					   document.getElementById("qqa4").innerHTML=questions2[11];
+					   document.getElementById("qqb4").innerHTML=questions3[11];
+
+					   document.getElementById("m13").innerHTML="Lithium ion battery";
+					   document.getElementById("m14").innerHTML="Arc Reactor";
+					   document.getElementById("m15").innerHTML="The Arkenstone";
+					   document.getElementById("m16").innerHTML="The Tesseract";
+
+
+
+					}	
+					else if(d==13){
+					   document.getElementById("qq4").innerHTML=questions[12];
+					   document.getElementById("qqa4").innerHTML=questions2[12];
+					   document.getElementById("qqb4").innerHTML=questions3[12];
+
+					   document.getElementById("m13").innerHTML="Rhodey";
+					   document.getElementById("m14").innerHTML="Pepper Potts";
+					   document.getElementById("m15").innerHTML="President Ellis";
+					   document.getElementById("m16").innerHTML="Happy Hogan";
+
+
+
+
+					}	
+					else if(d==14){
+					   document.getElementById("qq4").innerHTML=questions[13];
+					   document.getElementById("qqa4").innerHTML=questions2[13];
+					   document.getElementById("qqb4").innerHTML=questions3[13];
+
+
+					   document.getElementById("m13").innerHTML="Kurse/Algrim";
+					   document.getElementById("m14").innerHTML="Malekith";
+					   document.getElementById("m15").innerHTML="Jane Foster";
+					   document.getElementById("m16").innerHTML="Loki";
+
+
+
+					}	
+					else if(d==15){
+					   document.getElementById("qq4").innerHTML=questions[14];
+					   document.getElementById("qqa4").innerHTML=questions2[14];
+					   document.getElementById("qqb4").innerHTML=questions3[14];
+
+
+					   document.getElementById("m13").innerHTML="Christina Applegate";
+					   document.getElementById("m14").innerHTML="Heather Locklear";
+					   document.getElementById("m15").innerHTML="Tiffani Thiessen";
+					   document.getElementById("m16").innerHTML="Alyssa Milano";
+
+
+
+
+					}
+
+
+
+					if(e==1){
+					   document.getElementById("qq5").innerHTML=questions[0];
+					   document.getElementById("qqa5").innerHTML=questions2[0];
+					   document.getElementById("qqb5").innerHTML=questions3[0];
+
+					   document.getElementById("m17").innerHTML="Empire State Building";
+					   document.getElementById("m18").innerHTML="Time Square";
+					   document.getElementById("m19").innerHTML="Wall Street";
+					   document.getElementById("m20").innerHTML="Baxter Building";
+
+
+
+					}
+
+					else if(e==2){
+					   document.getElementById("qq5").innerHTML=questions[1];
+					   document.getElementById("qqa5").innerHTML=questions2[1];
+					   document.getElementById("qqb5").innerHTML=questions3[1];
+
+					   document.getElementById("m17").innerHTML="Thor: The Dark World";
+					   document.getElementById("m18").innerHTML="Captain America: The Winter Soldier";
+					   document.getElementById("m19").innerHTML="Doctor Strange";
+					   document.getElementById("m20").innerHTML="Guardians of the Galaxy Vol 2";
+
+					}	
+					else if(e==3){
+					   document.getElementById("qq5").innerHTML=questions[2];
+					   document.getElementById("qqa5").innerHTML=questions2[2];
+					   document.getElementById("qqb5").innerHTML=questions3[2];
+
+					   document.getElementById("m17").innerHTML="Jack Kirby";
+					   document.getElementById("m18").innerHTML="Steve Ditko";
+					   document.getElementById("m19").innerHTML="Stan Lee";
+					   document.getElementById("m20").innerHTML="Joss Whedon";
+
+
+					}	
+					else if(e==4){
+					   document.getElementById("qq5").innerHTML=questions[3];
+					   document.getElementById("qqa5").innerHTML=questions2[3];
+					   document.getElementById("qqb5").innerHTML=questions3[3];
+
+
+					   document.getElementById("m17").innerHTML="The Abomination";
+					   document.getElementById("m18").innerHTML="Absorbing Man";
+					   document.getElementById("m19").innerHTML="The Grandmaster";
+					   document.getElementById("m20").innerHTML="The Collector";
+
+
+
+					}	
+					else if(e==5){
+					   document.getElementById("qq5").innerHTML=questions[4];
+					   document.getElementById("qqa5").innerHTML=questions2[4];
+					   document.getElementById("qqb5").innerHTML=questions3[4];
+
+					   document.getElementById("m17").innerHTML="Loki";
+					   document.getElementById("m18").innerHTML="Nick";
+					   document.getElementById("m19").innerHTML="Hawkeye";
+					   document.getElementById("m20").innerHTML="Hulk";
+
+
+
+					}	
+					else if(e==6){
+					   document.getElementById("qq5").innerHTML=questions[5];
+					   document.getElementById("qqa5").innerHTML=questions2[5];
+					   document.getElementById("qqb5").innerHTML=questions3[5];
+
+
+					   document.getElementById("m17").innerHTML="Lena";
+					   document.getElementById("m18").innerHTML="Hela";
+					   document.getElementById("m19").innerHTML="Lana";
+					   document.getElementById("m20").innerHTML="Alana";
+
+
+
+					}	
+					else if(e==7){
+					   document.getElementById("qq5").innerHTML=questions[6];
+					   document.getElementById("qqa5").innerHTML=questions2[6];
+					   document.getElementById("qqb5").innerHTML=questions3[6];
+
+					   document.getElementById("m17").innerHTML="Alaska";
+					   document.getElementById("m18").innerHTML="Norway";
+					   document.getElementById("m19").innerHTML="Canada";
+					   document.getElementById("m20").innerHTML="Iceland";
+
+
+
+					}	
+					else if(e==8){
+					   document.getElementById("qq5").innerHTML=questions[7];
+					   document.getElementById("qqa5").innerHTML=questions2[7];
+					   document.getElementById("qqb5").innerHTML=questions3[7];
+
+
+					   document.getElementById("m17").innerHTML="Scarlet Witch";
+					   document.getElementById("m18").innerHTML="Iron Man";
+					   document.getElementById("m19").innerHTML="Rhodey";
+					   document.getElementById("m20").innerHTML="Hawkeye";
+
+
+
+					}	
+					else if(e==9){
+					   document.getElementById("qq5").innerHTML=questions[8];
+					   document.getElementById("qqa5").innerHTML=questions2[8];
+					   document.getElementById("qqb5").innerHTML=questions3[8];
+
+
+					   document.getElementById("m17").innerHTML="Reality Stone";
+					   document.getElementById("m18").innerHTML="Soul Stone";
+					   document.getElementById("m19").innerHTML="Power Stone";
+					   document.getElementById("m20").innerHTML="Space Stone";
+
+
+
+					}	
+					else if(e==10){
+					   document.getElementById("qq5").innerHTML=questions[9];
+					   document.getElementById("qqa5").innerHTML=questions2[9];
+					   document.getElementById("qqb5").innerHTML=questions3[9];
+
+
+					   document.getElementById("m17").innerHTML="bow and arrow";
+					   document.getElementById("m18").innerHTML="axe";
+					   document.getElementById("m19").innerHTML="rapier";
+					   document.getElementById("m20").innerHTML="daggers";
+
+
+
+					}	
+					else if(e==11){
+					   document.getElementById("qq5").innerHTML=questions[10];
+					   document.getElementById("qqa5").innerHTML=questions2[10];
+					   document.getElementById("qqb5").innerHTML=questions3[10];
+
+					   document.getElementById("m17").innerHTML="The Pillagers";
+					   document.getElementById("m18").innerHTML="The Ravagers";
+					   document.getElementById("m19").innerHTML="The Reavers";
+					   document.getElementById("m20").innerHTML="The Grievers";
+
+
+
+					}	
+					else if(e==12){
+					   document.getElementById("qq5").innerHTML=questions[11];
+					   document.getElementById("qqa5").innerHTML=questions2[11];
+					   document.getElementById("qqb5").innerHTML=questions3[11];
+
+
+					   document.getElementById("m17").innerHTML="Lithium ion battery";
+					   document.getElementById("m18").innerHTML="Arc Reactor";
+					   document.getElementById("m19").innerHTML="The Arkenstone";
+					   document.getElementById("m20").innerHTML="The Tesseract";
+
+
+
+					}	
+					else if(e==13){
+					   document.getElementById("qq5").innerHTML=questions[12];
+					   document.getElementById("qqa5").innerHTML=questions2[12];
+					   document.getElementById("qqb5").innerHTML=questions3[12];
+
+					   document.getElementById("m17").innerHTML="Rhodey";
+					   document.getElementById("m18").innerHTML="Pepper Potts";
+					   document.getElementById("m19").innerHTML="President Ellis";
+					   document.getElementById("m20").innerHTML="Happy Hogan";
+
+
+
+
+					}	
+					else if(e==14){
+					   document.getElementById("qq5").innerHTML=questions[13];
+					   document.getElementById("qqa5").innerHTML=questions2[13];
+					   document.getElementById("qqb5").innerHTML=questions3[13];
+
+
+					   document.getElementById("m17").innerHTML="Kurse/Algrim";
+					   document.getElementById("m18").innerHTML="Malekith";
+					   document.getElementById("m19").innerHTML="Jane Foster";
+					   document.getElementById("m20").innerHTML="Loki";
+
+
+
+					}	
+					else if(e==15){
+					   document.getElementById("qq5").innerHTML=questions[14];
+					   document.getElementById("qqa5").innerHTML=questions2[14];
+					   document.getElementById("qqb5").innerHTML=questions3[14];
+
+
+					   document.getElementById("m17").innerHTML="Christina Applegate";
+					   document.getElementById("m18").innerHTML="Heather Locklear";
+					   document.getElementById("m19").innerHTML="Tiffani Thiessen";
+					   document.getElementById("m20").innerHTML="Alyssa Milano";
+
+
+
+
+					}
+
+
+					if(f==1){
+					   document.getElementById("qq6").innerHTML=questions[0];
+					   document.getElementById("qqa6").innerHTML=questions2[0];
+					   document.getElementById("qqb6").innerHTML=questions3[0];
+
+					   document.getElementById("m21").innerHTML="Empire State Building";
+					   document.getElementById("m22").innerHTML="Time Square";
+					   document.getElementById("m23").innerHTML="Wall Street";
+					   document.getElementById("m24").innerHTML="Baxter Building";
+
+
+
+					}
+
+					else if(f==2){
+					   document.getElementById("qq6").innerHTML=questions[1];
+					   document.getElementById("qqa6").innerHTML=questions2[1];
+					   document.getElementById("qqb6").innerHTML=questions3[1];
+
+
+					   document.getElementById("m21").innerHTML="Thor: The Dark World";
+					   document.getElementById("m22").innerHTML="Captain America: The Winter Soldier";
+					   document.getElementById("m23").innerHTML="Doctor Strange";
+					   document.getElementById("m24").innerHTML="Guardians of the Galaxy Vol 2";
+
+					}	
+					else if(f==3){
+					   document.getElementById("qq6").innerHTML=questions[2];
+					   document.getElementById("qqa6").innerHTML=questions2[2];
+					   document.getElementById("qqb6").innerHTML=questions3[2];
+
+					   document.getElementById("m21").innerHTML="Jack Kirby";
+					   document.getElementById("m22").innerHTML="Steve Ditko";
+					   document.getElementById("m23").innerHTML="Stan Lee";
+					   document.getElementById("m24").innerHTML="Joss Whedon";
+
+
+					}	
+					else if(f==4){
+					   document.getElementById("qq6").innerHTML=questions[3];
+					   document.getElementById("qqa6").innerHTML=questions2[3];
+					   document.getElementById("qqb6").innerHTML=questions3[3];
+
+					   document.getElementById("m21").innerHTML="The Abomination";
+					   document.getElementById("m22").innerHTML="Absorbing Man";
+					   document.getElementById("m23").innerHTML="The Grandmaster";
+					   document.getElementById("m24").innerHTML="The Collector";
+
+
+
+					}	
+					else if(f==5){
+					   document.getElementById("qq6").innerHTML=questions[4];
+					   document.getElementById("qqa6").innerHTML=questions2[4];
+					   document.getElementById("qqb6").innerHTML=questions3[4];
+
+					   document.getElementById("m21").innerHTML="Loki";
+					   document.getElementById("m22").innerHTML="Nick";
+					   document.getElementById("m23").innerHTML="Hawkeye";
+					   document.getElementById("m24").innerHTML="Hulk";
+
+
+
+					}	
+					else if(f==6){
+					   document.getElementById("qq6").innerHTML=questions[5];
+					   document.getElementById("qqa6").innerHTML=questions2[5];
+					   document.getElementById("qqb6").innerHTML=questions3[5];
+
+					   document.getElementById("m21").innerHTML="Lena";
+					   document.getElementById("m22").innerHTML="Hela";
+					   document.getElementById("m23").innerHTML="Lana";
+					   document.getElementById("m24").innerHTML="Alana";
+
+
+
+					}	
+					else if(f==7){
+					   document.getElementById("qq6").innerHTML=questions[6];
+					   document.getElementById("qqa6").innerHTML=questions2[6];
+					   document.getElementById("qqb6").innerHTML=questions3[6];
+
+
+					   document.getElementById("m21").innerHTML="Alaska";
+					   document.getElementById("m22").innerHTML="Norway";
+					   document.getElementById("m23").innerHTML="Canada";
+					   document.getElementById("m24").innerHTML="Iceland";
+
+
+
+					}	
+					else if(f==8){
+					   document.getElementById("qq6").innerHTML=questions[7];
+					   document.getElementById("qqa6").innerHTML=questions2[7];
+					   document.getElementById("qqb6").innerHTML=questions3[7];
+
+					   document.getElementById("m21").innerHTML="Scarlet Witch";
+					   document.getElementById("m22").innerHTML="Iron Man";
+					   document.getElementById("m23").innerHTML="Rhodey";
+					   document.getElementById("m24").innerHTML="Hawkeye";
+
+
+
+					}	
+					else if(f==9){
+					   document.getElementById("qq6").innerHTML=questions[8];
+					   document.getElementById("qqa6").innerHTML=questions2[8];
+					   document.getElementById("qqb6").innerHTML=questions3[8];
+
+
+					   document.getElementById("m21").innerHTML="Reality Stone";
+					   document.getElementById("m22").innerHTML="Soul Stone";
+					   document.getElementById("m23").innerHTML="Power Stone";
+					   document.getElementById("m24").innerHTML="Space Stone";
+
+
+
+					}	
+					else if(f==10){
+					   document.getElementById("qq6").innerHTML=questions[9];
+					   document.getElementById("qqa6").innerHTML=questions2[9];
+					   document.getElementById("qqb6").innerHTML=questions3[9];
+
+					   document.getElementById("m21").innerHTML="bow and arrow";
+					   document.getElementById("m22").innerHTML="axe";
+					   document.getElementById("m23").innerHTML="rapier";
+					   document.getElementById("m24").innerHTML="daggers";
+
+
+
+					}	
+					else if(f==11){
+					   document.getElementById("qq6").innerHTML=questions[10];
+					   document.getElementById("qqa6").innerHTML=questions2[10];
+					   document.getElementById("qqb6").innerHTML=questions3[10];
+
+					   document.getElementById("m21").innerHTML="The Pillagers";
+					   document.getElementById("m22").innerHTML="The Ravagers";
+					   document.getElementById("m23").innerHTML="The Reavers";
+					   document.getElementById("m24").innerHTML="The Grievers";
+
+
+
+
+
+					}	
+					else if(f==12){
+					   document.getElementById("qq6").innerHTML=questions[11];
+					   document.getElementById("qqa6").innerHTML=questions2[11];
+					   document.getElementById("qqb6").innerHTML=questions3[11];
+
+					   document.getElementById("m21").innerHTML="Lithium ion battery";
+					   document.getElementById("m22").innerHTML="Arc Reactor";
+					   document.getElementById("m23").innerHTML="The Arkenstone";
+					   document.getElementById("m24").innerHTML="The Tesseract";
+
+
+
+					}	
+					else if(f==13){
+					   document.getElementById("qq6").innerHTML=questions[12];
+					   document.getElementById("qqa6").innerHTML=questions2[12];
+					   document.getElementById("qqb6").innerHTML=questions3[12];
+
+
+					   document.getElementById("m21").innerHTML="Rhodey";
+					   document.getElementById("m22").innerHTML="Pepper Potts";
+					   document.getElementById("m23").innerHTML="President Ellis";
+					   document.getElementById("m24").innerHTML="Happy Hogan";
+
+
+
+
+					}	
+					else if(f==14){
+					   document.getElementById("qq6").innerHTML=questions[13];
+					   document.getElementById("qqa6").innerHTML=questions2[13];
+					   document.getElementById("qqb6").innerHTML=questions3[13];
+
+
+					   document.getElementById("m21").innerHTML="Kurse/Algrim";
+					   document.getElementById("m22").innerHTML="Malekith";
+					   document.getElementById("m23").innerHTML="Jane Foster";
+					   document.getElementById("m24").innerHTML="Loki";
+
+
+
+					}	
+					else if(f==15){
+					   document.getElementById("qq6").innerHTML=questions[14];
+					   document.getElementById("qqa6").innerHTML=questions2[14];
+					   document.getElementById("qqb6").innerHTML=questions3[14];
+
+					   document.getElementById("m21").innerHTML="Christina Applegate";
+					   document.getElementById("m22").innerHTML="Heather Locklear";
+					   document.getElementById("m23").innerHTML="Tiffani Thiessen";
+					   document.getElementById("m24").innerHTML="Alyssa Milano";
+
+
+
+
+					}
+
+
+
+					if(g==1){
+					   document.getElementById("qq7").innerHTML=questions[0];
+					   document.getElementById("qqa7").innerHTML=questions2[0];
+					   document.getElementById("qqb7").innerHTML=questions3[0];
+
+					   document.getElementById("m25").innerHTML="Empire State Building";
+					   document.getElementById("m26").innerHTML="Time Square";
+					   document.getElementById("m27").innerHTML="Wall Street";
+					   document.getElementById("m28").innerHTML="Baxter Building";
+
+
+
+					}
+
+					else if(g==2){
+					   document.getElementById("qq7").innerHTML=questions[1];
+					   document.getElementById("qqa7").innerHTML=questions2[1];
+					   document.getElementById("qqb7").innerHTML=questions3[1];
+
+					   document.getElementById("m25").innerHTML="Thor: The Dark World";
+					   document.getElementById("m26").innerHTML="Captain America: The Winter Soldier";
+					   document.getElementById("m27").innerHTML="Doctor Strange";
+					   document.getElementById("m28").innerHTML="Guardians of the Galaxy Vol 2";
+
+
+
+					}	
+					else if(g==3){
+					   document.getElementById("qq7").innerHTML=questions[2];
+					   document.getElementById("qqa7").innerHTML=questions2[2];
+					   document.getElementById("qqb7").innerHTML=questions3[2];
+
+					   document.getElementById("m25").innerHTML="Jack Kirby";
+					   document.getElementById("m26").innerHTML="Steve Ditko";
+					   document.getElementById("m27").innerHTML="Stan Lee";
+					   document.getElementById("m28").innerHTML="Joss Whedon";
+
+
+
+					}	
+					else if(g==4){
+					   document.getElementById("qq7").innerHTML=questions[3];
+					   document.getElementById("qqa7").innerHTML=questions2[3];
+					   document.getElementById("qqb7").innerHTML=questions3[3];
+
+					   document.getElementById("m25").innerHTML="The Abomination";
+					   document.getElementById("m26").innerHTML="Absorbing Man";
+					   document.getElementById("m27").innerHTML="The Grandmaster";
+					   document.getElementById("m28").innerHTML="The Collector";
+
+
+
+					}	
+					else if(g==5){
+					   document.getElementById("qq7").innerHTML=questions[4];
+					   document.getElementById("qqa7").innerHTML=questions2[4];
+					   document.getElementById("qqb7").innerHTML=questions3[4];
+
+					   document.getElementById("m25").innerHTML="Loki";
+					   document.getElementById("m26").innerHTML="Nick";
+					   document.getElementById("m27").innerHTML="Hawkeye";
+					   document.getElementById("m28").innerHTML="Hulk";
+
+
+
+					}	
+					else if(g==6){
+					   document.getElementById("qq7").innerHTML=questions[5];
+					   document.getElementById("qqa7").innerHTML=questions2[5];
+					   document.getElementById("qqb7").innerHTML=questions3[5];
+
+					   document.getElementById("m25").innerHTML="Lena";
+					   document.getElementById("m26").innerHTML="Hela";
+					   document.getElementById("m27").innerHTML="Lana";
+					   document.getElementById("m28").innerHTML="Alana";
+
+
+
+					}	
+					else if(g==7){
+					   document.getElementById("qq7").innerHTML=questions[6];
+					   document.getElementById("qqa7").innerHTML=questions2[6];
+					   document.getElementById("qqb7").innerHTML=questions3[6];
+
+
+					   document.getElementById("m25").innerHTML="Alaska";
+					   document.getElementById("m26").innerHTML="Norway";
+					   document.getElementById("m27").innerHTML="Canada";
+					   document.getElementById("m28").innerHTML="Iceland";
+
+
+
+					}	
+					else if(g==8){
+					   document.getElementById("qq7").innerHTML=questions[7];
+					   document.getElementById("qqa7").innerHTML=questions2[7];
+					   document.getElementById("qqb7").innerHTML=questions3[7];
+
+
+					   document.getElementById("m25").innerHTML="Scarlet Witch";
+					   document.getElementById("m26").innerHTML="Iron Man";
+					   document.getElementById("m27").innerHTML="Rhodey";
+					   document.getElementById("m28").innerHTML="Hawkeye";
+
+
+
+					}	
+					else if(g==9){
+					   document.getElementById("qq7").innerHTML=questions[8];
+					   document.getElementById("qqa7").innerHTML=questions2[8];
+					   document.getElementById("qqb7").innerHTML=questions3[8];
+
+
+					   document.getElementById("m25").innerHTML="Reality Stone";
+					   document.getElementById("m26").innerHTML="Soul Stone";
+					   document.getElementById("m27").innerHTML="Power Stone";
+					   document.getElementById("m28").innerHTML="Space Stone";
+
+
+
+					}	
+					else if(g==10){
+					   document.getElementById("qq7").innerHTML=questions[9];
+					   document.getElementById("qqa7").innerHTML=questions2[9];
+					   document.getElementById("qqb7").innerHTML=questions3[9];
+
+					   document.getElementById("m25").innerHTML="bow and arrow";
+					   document.getElementById("m26").innerHTML="axe";
+					   document.getElementById("m27").innerHTML="rapier";
+					   document.getElementById("m28").innerHTML="daggers";
+
+
+
+					}	
+					else if(g==11){
+					   document.getElementById("qq7").innerHTML=questions[10];
+					   document.getElementById("qqa7").innerHTML=questions2[10];
+					   document.getElementById("qqb7").innerHTML=questions3[10];
+
+
+					   document.getElementById("m25").innerHTML="The Pillagers";
+					   document.getElementById("m26").innerHTML="The Ravagers";
+					   document.getElementById("m27").innerHTML="The Reavers";
+					   document.getElementById("m28").innerHTML="The Grievers";
+
+
+
+					}	
+					else if(g==12){
+					   document.getElementById("qq7").innerHTML=questions[11];
+					   document.getElementById("qqa7").innerHTML=questions2[11];
+					   document.getElementById("qqb7").innerHTML=questions3[11];
+
+					   document.getElementById("m25").innerHTML="Lithium ion battery";
+					   document.getElementById("m26").innerHTML="Arc Reactor";
+					   document.getElementById("m27").innerHTML="The Arkenstone";
+					   document.getElementById("m28").innerHTML="The Tesseract";
+
+
+
+					}	
+					else if(g==13){
+					   document.getElementById("qq7").innerHTML=questions[12];
+					   document.getElementById("qqa7").innerHTML=questions2[12];
+					   document.getElementById("qqb7").innerHTML=questions3[12];
+
+					   document.getElementById("m25").innerHTML="Rhodey";
+					   document.getElementById("m26").innerHTML="Pepper Potts";
+					   document.getElementById("m27").innerHTML="President Ellis";
+					   document.getElementById("m28").innerHTML="Happy Hogan";
+
+
+
+
+					}	
+					else if(g==14){
+					   document.getElementById("qq7").innerHTML=questions[13];
+					   document.getElementById("qqa7").innerHTML=questions2[13];
+					   document.getElementById("qqb7").innerHTML=questions3[13];
+
+
+					   document.getElementById("m25").innerHTML="Kurse/Algrim";
+					   document.getElementById("m26").innerHTML="Malekith";
+					   document.getElementById("m27").innerHTML="Jane Foster";
+					   document.getElementById("m28").innerHTML="Loki";
+
+
+
+					}	
+					else if(g==15){
+					   document.getElementById("qq7").innerHTML=questions[14];
+					   document.getElementById("qqa7").innerHTML=questions2[14];
+					   document.getElementById("qqb7").innerHTML=questions3[14];
+
+					   document.getElementById("m25").innerHTML="Christina Applegate";
+					   document.getElementById("m26").innerHTML="Heather Locklear";
+					   document.getElementById("m27").innerHTML="Tiffani Thiessen";
+					   document.getElementById("m28").innerHTML="Alyssa Milano";
+
+
+
+
+					}
+
+
+
+					if(h==1){
+					   document.getElementById("qq8").innerHTML=questions[0];
+					   document.getElementById("qqa8").innerHTML=questions2[0];
+					   document.getElementById("qqb8").innerHTML=questions3[0];
+
+
+					   document.getElementById("m29").innerHTML="Empire State Building";
+					   document.getElementById("m30").innerHTML="Time Square";
+					   document.getElementById("m31").innerHTML="Wall Street";
+					   document.getElementById("m32").innerHTML="Baxter Building";
+
+
+
+					}
+
+					else if(h==2){
+					   document.getElementById("qq8").innerHTML=questions[1];
+					   document.getElementById("qqa8").innerHTML=questions2[1];
+					   document.getElementById("qqb8").innerHTML=questions3[1];
+
+
+					   document.getElementById("m29").innerHTML="Thor: The Dark World";
+					   document.getElementById("m30").innerHTML="Captain America: The Winter Soldier";
+					   document.getElementById("m31").innerHTML="Doctor Strange";
+					   document.getElementById("m32").innerHTML="Guardians of the Galaxy Vol 2";
+
+
+					}	
+					else if(h==3){
+					   document.getElementById("qq8").innerHTML=questions[2];
+					   document.getElementById("qqa8").innerHTML=questions2[2];
+					   document.getElementById("qqb8").innerHTML=questions3[2];
+
+					   document.getElementById("m29").innerHTML="Jack Kirby";
+					   document.getElementById("m30").innerHTML="Steve Ditko";
+					   document.getElementById("m31").innerHTML="Stan Lee";
+					   document.getElementById("m32").innerHTML="Joss Whedon";
+
+
+
+					}	
+					else if(h==4){
+					   document.getElementById("qq8").innerHTML=questions[3];
+					   document.getElementById("qqa8").innerHTML=questions2[3];
+					   document.getElementById("qqb8").innerHTML=questions3[3];
+
+					   document.getElementById("m29").innerHTML="The Abomination";
+					   document.getElementById("m30").innerHTML="Absorbing Man";
+					   document.getElementById("m31").innerHTML="The Grandmaster";
+					   document.getElementById("m32").innerHTML="The Collector";
+
+
+
+					}	
+					else if(h==5){
+					   document.getElementById("qq8").innerHTML=questions[4];
+					   document.getElementById("qqa8").innerHTML=questions2[4];
+					   document.getElementById("qqb8").innerHTML=questions3[4];
+
+					   document.getElementById("m29").innerHTML="Loki";
+					   document.getElementById("m30").innerHTML="Nick";
+					   document.getElementById("m31").innerHTML="Hawkeye";
+					   document.getElementById("m32").innerHTML="Hulk";
+
+
+
+					}	
+					else if(h==6){
+					   document.getElementById("qq8").innerHTML=questions[5];
+					   document.getElementById("qqa8").innerHTML=questions2[5];
+					   document.getElementById("qqb8").innerHTML=questions3[5];
+
+					   document.getElementById("m29").innerHTML="Lena";
+					   document.getElementById("m30").innerHTML="Hela";
+					   document.getElementById("m31").innerHTML="Lana";
+					   document.getElementById("m32").innerHTML="Alana";
+
+
+
+					}	
+					else if(h==7){
+					   document.getElementById("qq8").innerHTML=questions[6];
+					   document.getElementById("qqa8").innerHTML=questions2[6];
+					   document.getElementById("qqb8").innerHTML=questions3[6];
+
+					   document.getElementById("m29").innerHTML="Alaska";
+					   document.getElementById("m30").innerHTML="Norway";
+					   document.getElementById("m31").innerHTML="Canada";
+					   document.getElementById("m32").innerHTML="Iceland";
+
+
+
+					}	
+					else if(h==8){
+					   document.getElementById("qq8").innerHTML=questions[7];
+					   document.getElementById("qqa8").innerHTML=questions2[7];
+					   document.getElementById("qqb8").innerHTML=questions3[7];
+
+
+					   document.getElementById("m29").innerHTML="Scarlet Witch";
+					   document.getElementById("m30").innerHTML="Iron Man";
+					   document.getElementById("m31").innerHTML="Rhodey";
+					   document.getElementById("m32").innerHTML="Hawkeye";
+
+
+
+					}	
+					else if(h==9){
+					   document.getElementById("qq8").innerHTML=questions[8];
+					   document.getElementById("qqa8").innerHTML=questions2[8];
+					   document.getElementById("qqb8").innerHTML=questions3[8];
+
+					   document.getElementById("m29").innerHTML="Reality Stone";
+					   document.getElementById("m30").innerHTML="Soul Stone";
+					   document.getElementById("m31").innerHTML="Power Stone";
+					   document.getElementById("m32").innerHTML="Space Stone";
+
+
+
+					}	
+					else if(h==10){
+					   document.getElementById("qq8").innerHTML=questions[9];
+					   document.getElementById("qqa8").innerHTML=questions2[9];
+					   document.getElementById("qqb8").innerHTML=questions3[9];
+
+					   document.getElementById("m29").innerHTML="bow and arrow";
+					   document.getElementById("m30").innerHTML="axe";
+					   document.getElementById("m31").innerHTML="rapier";
+					   document.getElementById("m32").innerHTML="daggers";
+
+
+
+					}	
+					else if(h==11){
+					   document.getElementById("qq8").innerHTML=questions[10];
+					   document.getElementById("qqa8").innerHTML=questions2[10];
+					   document.getElementById("qqb8").innerHTML=questions3[10];
+
+
+					   document.getElementById("m29").innerHTML="The Pillagers";
+					   document.getElementById("m30").innerHTML="The Ravagers";
+					   document.getElementById("m31").innerHTML="The Reavers";
+					   document.getElementById("m32").innerHTML="The Grievers";
+
+
+
+					}	
+					else if(h==12){
+					   document.getElementById("qq8").innerHTML=questions[11];
+					   document.getElementById("qqa8").innerHTML=questions2[11];
+					   document.getElementById("qqb8").innerHTML=questions3[11];
+
+
+					   document.getElementById("m29").innerHTML="Lithium ion battery";
+					   document.getElementById("m30").innerHTML="Arc Reactor";
+					   document.getElementById("m31").innerHTML="The Arkenstone";
+					   document.getElementById("m32").innerHTML="The Tesseract";
+
+
+
+					}	
+					else if(h==13){
+					   document.getElementById("qq8").innerHTML=questions[12];
+					   document.getElementById("qqa8").innerHTML=questions2[12];
+					   document.getElementById("qqb8").innerHTML=questions3[12];
+
+					   document.getElementById("m29").innerHTML="Rhodey";
+					   document.getElementById("m30").innerHTML="Pepper Potts";
+					   document.getElementById("m31").innerHTML="President Ellis";
+					   document.getElementById("m32").innerHTML="Happy Hogan";
+
+
+
+
+					}	
+					else if(h==14){
+					   document.getElementById("qq8").innerHTML=questions[13];
+					   document.getElementById("qqa8").innerHTML=questions2[13];
+					   document.getElementById("qqb8").innerHTML=questions3[13];
+
+
+					   document.getElementById("m29").innerHTML="Kurse/Algrim";
+					   document.getElementById("m30").innerHTML="Malekith";
+					   document.getElementById("m31").innerHTML="Jane Foster";
+					   document.getElementById("m32").innerHTML="Loki";
+
+
+
+					}	
+					else if(h==15){
+					   document.getElementById("qq8").innerHTML=questions[14];
+					   document.getElementById("qqa8").innerHTML=questions2[14];
+					   document.getElementById("qqb8").innerHTML=questions3[14];
+
+
+					   document.getElementById("m29").innerHTML="Christina Applegate";
+					   document.getElementById("m30").innerHTML="Heather Locklear";
+					   document.getElementById("m31").innerHTML="Tiffani Thiessen";
+					   document.getElementById("m32").innerHTML="Alyssa Milano";
+
+
+
+
+					}
+
+
+
+					if(ii==1){
+					   document.getElementById("qq9").innerHTML=questions[0];
+					   document.getElementById("qqa9").innerHTML=questions2[0];
+					   document.getElementById("qqb9").innerHTML=questions3[0];
+
+					   document.getElementById("m33").innerHTML="Empire State Building";
+					   document.getElementById("m34").innerHTML="Time Square";
+					   document.getElementById("m35").innerHTML="Wall Street";
+					   document.getElementById("m36").innerHTML="Baxter Building";
+
+
+
+					}
+
+					else if(ii==2){
+					   document.getElementById("qq9").innerHTML=questions[1];
+					   document.getElementById("qqa9").innerHTML=questions2[1];
+					   document.getElementById("qqb9").innerHTML=questions3[1];
+
+					   document.getElementById("m33").innerHTML="Thor: The Dark World";
+					   document.getElementById("m34").innerHTML="Captain America: The Winter Soldier";
+					   document.getElementById("m35").innerHTML="Doctor Strange";
+					   document.getElementById("m36").innerHTML="Guardians of the Galaxy Vol 2";
+
+					}	
+					else if(ii==3){
+					   document.getElementById("qq9").innerHTML=questions[2];
+					   document.getElementById("qqa9").innerHTML=questions2[2];
+					   document.getElementById("qqb9").innerHTML=questions3[2];
+
+					   document.getElementById("m33").innerHTML="Jack Kirby";
+					   document.getElementById("m34").innerHTML="Steve Ditko";
+					   document.getElementById("m35").innerHTML="Stan Lee";
+					   document.getElementById("m36").innerHTML="Joss Whedon";
+
+
+
+					}	
+					else if(ii==4){
+					   document.getElementById("qq9").innerHTML=questions[3];
+					   document.getElementById("qqa9").innerHTML=questions2[3];
+					   document.getElementById("qqb9").innerHTML=questions3[3];
+
+					   document.getElementById("m33").innerHTML="The Abomination";
+					   document.getElementById("m34").innerHTML="Absorbing Man";
+					   document.getElementById("m35").innerHTML="The Grandmaster";
+					   document.getElementById("m36").innerHTML="The Collector";
+
+
+
+					}	
+					else if(ii==5){
+					   document.getElementById("qq9").innerHTML=questions[4];
+					   document.getElementById("qqa9").innerHTML=questions2[4];
+					   document.getElementById("qqb9").innerHTML=questions3[4];
+
+					   document.getElementById("m33").innerHTML="Loki";
+					   document.getElementById("m34").innerHTML="Nick";
+					   document.getElementById("m35").innerHTML="Hawkeye";
+					   document.getElementById("m36").innerHTML="Hulk";
+
+
+
+					}	
+					else if(ii==6){
+					   document.getElementById("qq9").innerHTML=questions[5];
+					   document.getElementById("qqa9").innerHTML=questions2[5];
+					   document.getElementById("qqb9").innerHTML=questions3[5];
+
+					   document.getElementById("m33").innerHTML="Lena";
+					   document.getElementById("m34").innerHTML="Hela";
+					   document.getElementById("m35").innerHTML="Lana";
+					   document.getElementById("m36").innerHTML="Alana";
+
+
+
+					}	
+					else if(ii==7){
+					   document.getElementById("qq9").innerHTML=questions[6];
+					   document.getElementById("qqa9").innerHTML=questions2[6];
+					   document.getElementById("qqb9").innerHTML=questions3[6];
+
+					   document.getElementById("m33").innerHTML="Alaska";
+					   document.getElementById("m34").innerHTML="Norway";
+					   document.getElementById("m35").innerHTML="Canada";
+					   document.getElementById("m36").innerHTML="Iceland";
+
+
+
+					}	
+					else if(ii==8){
+					   document.getElementById("qq9").innerHTML=questions[7];
+					   document.getElementById("qqa9").innerHTML=questions2[7];
+					   document.getElementById("qqb9").innerHTML=questions3[7];
+
+					   document.getElementById("m33").innerHTML="Scarlet Witch";
+					   document.getElementById("m34").innerHTML="Iron Man";
+					   document.getElementById("m35").innerHTML="Rhodey";
+					   document.getElementById("m36").innerHTML="Hawkeye";
+
+
+
+					}
+					else if(ii==9){
+					   document.getElementById("qq9").innerHTML=questions[8];
+					   document.getElementById("qqa9").innerHTML=questions2[8];
+					   document.getElementById("qqb9").innerHTML=questions3[8];
+
+
+					   document.getElementById("m33").innerHTML="Reality Stone";
+					   document.getElementById("m34").innerHTML="Soul Stone";
+					   document.getElementById("m35").innerHTML="Power Stone";
+					   document.getElementById("m36").innerHTML="Space Stone";
+
+
+
+					}	
+					else if(ii==10){
+					   document.getElementById("qq9").innerHTML=questions[9];
+					   document.getElementById("qqa9").innerHTML=questions2[9];
+					   document.getElementById("qqb9").innerHTML=questions3[9];
+
+
+					   document.getElementById("m33").innerHTML="bow and arrow";
+					   document.getElementById("m34").innerHTML="axe";
+					   document.getElementById("m35").innerHTML="rapier";
+					   document.getElementById("m36").innerHTML="daggers";
+
+
+
+					}	
+					else if(ii==11){
+					   document.getElementById("qq9").innerHTML=questions[10];
+					   document.getElementById("qqa9").innerHTML=questions2[10];
+					   document.getElementById("qqb9").innerHTML=questions3[10];
+
+
+					   document.getElementById("m33").innerHTML="The Pillagers";
+					   document.getElementById("m34").innerHTML="The Ravagers";
+					   document.getElementById("m35").innerHTML="The Reavers";
+					   document.getElementById("m36").innerHTML="The Grievers";
+
+
+
+					}	
+					else if(ii==12){
+					   document.getElementById("qq9").innerHTML=questions[11];
+					   document.getElementById("qqa9").innerHTML=questions2[11];
+					   document.getElementById("qqb9").innerHTML=questions3[11];
+
+					   document.getElementById("m33").innerHTML="Lithium ion battery";
+					   document.getElementById("m34").innerHTML="Arc Reactor";
+					   document.getElementById("m35").innerHTML="The Arkenstone";
+					   document.getElementById("m36").innerHTML="The Tesseract";
+
+
+
+					}	
+					else if(ii==13){
+					   document.getElementById("qq9").innerHTML=questions[12];
+					   document.getElementById("qqa9").innerHTML=questions2[12];
+					   document.getElementById("qqb9").innerHTML=questions3[12];
+
+					   document.getElementById("m33").innerHTML="Rhodey";
+					   document.getElementById("m34").innerHTML="Pepper Potts";
+					   document.getElementById("m35").innerHTML="President Ellis";
+					   document.getElementById("m36").innerHTML="Happy Hogan";
+
+
+
+
+					}	
+					else if(ii==14){
+					   document.getElementById("qq9").innerHTML=questions[13];
+					   document.getElementById("qqa9").innerHTML=questions2[13];
+					   document.getElementById("qqb9").innerHTML=questions3[13];
+
+
+					   document.getElementById("m33").innerHTML="Kurse/Algrim";
+					   document.getElementById("m34").innerHTML="Malekith";
+					   document.getElementById("m35").innerHTML="Jane Foster";
+					   document.getElementById("m36").innerHTML="Loki";
+
+
+
+					}	
+					else if(ii==15){
+					   document.getElementById("qq9").innerHTML=questions[14];
+					   document.getElementById("qqa9").innerHTML=questions2[14];
+					   document.getElementById("qqb9").innerHTML=questions3[14];
+
+
+					   document.getElementById("m33").innerHTML="Christina Applegate";
+					   document.getElementById("m34").innerHTML="Heather Locklear";
+					   document.getElementById("m35").innerHTML="Tiffani Thiessen";
+					   document.getElementById("m36").innerHTML="Alyssa Milano";
+
+
+
+
+					}
+
+
+					if(j==1){
+					   document.getElementById("qq10").innerHTML=questions[0];
+					   document.getElementById("qqa10").innerHTML=questions2[0];
+					   document.getElementById("qqb10").innerHTML=questions3[0];
+
+
+					   document.getElementById("m37").innerHTML="Empire State Building";
+					   document.getElementById("m38").innerHTML="Time Square";
+					   document.getElementById("m39").innerHTML="Wall Street";
+					   document.getElementById("m40").innerHTML="Baxter Building";
+
+
+
+					}
+
+					else if(j==2){
+					   document.getElementById("qq10").innerHTML=questions[1];
+					   document.getElementById("qqa10").innerHTML=questions2[1];
+					   document.getElementById("qqb10").innerHTML=questions3[1];
+
+					   document.getElementById("m37").innerHTML="Thor: The Dark World";
+					   document.getElementById("m38").innerHTML="Captain America: The Winter Soldier";
+					   document.getElementById("m39").innerHTML="Doctor Strange";
+					   document.getElementById("m40").innerHTML="Guardians of the Galaxy Vol 2";
+
+
+					}	
+					else if(j==3){
+					   document.getElementById("qq10").innerHTML=questions[2];
+					   document.getElementById("qqa10").innerHTML=questions2[2];
+					   document.getElementById("qqb10").innerHTML=questions3[2];
+
+
+					   document.getElementById("m37").innerHTML="Jack Kirby";
+					   document.getElementById("m38").innerHTML="Steve Ditko";
+					   document.getElementById("m39").innerHTML="Stan Lee";
+					   document.getElementById("m40").innerHTML="Joss Whedon";
+
+
+
+					}	
+					else if(j==4){
+					   document.getElementById("qq10").innerHTML=questions[3];
+					   document.getElementById("qqa10").innerHTML=questions2[3];
+					   document.getElementById("qqb10").innerHTML=questions3[3];
+
+					   document.getElementById("m37").innerHTML="The Abomination";
+					   document.getElementById("m38").innerHTML="Absorbing Man";
+					   document.getElementById("m39").innerHTML="The Grandmaster";
+					   document.getElementById("m40").innerHTML="The Collector";
+
+
+
+					}	
+					else if(j==5){
+					   document.getElementById("qq10").innerHTML=questions[4];
+					   document.getElementById("qqa10").innerHTML=questions2[4];
+					   document.getElementById("qqb10").innerHTML=questions3[4];
+
+					   document.getElementById("m37").innerHTML="Loki";
+					   document.getElementById("m38").innerHTML="Nick";
+					   document.getElementById("m39").innerHTML="Hawkeye";
+					   document.getElementById("m40").innerHTML="Hulk";
+
+
+
+					}	
+					else if(j==6){
+					   document.getElementById("qq10").innerHTML=questions[5];
+					   document.getElementById("qqa10").innerHTML=questions2[5];
+					   document.getElementById("qqb10").innerHTML=questions3[5];
+
+					   document.getElementById("m37").innerHTML="Lena";
+					   document.getElementById("m38").innerHTML="Hela";
+					   document.getElementById("m39").innerHTML="Lana";
+					   document.getElementById("m40").innerHTML="Alana";
+
+
+
+					}	
+					else if(j==7){
+					   document.getElementById("qq10").innerHTML=questions[6];
+					   document.getElementById("qqa10").innerHTML=questions2[6];
+					   document.getElementById("qqb10").innerHTML=questions3[6];
+
+					   document.getElementById("m37").innerHTML="Alaska";
+					   document.getElementById("m38").innerHTML="Norway";
+					   document.getElementById("m39").innerHTML="Canada";
+					   document.getElementById("m40").innerHTML="Iceland";
+
+
+
+					}	
+					else if(j==8){
+					   document.getElementById("qq10").innerHTML=questions[7];
+					   document.getElementById("qqa10").innerHTML=questions2[7];
+					   document.getElementById("qqb10").innerHTML=questions3[7];
+
+
+					   document.getElementById("m37").innerHTML="Scarlet Witch";
+					   document.getElementById("m38").innerHTML="Iron Man";
+					   document.getElementById("m39").innerHTML="Rhodey";
+					   document.getElementById("m40").innerHTML="Hawkeye";
+
+
+					}	
+					else if(j==9){
+					   document.getElementById("qq10").innerHTML=questions[8];
+					   document.getElementById("qqa10").innerHTML=questions2[8];
+					   document.getElementById("qqb10").innerHTML=questions3[8];
+
+
+					   document.getElementById("m37").innerHTML="Reality Stone";
+					   document.getElementById("m38").innerHTML="Soul Stone";
+					   document.getElementById("m39").innerHTML="Power Stone";
+					   document.getElementById("m40").innerHTML="Space Stone";
+
+
+
+					}	
+					else if(j==10){
+					   document.getElementById("qq10").innerHTML=questions[9];
+					   document.getElementById("qqa10").innerHTML=questions2[9];
+					   document.getElementById("qqb10").innerHTML=questions3[9];
+
+					   document.getElementById("m37").innerHTML="bow and arrow";
+					   document.getElementById("m38").innerHTML="axe";
+					   document.getElementById("m39").innerHTML="rapier";
+					   document.getElementById("m40").innerHTML="daggers";
+
+
+
+					}	
+					else if(j==11){
+					   document.getElementById("qq10").innerHTML=questions[10];
+					   document.getElementById("qqa10").innerHTML=questions2[10];
+					   document.getElementById("qqb10").innerHTML=questions3[10];
+
+					   document.getElementById("m37").innerHTML="The Pillagers";
+					   document.getElementById("m38").innerHTML="The Ravagers";
+					   document.getElementById("m39").innerHTML="The Reavers";
+					   document.getElementById("m40").innerHTML="The Grievers";
+
+
+
+					}	
+					else if(j==12){
+					   document.getElementById("qq10").innerHTML=questions[11];
+					   document.getElementById("qqa10").innerHTML=questions2[11];
+					   document.getElementById("qqb10").innerHTML=questions3[11];
+
+					   document.getElementById("m37").innerHTML="Lithium ion battery";
+					   document.getElementById("m38").innerHTML="Arc Reactor";
+					   document.getElementById("m39").innerHTML="The Arkenstone";
+					   document.getElementById("m40").innerHTML="The Tesseract";
+
+
+
+					}
+					else if(j==13){
+					   document.getElementById("qq10").innerHTML=questions[12];
+					   document.getElementById("qqa10").innerHTML=questions2[12];
+					   document.getElementById("qqb10").innerHTML=questions3[12];
+
+					   document.getElementById("m37").innerHTML="Rhodey";
+					   document.getElementById("m38").innerHTML="Pepper Potts";
+					   document.getElementById("m39").innerHTML="President Ellis";
+					   document.getElementById("m40").innerHTML="Happy Hogan";
+
+
+
+
+					}	
+					else if(j==14){
+					   document.getElementById("qq10").innerHTML=questions[13];
+					   document.getElementById("qqa10").innerHTML=questions2[13];
+					   document.getElementById("qqb10").innerHTML=questions3[13];
+
+					   document.getElementById("m37").innerHTML="Kurse/Algrim";
+					   document.getElementById("m38").innerHTML="Malekith";
+					   document.getElementById("m39").innerHTML="Jane Foster";
+					   document.getElementById("m40").innerHTML="Loki";
+
+
+
+					}	
+					else if(j==15){
+					   document.getElementById("qq10").innerHTML=questions[14];
+					   document.getElementById("qqa10").innerHTML=questions2[14];
+					   document.getElementById("qqb10").innerHTML=questions3[14];
+
+					   document.getElementById("m37").innerHTML="Christina Applegate";
+					   document.getElementById("m38").innerHTML="Heather Locklear";
+					   document.getElementById("m39").innerHTML="Tiffani Thiessen";
+					   document.getElementById("m40").innerHTML="Alyssa Milano";
+
+
+
+
+					}
+
+
+
+
+
+
+				}
+				ch=1;
+			}
+			
+			function f1(){
+				cm=5;
+				if(check==0){
+					if(a==1){
+						ans1 = document.getElementById("a1").value;
+						ans1 = ans1.toLowerCase();
+						ans1 = ans1.trim();
+						cm=ans1.localeCompare(answers[0]);	
+
+					}
+					else if(a==2){
+						ans1 = document.getElementById("a1").value;
+						ans1 = ans1.toLowerCase();
+						ans1 = ans1.trim();
+
+						cm=ans1.localeCompare(answers[1]);	
+
+					}
+					else if(a==3){
+						ans1 = document.getElementById("a1").value;
+						ans1 = ans1.toLowerCase();
+						ans1 = ans1.trim();
+
+						cm=ans1.localeCompare(answers[2]);	
+
+					}
+					else if(a==4){
+						ans1 = document.getElementById("a1").value;
+						ans1 = ans1.toLowerCase();
+						ans1 = ans1.trim();
+
+						cm=ans1.localeCompare(answers[3]);	
+
+					}
+					else if(a==5){
+						ans1 = document.getElementById("a1").value;
+						ans1 = ans1.toLowerCase();
+						ans1 = ans1.trim();
+
+						cm=ans1.localeCompare(answers[4]);	
+
+					}
+					else if(a==6){
+						ans1 = document.getElementById("a1").value;
+						ans1 = ans1.toLowerCase();
+						ans1 = ans1.trim();
+
+						cm=ans1.localeCompare(answers[5]);	
+
+					}
+					else if(a==7){
+						ans1 = document.getElementById("a1").value;
+						ans1 = ans1.toLowerCase();
+						ans1 = ans1.trim();
+
+						cm=ans1.localeCompare(answers[6]);	
+
+					}
+					else if(a==8){
+						ans1 = document.getElementById("a1").value;
+						ans1 = ans1.toLowerCase();
+						ans1 = ans1.trim();
+
+						cm=ans1.localeCompare(answers[7]);	
+
+					}
+					else if(a==9){
+						ans1 = document.getElementById("a1").value;
+						ans1 = ans1.toLowerCase();
+						ans1 = ans1.trim();
+
+						cm=ans1.localeCompare(answers[8]);	
+
+					}
+					else if(a==10){
+						ans1 = document.getElementById("a1").value;
+						ans1 = ans1.toLowerCase();
+						ans1 = ans1.trim();
+
+						cm=ans1.localeCompare(answers[9]);	
+
+					}
+					else if(a==11){
+						ans1 = document.getElementById("a1").value;
+						ans1 = ans1.toLowerCase();
+						ans1 = ans1.trim();
+
+						cm=ans1.localeCompare(answers[10]);	
+
+					}
+					else if(a==12){
+						ans1 = document.getElementById("a1").value;
+						ans1 = ans1.toLowerCase();
+						ans1 = ans1.trim();
+
+						cm=ans1.localeCompare(answers[11]);	
+
+					}
+					else if(a==13){
+						ans1 = document.getElementById("a1").value;
+						ans1 = ans1.toLowerCase();
+						ans1 = ans1.trim();
+
+						cm=ans1.localeCompare(answers[12]);	
+
+					}
+					else if(a==14){
+						ans1 = document.getElementById("a1").value;
+						ans1 = ans1.toLowerCase();
+						ans1 = ans1.trim();
+
+						cm=ans1.localeCompare(answers[13]);	
+
+					}
+					else if(a==15){
+						ans1 = document.getElementById("a1").value;
+						ans1 = ans1.toLowerCase();
+						ans1 = ans1.trim();
+
+						cm=ans1.localeCompare(answers[14]);	
+					}
+				}
+			}
+			function f2(){
+
+				cm2=5,ans2;			
+				if(check1==0){
+					if(b==1){
+						ans2 = document.getElementById("a2").value;
+						ans2 = ans2.toLowerCase();
+						ans2 = ans2.trim();
+
+						cm2=ans2.localeCompare(answers[0]);
+		
+					}
+					else if(b==2){
+						ans2 = document.getElementById("a2").value;
+						ans2 = ans2.toLowerCase();
+						ans2 = ans2.trim();
+
+						cm2=ans2.localeCompare(answers[1]);	
+
+					}
+					else if(b==3){
+						ans2 = document.getElementById("a2").value;
+						ans2 = ans2.toLowerCase();
+						ans2 = ans2.trim();
+
+						cm2=ans2.localeCompare(answers[2]);	
+
+					}
+					else if(b==4){
+						ans2 = document.getElementById("a2").value;
+						ans2 = ans2.toLowerCase();
+						ans2 = ans2.trim();
+
+						cm2=ans2.localeCompare(answers[3]);	
+
+					}
+					else if(b==5){
+						ans2 = document.getElementById("a2").value;
+						ans2 = ans2.toLowerCase();
+						ans2 = ans2.trim();
+
+						cm2=ans2.localeCompare(answers[4]);	
+
+					}
+					else if(b==6){
+						ans2 = document.getElementById("a2").value;
+						ans2 = ans2.toLowerCase();
+						ans2 = ans2.trim();
+
+						cm2=ans2.localeCompare(answers[5]);	
+
+					}
+					else if(b==7){
+						ans2 = document.getElementById("a2").value;
+						ans2 = ans2.toLowerCase();
+						ans2 = ans2.trim();
+
+						cm2=ans2.localeCompare(answers[6]);	
+
+					}
+					else if(b==8){
+						ans2 = document.getElementById("a2").value;
+						ans2 = ans2.toLowerCase();
+						ans2 = ans2.trim();
+
+						cm2=ans2.localeCompare(answers[7]);	
+
+					}
+					else if(b==9){
+						ans2 = document.getElementById("a2").value;
+						ans2 = ans2.toLowerCase();
+						ans2 = ans2.trim();
+
+						cm2=ans2.localeCompare(answers[8]);	
+
+					}
+					else if(b==10){
+						ans2 = document.getElementById("a2").value;
+						ans2 = ans2.toLowerCase();
+						ans2 = ans2.trim();
+
+						cm2=ans2.localeCompare(answers[9]);	
+
+					}
+					else if(b==11){
+						ans2 = document.getElementById("a2").value;
+						ans2 = ans2.toLowerCase();
+						ans2 = ans2.trim();
+
+						cm2=ans2.localeCompare(answers[10]);	
+
+					}
+					else if(b==12){
+						ans2 = document.getElementById("a2").value;
+						ans2 = ans2.toLowerCase();
+						ans2 = ans2.trim();
+
+						cm2=ans2.localeCompare(answers[11]);	
+
+					}
+					else if(b==13){
+						ans2 = document.getElementById("a2").value;
+						ans2 = ans2.toLowerCase();
+						ans2 = ans2.trim();
+
+						cm2=ans2.localeCompare(answers[12]);	
+
+					}
+					else if(b==14){
+						ans2 = document.getElementById("a2").value;
+						ans2 = ans2.toLowerCase();
+						ans2 = ans2.trim();
+
+						cm2=ans2.localeCompare(answers[13]);	
+
+					}
+					else if(b==15){
+						ans2 = document.getElementById("a2").value;
+						ans2 = ans2.toLowerCase();
+						ans2 = ans2.trim();
+
+						cm2=ans2.localeCompare(answers[14]);	
+
+					}
+				
+
+				}
+			}
+
+
+
+
+
+			function f3(){
+
+				cm3=5;			
+				if(check1==0){
+					if(c==1){
+						ans3 = document.getElementById("a3").value;
+						ans3 = ans3.toLowerCase();
+						ans3 = ans3.trim();
+
+						cm3=ans3.localeCompare(answers[0]);	
+
+					}
+					else if(c==2){
+						ans3 = document.getElementById("a3").value;
+						ans3 = ans3.toLowerCase();
+						ans3 = ans3.trim();
+
+						cm3=ans3.localeCompare(answers[1]);	
+
+					}
+					else if(c==3){
+						ans3 = document.getElementById("a3").value;
+						ans3 = ans3.toLowerCase();
+						ans3 = ans3.trim();
+
+						cm3=ans3.localeCompare(answers[2]);	
+
+					}
+					else if(c==4){
+						ans3 = document.getElementById("a3").value;
+						ans3 = ans3.toLowerCase();
+						ans3 = ans3.trim();
+
+						cm3=ans3.localeCompare(answers[3]);	
+
+					}
+					else if(c==5){
+						ans3 = document.getElementById("a3").value;
+						ans3 = ans3.toLowerCase();
+						ans3 = ans3.trim();
+
+						cm3=ans3.localeCompare(answers[4]);	
+
+					}
+					else if(c==6){
+						ans3 = document.getElementById("a3").value;
+						ans3 = ans3.toLowerCase();
+						ans3 = ans3.trim();
+
+						cm3=ans3.localeCompare(answers[5]);	
+
+					}
+					else if(c==7){
+						ans3 = document.getElementById("a3").value;
+						ans3 = ans3.toLowerCase();
+						ans3 = ans3.trim();
+
+						cm3=ans3.localeCompare(answers[6]);	
+
+					}
+					else if(c==8){
+						ans3 = document.getElementById("a3").value;
+						ans3 = ans3.toLowerCase();
+						ans3 = ans3.trim();
+
+						cm3=ans3.localeCompare(answers[7]);	
+
+					}
+					else if(c==9){
+						ans3 = document.getElementById("a3").value;
+						ans3 = ans3.toLowerCase();
+						ans3 = ans3.trim();
+
+						cm3=ans3.localeCompare(answers[8]);	
+
+					}
+					else if(c==10){
+						ans3 = document.getElementById("a3").value;
+						ans3 = ans3.toLowerCase();
+						ans3 = ans3.trim();
+
+						cm3=ans3.localeCompare(answers[9]);	
+
+					}
+					else if(c==11){
+						ans3 = document.getElementById("a3").value;
+						ans3 = ans3.toLowerCase();
+						ans3 = ans3.trim();
+
+						cm3=ans3.localeCompare(answers[10]);	
+
+					}
+					else if(c==12){
+						ans3 = document.getElementById("a3").value;
+						ans3 = ans3.toLowerCase();
+						ans3 = ans3.trim();
+
+						cm3=ans3.localeCompare(answers[11]);	
+
+					}
+					else if(c==13){
+						ans3 = document.getElementById("a3").value;
+						ans3 = ans3.toLowerCase();
+						ans3 = ans3.trim();
+
+						cm3=ans3.localeCompare(answers[12]);	
+
+					}
+					else if(c==14){
+						ans3 = document.getElementById("a3").value;
+						ans3 = ans3.toLowerCase();
+						ans3 = ans3.trim();
+
+						cm3=ans3.localeCompare(answers[13]);	
+
+					}
+					else if(c==15){
+						ans3 = document.getElementById("a3").value;
+						ans3 = ans3.toLowerCase();
+						ans3 = ans3.trim();
+
+						cm3=ans3.localeCompare(answers[14]);	
+
+					}
+				
+
+				}
+			}
+
+
+
+
+
+			function f4(){
+
+				cm4=5;			
+				if(check1==0){
+					if(d==1){
+						ans4 = document.getElementById("a4").value;
+						ans4 = ans4.toLowerCase();
+						ans4 = ans4.trim();
+
+						cm4=ans4.localeCompare(answers[0]);	
+
+					}
+					else if(d==2){
+						ans4 = document.getElementById("a4").value;
+						ans4 = ans4.toLowerCase();
+						ans4 = ans4.trim();
+
+						cm4=ans4.localeCompare(answers[1]);	
+
+					}
+					else if(d==3){
+						ans4 = document.getElementById("a4").value;
+						ans4 = ans4.toLowerCase();
+						ans4 = ans4.trim();
+
+						cm4=ans4.localeCompare(answers[2]);	
+
+					}
+					else if(d==4){
+						ans4 = document.getElementById("a4").value;
+						ans4 = ans4.toLowerCase();
+						ans4 = ans4.trim();
+
+						cm4=ans4.localeCompare(answers[3]);	
+
+					}
+					else if(d==5){
+						ans4 = document.getElementById("a4").value;
+						ans4 = ans4.toLowerCase();
+						ans4 = ans4.trim();
+
+						cm4=ans4.localeCompare(answers[4]);	
+
+					}
+					else if(d==6){
+						ans4 = document.getElementById("a4").value;
+						ans4 = ans4.toLowerCase();
+						ans4 = ans4.trim();
+
+						cm4=ans4.localeCompare(answers[5]);	
+
+					}
+					else if(d==7){
+						ans4 = document.getElementById("a4").value;
+						ans4 = ans4.toLowerCase();
+						ans4 = ans4.trim();
+
+						cm4=ans4.localeCompare(answers[6]);	
+
+					}
+					else if(d==8){
+						ans4 = document.getElementById("a4").value;
+						ans4 = ans4.toLowerCase();
+						ans4 = ans4.trim();
+
+						cm4=ans4.localeCompare(answers[7]);	
+
+					}
+					else if(d==9){
+						ans4 = document.getElementById("a4").value;
+						ans4 = ans4.toLowerCase();
+						ans4 = ans4.trim();
+
+						cm4=ans4.localeCompare(answers[8]);	
+
+					}
+					else if(d==10){
+						ans4 = document.getElementById("a4").value;
+						ans4 = ans4.toLowerCase();
+						ans4 = ans4.trim();
+
+						cm4=ans4.localeCompare(answers[9]);	
+
+					}
+					else if(d==11){
+						ans4 = document.getElementById("a4").value;
+						ans4 = ans4.toLowerCase();
+						ans4 = ans4.trim();
+
+						cm4=ans4.localeCompare(answers[10]);	
+
+					}
+					else if(d==12){
+						ans4 = document.getElementById("a4").value;
+						ans4 = ans4.toLowerCase();
+						ans4 = ans4.trim();
+
+						cm4=ans4.localeCompare(answers[11]);	
+
+					}
+					else if(d==13){
+						ans4 = document.getElementById("a4").value;
+						ans4 = ans4.toLowerCase();
+						ans4 = ans4.trim();
+
+						cm4=ans4.localeCompare(answers[12]);	
+
+					}
+					else if(d==14){
+						ans4 = document.getElementById("a4").value;
+						ans4 = ans4.toLowerCase();
+						ans4 = ans4.trim();
+
+						cm4=ans4.localeCompare(answers[13]);	
+
+					}
+					else if(d==15){
+						ans4 = document.getElementById("a4").value;
+						ans4 = ans4.toLowerCase();
+						ans4 = ans4.trim();
+
+						cm4=ans4.localeCompare(answers[14]);	
+
+					}
+				
+
+				}
+
+			}
+
+
+
+
+
+
+
+			function f5(){
+
+				cm5=5;			
+				if(check1==0){
+					if(e==1){
+						ans5 = document.getElementById("a5").value;
+						ans5 = ans5.toLowerCase();
+						ans5 = ans5.trim();
+
+
+						cm5=ans5.localeCompare(answers[0]);	
+
+					}
+					else if(e==2){
+						ans5 = document.getElementById("a5").value;
+						ans5 = ans5.toLowerCase();
+						ans5 = ans5.trim();
+
+
+						cm5=ans5.localeCompare(answers[1]);	
+
+					}
+					else if(e==3){
+						ans5 = document.getElementById("a5").value;
+						ans5 = ans5.toLowerCase();
+						ans5 = ans5.trim();
+
+
+						cm5=ans5.localeCompare(answers[2]);	
+
+					}
+					else if(e==4){
+						ans5 = document.getElementById("a5").value;
+						ans5 = ans5.toLowerCase();
+						ans5 = ans5.trim();
+
+
+						cm5=ans5.localeCompare(answers[3]);	
+
+					}
+					else if(e==5){
+						ans5 = document.getElementById("a5").value;
+						ans5 = ans5.toLowerCase();
+						ans5 = ans5.trim();
+
+
+						cm5=ans5.localeCompare(answers[4]);	
+
+					}
+					else if(e==6){
+						ans5 = document.getElementById("a5").value;
+						ans5 = ans5.toLowerCase();
+						ans5 = ans5.trim();
+
+
+						cm5=ans5.localeCompare(answers[5]);	
+
+					}
+					else if(e==7){
+						ans5 = document.getElementById("a5").value;
+						ans5 = ans5.toLowerCase();
+						ans5 = ans5.trim();
+
+
+						cm5=ans5.localeCompare(answers[6]);	
+
+					}
+					else if(e==8){
+						ans5 = document.getElementById("a5").value;
+						ans5 = ans5.toLowerCase();
+						ans5 = ans5.trim();
+
+
+						cm5=ans5.localeCompare(answers[7]);	
+
+					}
+					else if(e==9){
+						ans5 = document.getElementById("a5").value;
+						ans5 = ans5.toLowerCase();
+						ans5 = ans5.trim();
+
+
+						cm5=ans5.localeCompare(answers[8]);	
+
+					}
+					else if(e==10){
+						ans5 = document.getElementById("a5").value;
+						ans5 = ans5.toLowerCase();
+						ans5 = ans5.trim();
+
+
+						cm5=ans5.localeCompare(answers[9]);	
+
+					}
+					else if(e==11){
+						ans5 = document.getElementById("a5").value;
+						ans5 = ans5.toLowerCase();
+						ans5 = ans5.trim();
+
+
+						cm5=ans5.localeCompare(answers[10]);	
+
+					}
+					else if(e==12){
+						ans5 = document.getElementById("a5").value;
+						ans5 = ans5.toLowerCase();
+						ans5 = ans5.trim();
+
+
+						cm5=ans5.localeCompare(answers[11]);	
+
+					}
+					else if(e==13){
+						ans5 = document.getElementById("a5").value;
+						ans5 = ans5.toLowerCase();
+						ans5 = ans5.trim();
+
+
+						cm5=ans5.localeCompare(answers[12]);	
+
+					}
+					else if(e==14){
+						ans5 = document.getElementById("a5").value;
+						ans5 = ans5.toLowerCase();
+						ans5 = ans5.trim();
+
+
+						cm5=ans5.localeCompare(answers[13]);	
+
+					}
+					else if(e==15){
+						ans5 = document.getElementById("a5").value;
+						ans5 = ans5.toLowerCase();
+						ans5 = ans5.trim();
+
+
+						cm5=ans5.localeCompare(answers[14]);	
+
+					}
+				
+
+				}
+
+			}
+
+ 
+
+
+
+			function f6(){
+
+				cm6=5;			
+				if(check1==0){
+					if(f==1){
+						ans6 = document.getElementById("a6").value;
+						ans6 = ans6.toLowerCase();
+						ans6 = ans6.trim();
+
+						cm6=ans6.localeCompare(answers[0]);	
+
+					}
+					else if(f==2){
+						ans6 = document.getElementById("a6").value;
+						ans6 = ans6.toLowerCase();
+						ans6 = ans6.trim();
+
+						cm6=ans6.localeCompare(answers[1]);	
+
+					}
+					else if(f==3){
+						ans6 = document.getElementById("a6").value;
+						ans6 = ans6.toLowerCase();
+						ans6 = ans6.trim();
+
+						cm6=ans6.localeCompare(answers[2]);	
+
+					}
+					else if(f==4){
+						ans6 = document.getElementById("a6").value;
+						ans6 = ans6.toLowerCase();
+						ans6 = ans6.trim();
+
+						cm6=ans6.localeCompare(answers[3]);	
+
+					}
+					else if(f==5){
+						ans6 = document.getElementById("a6").value;
+						ans6 = ans6.toLowerCase();
+						ans6 = ans6.trim();
+
+						cm6=ans6.localeCompare(answers[4]);	
+
+					}
+					else if(f==6){
+						ans6 = document.getElementById("a6").value;
+						ans6 = ans6.toLowerCase();
+						ans6 = ans6.trim();
+
+						cm6=ans6.localeCompare(answers[5]);	
+
+					}
+					else if(f==7){
+						ans6 = document.getElementById("a6").value;
+						ans6 = ans6.toLowerCase();
+						ans6 = ans6.trim();
+
+						cm6=ans6.localeCompare(answers[6]);	
+
+					}
+					else if(f==8){
+						ans6 = document.getElementById("a6").value;
+						ans6 = ans6.toLowerCase();
+						ans6 = ans6.trim();
+
+						cm6=ans6.localeCompare(answers[7]);	
+
+					}
+					else if(f==9){
+						ans6 = document.getElementById("a6").value;
+						ans6 = ans6.toLowerCase();
+						ans6 = ans6.trim();
+
+						cm6=ans6.localeCompare(answers[8]);	
+
+					}
+					else if(f==10){
+						ans6 = document.getElementById("a6").value;
+						ans6 = ans6.toLowerCase();
+						ans6 = ans6.trim();
+
+						cm6=ans6.localeCompare(answers[9]);	
+
+					}
+					else if(f==11){
+						ans6 = document.getElementById("a6").value;
+						ans6 = ans6.toLowerCase();
+						ans6 = ans6.trim();
+
+						cm6=ans6.localeCompare(answers[10]);	
+
+					}
+					else if(f==12){
+						ans6 = document.getElementById("a6").value;
+						ans6 = ans6.toLowerCase();
+						ans6 = ans6.trim();
+
+						cm6=ans6.localeCompare(answers[11]);	
+
+					}
+					else if(f==13){
+						ans6 = document.getElementById("a6").value;
+						ans6 = ans6.toLowerCase();
+						ans6 = ans6.trim();
+
+						cm6=ans6.localeCompare(answers[12]);	
+
+					}
+					else if(f==14){
+						ans6 = document.getElementById("a6").value;
+						ans6 = ans6.toLowerCase();
+						ans6 = ans6.trim();
+
+						cm6=ans6.localeCompare(answers[13]);	
+
+					}
+					else if(f==15){
+						ans6 = document.getElementById("a6").value;
+						ans6 = ans6.toLowerCase();
+						ans6 = ans6.trim();
+
+						cm6=ans6.localeCompare(answers[14]);	
+
+					}
+				
+
+				}
+
+			}
+
+
+
+			function f7(){
+
+				cm7=5;			
+				if(check1==0){
+					if(g==1){
+						ans7 = document.getElementById("a7").value;
+						ans7 = ans7.toLowerCase();
+						ans7 = ans7.trim();
+
+						cm7=ans7.localeCompare(answers[0]);	
+
+					}
+					else if(g==2){
+						ans7 = document.getElementById("a7").value;
+						ans7 = ans7.toLowerCase();
+						ans7 = ans7.trim();
+
+						cm7=ans7.localeCompare(answers[1]);	
+
+					}
+					else if(g==3){
+						ans7 = document.getElementById("a7").value;
+						ans7 = ans7.toLowerCase();
+						ans7 = ans7.trim();
+
+						cm7=ans7.localeCompare(answers[2]);	
+
+					}
+					else if(g==4){
+						ans7 = document.getElementById("a7").value;
+						ans7 = ans7.toLowerCase();
+						ans7 = ans7.trim();
+
+						cm7=ans7.localeCompare(answers[3]);	
+
+					}
+					else if(g==5){
+						ans7 = document.getElementById("a7").value;
+						ans7 = ans7.toLowerCase();
+						ans7 = ans7.trim();
+
+						cm7=ans7.localeCompare(answers[4]);	
+
+					}
+					else if(g==6){
+						ans7 = document.getElementById("a7").value;
+						ans7 = ans7.toLowerCase();
+						ans7 = ans7.trim();
+
+						cm7=ans7.localeCompare(answers[5]);	
+
+					}
+					else if(g==7){
+						ans7 = document.getElementById("a7").value;
+						ans7 = ans7.toLowerCase();
+						ans7 = ans7.trim();
+
+						cm7=ans7.localeCompare(answers[6]);	
+
+					}
+					else if(g==8){
+						ans7 = document.getElementById("a7").value;
+						ans7 = ans7.toLowerCase();
+						ans7 = ans7.trim();
+
+						cm7=ans7.localeCompare(answers[7]);	
+
+					}
+					else if(g==9){
+						ans7 = document.getElementById("a7").value;
+						ans7 = ans7.toLowerCase();
+						ans7 = ans7.trim();
+
+						cm7=ans7.localeCompare(answers[8]);	
+
+					}
+					else if(g==10){
+						ans7 = document.getElementById("a7").value;
+						ans7 = ans7.toLowerCase();
+						ans7 = ans7.trim();
+
+						cm7=ans7.localeCompare(answers[9]);	
+
+					}
+					else if(g==11){
+						ans7 = document.getElementById("a7").value;
+						ans7 = ans7.toLowerCase();
+						ans7 = ans7.trim();
+
+						cm7=ans7.localeCompare(answers[10]);	
+
+					}
+					else if(g==12){
+						ans7 = document.getElementById("a7").value;
+						ans7 = ans7.toLowerCase();
+						ans7 = ans7.trim();
+
+						cm7=ans7.localeCompare(answers[11]);	
+
+					}
+					else if(g==13){
+						ans7 = document.getElementById("a7").value;
+						ans7 = ans7.toLowerCase();
+						ans7 = ans7.trim();
+
+						cm7=ans7.localeCompare(answers[12]);	
+
+					}
+					else if(g==14){
+						ans7 = document.getElementById("a7").value;
+						ans7 = ans7.toLowerCase();
+						ans7 = ans7.trim();
+
+						cm7=ans7.localeCompare(answers[13]);	
+
+					}
+					else if(g==15){
+						ans7 = document.getElementById("a7").value;
+						ans7 = ans7.toLowerCase();
+						ans7 = ans7.trim();
+
+						cm7=ans7.localeCompare(answers[14]);	
+
+					}
+				
+
+				}
+
+			}
+
+
+
+
+
+
+			function f8(){
+
+				cm8=5;			
+				if(check1==0){
+					if(h==1){
+						ans8 = document.getElementById("a8").value;
+						ans8 = ans8.toLowerCase();
+						ans8 = ans8.trim();
+
+						cm8=ans8.localeCompare(answers[0]);	
+
+					}
+					else if(h==2){
+						ans8 = document.getElementById("a8").value;
+						ans8 = ans8.toLowerCase();
+						ans8 = ans8.trim();
+
+						cm8=ans8.localeCompare(answers[1]);	
+
+					}
+					else if(h==3){
+						ans8 = document.getElementById("a8").value;
+						ans8 = ans8.toLowerCase();
+						ans8 = ans8.trim();
+
+						cm8=ans8.localeCompare(answers[2]);	
+
+					}
+					else if(h==4){
+						ans8 = document.getElementById("a8").value;
+						ans8 = ans8.toLowerCase();
+						ans8 = ans8.trim();
+
+						cm8=ans8.localeCompare(answers[3]);	
+
+					}
+					else if(h==5){
+						ans8 = document.getElementById("a8").value;
+						ans8 = ans8.toLowerCase();
+						ans8 = ans8.trim();
+
+						cm8=ans8.localeCompare(answers[4]);	
+
+					}
+					else if(h==6){
+						ans8 = document.getElementById("a8").value;
+						ans8 = ans8.toLowerCase();
+						ans8 = ans8.trim();
+
+						cm8=ans8.localeCompare(answers[5]);	
+
+					}
+					else if(h==7){
+						ans8 = document.getElementById("a8").value;
+						ans8 = ans8.toLowerCase();
+						ans8 = ans8.trim();
+
+						cm8=ans8.localeCompare(answers[6]);	
+
+					}
+					else if(h==8){
+						ans8 = document.getElementById("a8").value;
+						ans8 = ans8.toLowerCase();
+						ans8 = ans8.trim();
+
+						cm8=ans8.localeCompare(answers[7]);	
+
+					}
+					else if(h==9){
+						ans8 = document.getElementById("a8").value;
+						ans8 = ans8.toLowerCase();
+						ans8 = ans8.trim();
+
+						cm8=ans8.localeCompare(answers[8]);	
+
+					}
+					else if(h==10){
+						ans8 = document.getElementById("a8").value;
+						ans8 = ans8.toLowerCase();
+						ans8 = ans8.trim();
+
+						cm8=ans8.localeCompare(answers[9]);	
+
+					}
+					else if(h==11){
+						ans8 = document.getElementById("a8").value;
+						ans8 = ans8.toLowerCase();
+						ans8 = ans8.trim();
+
+						cm8=ans8.localeCompare(answers[10]);	
+
+					}
+					else if(h==12){
+						ans8 = document.getElementById("a8").value;
+						ans8 = ans8.toLowerCase();
+						ans8 = ans8.trim();
+
+						cm8=ans8.localeCompare(answers[11]);	
+
+					}
+					else if(h==13){
+						ans8 = document.getElementById("a8").value;
+						ans8 = ans8.toLowerCase();
+						ans8 = ans8.trim();
+
+						cm8=ans8.localeCompare(answers[12]);	
+
+					}
+					else if(h==14){
+						ans8 = document.getElementById("a8").value;
+						ans8 = ans8.toLowerCase();
+						ans8 = ans8.trim();
+
+						cm8=ans8.localeCompare(answers[13]);	
+
+					}
+					else if(h==15){
+						ans8 = document.getElementById("a8").value;
+						ans8 = ans8.toLowerCase();
+						ans8 = ans8.trim();
+
+						cm8=ans8.localeCompare(answers[14]);	
+
+					}
+				
+
+				}
+
+			}
+
+
+
+
+
+
+
+			function f9(){
+
+				cm9=5;			
+				if(check1==0){
+					if(ii==1){
+						ans9 = document.getElementById("a9").value;
+						ans9 = ans9.toLowerCase();
+						ans9 = ans9.trim();
+
+						cm9=ans9.localeCompare(answers[0]);	
+
+					}
+					else if(ii==2){
+						ans9 = document.getElementById("a9").value;
+						ans9 = ans9.toLowerCase();
+						ans9 = ans9.trim();
+
+						cm9=ans9.localeCompare(answers[1]);	
+
+					}
+					else if(ii==3){
+						ans9 = document.getElementById("a9").value;
+						ans9 = ans9.toLowerCase();
+						ans9 = ans9.trim();
+
+						cm9=ans9.localeCompare(answers[2]);	
+
+					}
+					else if(ii==4){
+						ans9 = document.getElementById("a9").value;
+						ans9 = ans9.toLowerCase();
+						ans9 = ans9.trim();
+
+						cm9=ans9.localeCompare(answers[3]);	
+
+					}
+					else if(ii==5){
+						ans9 = document.getElementById("a9").value;
+						ans9 = ans9.toLowerCase();
+						ans9 = ans9.trim();
+
+						cm9=ans9.localeCompare(answers[4]);	
+
+					}
+					else if(ii==6){
+						ans9 = document.getElementById("a9").value;
+						ans9 = ans9.toLowerCase();
+						ans9 = ans9.trim();
+
+						cm9=ans9.localeCompare(answers[5]);	
+
+					}
+					else if(ii==7){
+						ans9 = document.getElementById("a9").value;
+						ans9 = ans9.toLowerCase();
+						ans9 = ans9.trim();
+
+						cm9=ans9.localeCompare(answers[6]);	
+
+					}
+					else if(ii==8){
+						ans9 = document.getElementById("a9").value;
+						ans9 = ans9.toLowerCase();
+						ans9 = ans9.trim();
+
+						cm9=ans9.localeCompare(answers[7]);	
+
+					}
+					else if(ii==9){
+						ans9 = document.getElementById("a9").value;
+						ans9 = ans9.toLowerCase();
+						ans9 = ans9.trim();
+
+						cm9=ans9.localeCompare(answers[8]);	
+
+					}
+					else if(ii==10){
+						ans9 = document.getElementById("a9").value;
+						ans9 = ans9.toLowerCase();
+						ans9 = ans9.trim();
+
+						cm9=ans9.localeCompare(answers[9]);	
+
+					}
+					else if(ii==11){
+						ans9 = document.getElementById("a9").value;
+						ans9 = ans9.toLowerCase();
+						ans9 = ans9.trim();
+
+						cm9=ans9.localeCompare(answers[10]);	
+
+					}
+					else if(ii==12){
+						ans9 = document.getElementById("a9").value;
+						ans9 = ans9.toLowerCase();
+						ans9 = ans9.trim();
+
+						cm9=ans9.localeCompare(answers[11]);	
+
+					}
+					else if(ii==13){
+						ans9 = document.getElementById("a9").value;
+						ans9 = ans9.toLowerCase();
+						ans9 = ans9.trim();
+
+						cm9=ans9.localeCompare(answers[12]);	
+
+					}
+					else if(ii==14){
+						ans9 = document.getElementById("a9").value;
+						ans9 = ans9.toLowerCase();
+						ans9 = ans9.trim();
+
+						cm9=ans9.localeCompare(answers[13]);	
+
+					}
+					else if(ii==15){
+						ans9 = document.getElementById("a9").value;
+						ans9 = ans9.toLowerCase();
+						ans9 = ans9.trim();
+
+						cm9=ans9.localeCompare(answers[14]);	
+
+					}
+				
+
+				}
+
+			}
+
+
+
+			function f10(){
+
+				cm10=5;			
+				if(check1==0){
+					if(j==1){
+						ans10 = document.getElementById("a10").value;
+						ans10 = ans10.toLowerCase();
+						ans10 = ans10.trim();
+
+						cm10=ans10.localeCompare(answers[0]);	
+
+					}
+					else if(j==2){
+						ans10 = document.getElementById("a10").value;
+						ans10 = ans10.toLowerCase();
+						ans10 = ans10.trim();
+
+						cm10=ans10.localeCompare(answers[1]);	
+
+					}
+					else if(j==3){
+						ans10 = document.getElementById("a10").value;
+						ans10 = ans10.toLowerCase();
+						ans10 = ans10.trim();
+
+						cm10=ans10.localeCompare(answers[2]);	
+
+					}
+					else if(j==4){
+						ans10 = document.getElementById("a10").value;
+						ans10 = ans10.toLowerCase();
+						ans10 = ans10.trim();
+
+						cm10=ans10.localeCompare(answers[3]);	
+
+					}
+					else if(j==5){
+						ans10 = document.getElementById("a10").value;
+						ans10 = ans10.toLowerCase();
+						ans10 = ans10.trim();
+
+						cm10=ans10.localeCompare(answers[4]);	
+
+					}
+					else if(j==6){
+						ans10 = document.getElementById("a10").value;
+						ans10 = ans10.toLowerCase();
+						ans10 = ans10.trim();
+
+						cm10=ans10.localeCompare(answers[5]);	
+
+					}
+					else if(j==7){
+						ans10 = document.getElementById("a10").value;
+						ans10 = ans10.toLowerCase();
+						ans10 = ans10.trim();
+
+						cm10=ans10.localeCompare(answers[6]);	
+
+					}
+					else if(j==8){
+						ans10 = document.getElementById("a10").value;
+						ans10 = ans10.toLowerCase();
+						ans10 = ans10.trim();
+
+						cm10=ans10.localeCompare(answers[7]);	
+
+					}
+					else if(j==9){
+						ans10 = document.getElementById("a10").value;
+						ans10 = ans10.toLowerCase();
+						ans10 = ans10.trim();
+
+						cm10=ans10.localeCompare(answers[8]);	
+
+					}
+					else if(j==10){
+						ans10 = document.getElementById("a10").value;
+						ans10 = ans10.toLowerCase();
+						ans10 = ans10.trim();
+
+						cm10=ans10.localeCompare(answers[9]);	
+
+					}
+					else if(j==11){
+						ans10 = document.getElementById("a10").value;
+						ans10 = ans10.toLowerCase();
+						ans10 = ans10.trim();
+
+						cm10=ans10.localeCompare(answers[10]);	
+
+					}
+					else if(j==12){
+						ans10 = document.getElementById("a10").value;
+						ans10 = ans10.toLowerCase();
+						ans10 = ans10.trim();
+
+						cm10=ans10.localeCompare(answers[11]);	
+
+					}
+					else if(j==13){
+						ans10 = document.getElementById("a10").value;
+						ans10 = ans10.toLowerCase();
+						ans10 = ans10.trim();
+
+						cm10=ans10.localeCompare(answers[12]);	
+
+					}
+					else if(j==14){
+						ans10 = document.getElementById("a10").value;
+						ans10 = ans10.toLowerCase();
+						ans10 = ans10.trim();
+
+						cm10=ans10.localeCompare(answers[13]);	
+
+					}
+					else if(j==15){
+						ans10 = document.getElementById("a10").value;
+						ans10 = ans10.toLowerCase();
+						ans10 = ans10.trim();
+
+						cm10=ans10.localeCompare(answers[14]);	
+
+					}
+				
+
+				}
+
+			}
+
+
+
+
+
+
+
+			function fa1(){
+				cmm=5;
+				if(check==0){
+
+					if(a==1){
+
+						ans1 = document.getElementById("aa1").value;
+						cmm=ans1.localeCompare(answers1[0]);	
+
+					}
+					else if(a==2){
+						ans1 = document.getElementById("aa1").value;
+
+						cmm=ans1.localeCompare(answers1[1]);	
+
+					}
+					else if(a==3){
+						ans1 = document.getElementById("aa1").value;
+
+						cmm=ans1.localeCompare(answers1[2]);	
+
+					}
+					else if(a==4){
+						ans1 = document.getElementById("aa1").value;
+
+						cmm=ans1.localeCompare(answers1[3]);	
+
+					}
+					else if(a==5){
+						ans1 = document.getElementById("aa1").value;
+
+						cmm=ans1.localeCompare(answers1[4]);	
+					}
+					else if(a==6){
+						ans1 = document.getElementById("aa1").value;
+
+						cmm=ans1.localeCompare(answers1[5]);	
+					}
+					else if(a==7){
+						ans1 = document.getElementById("aa1").value;
+
+						cmm=ans1.localeCompare(answers1[6]);	
+					}
+					else if(a==8){
+						ans1 = document.getElementById("aa1").value;
+
+						cmm=ans1.localeCompare(answers1[7]);	
+
+					}
+					else if(a==9){
+						ans1 = document.getElementById("aa1").value;
+
+						cmm=ans1.localeCompare(answers1[8]);	
+
+					}
+					else if(a==10){
+						ans1 = document.getElementById("aa1").value;
+
+						cmm=ans1.localeCompare(answers1[9]);	
+
+					}
+					else if(a==11){
+						ans1 = document.getElementById("aa1").value;
+
+						cmm=ans1.localeCompare(answers1[10]);	
+
+					}
+					else if(a==12){
+						ans1 = document.getElementById("aa1").value;
+
+						cmm=ans1.localeCompare(answers1[11]);	
+
+					}
+					else if(a==13){
+						ans1 = document.getElementById("aa1").value;
+
+						cmm=ans1.localeCompare(answers1[12]);	
+
+														
+					}
+					else if(a==14){
+						ans1 = document.getElementById("aa1").value;
+
+						cmm=ans1.localeCompare(answers1[13]);	
+
+					}
+					else if(a==15){
+						ans1 = document.getElementById("aa1").value;
+
+						cmm=ans1.localeCompare(answers1[14]);	
+
+					}
+				}
+
+			}
+			function fa2(){
+
+				cmm2=5;			
+				if(check1==0){
+					if(b==1){
+						ans1 = document.getElementById("aa2").value;
+
+						cmm2=ans1.localeCompare(answers1[0]);	
+
+					}
+					else if(b==2){
+						ans1 = document.getElementById("aa2").value;
+
+						cmm2=ans1.localeCompare(answers1[1]);	
+
+					}
+					else if(b==3){
+						ans1 = document.getElementById("aa2").value;
+
+						cmm2=ans1.localeCompare(answers1[2]);	
+
+					}
+					else if(b==4){
+						ans1 = document.getElementById("aa2").value;
+
+						cmm2=ans1.localeCompare(answers1[3]);	
+
+					}
+					else if(b==5){
+						ans1 = document.getElementById("aa2").value;
+
+						cmm2=ans1.localeCompare(answers1[4]);	
+
+					}
+					else if(b==6){
+						ans1 = document.getElementById("aa2").value;
+
+						cmm2=ans1.localeCompare(answers1[5]);	
+
+					}
+					else if(b==7){
+						ans1 = document.getElementById("aa2").value;
+
+						cmm2=ans1.localeCompare(answers1[6]);	
+
+					}
+					else if(b==8){
+						ans1 = document.getElementById("aa2").value;
+
+						cmm2=ans1.localeCompare(answers1[7]);	
+
+					}
+					else if(b==9){
+						ans1 = document.getElementById("aa2").value;
+
+						cmm2=ans1.localeCompare(answers1[8]);	
+
+					}
+					else if(b==10){
+						ans1 = document.getElementById("aa2").value;
+
+						cmm2=ans1.localeCompare(answers1[9]);	
+
+					}
+					else if(b==11){
+						ans1 = document.getElementById("aa2").value;
+
+						cmm2=ans1.localeCompare(answers1[10]);	
+
+					}
+					else if(b==12){
+						ans1 = document.getElementById("aa2").value;
+
+						cmm2=ans1.localeCompare(answers1[11]);	
+
+					}
+					else if(b==13){
+						ans1 = document.getElementById("aa2").value;
+
+						cmm2=ans1.localeCompare(answers1[12]);	
+
+					}
+					else if(b==14){
+						ans1 = document.getElementById("aa2").value;
+
+						cmm2=ans1.localeCompare(answers1[13]);	
+
+					}
+					else if(b==15){
+						ans1 = document.getElementById("aa2").value;
+
+						cmm2=ans1.localeCompare(answers1[14]);	
+
+					}
+				
+
+				}
+			}
+
+
+
+
+
+			function fa3(){
+
+				cmm3=5;			
+				if(check1==0){
+					if(c==1){
+						ans1 = document.getElementById("aa3").value;
+
+						cmm3=ans1.localeCompare(answers1[0]);	
+
+					}
+					else if(c==2){
+						ans1 = document.getElementById("aa3").value;
+
+						cmm3=ans1.localeCompare(answers1[1]);	
+
+					}
+					else if(c==3){
+						ans1 = document.getElementById("aa3").value;
+
+						cmm3=ans1.localeCompare(answers1[2]);	
+
+					}
+					else if(c==4){
+						ans1 = document.getElementById("aa3").value;
+
+						cmm3=ans1.localeCompare(answers1[3]);	
+
+					}
+					else if(c==5){
+						ans1 = document.getElementById("aa3").value;
+
+						cmm3=ans1.localeCompare(answers1[4]);	
+
+					}
+					else if(c==6){
+						ans1 = document.getElementById("aa3").value;
+
+						cmm3=ans1.localeCompare(answers1[5]);	
+
+					}
+					else if(c==7){
+						ans1 = document.getElementById("aa3").value;
+
+						cmm3=ans1.localeCompare(answers1[6]);	
+
+					}
+					else if(c==8){
+						ans1 = document.getElementById("aa3").value;
+
+						cmm3=ans1.localeCompare(answers1[7]);	
+
+					}
+					else if(c==9){
+						ans1 = document.getElementById("aa3").value;
+
+						cmm3=ans1.localeCompare(answers1[8]);	
+
+					}
+					else if(c==10){
+						ans1 = document.getElementById("aa3").value;
+
+						cmm3=ans1.localeCompare(answers1[9]);	
+
+					}
+					else if(c==11){
+						ans1 = document.getElementById("aa3").value;
+
+						cmm3=ans1.localeCompare(answers1[10]);	
+
+					}
+					else if(c==12){
+						ans1 = document.getElementById("aa3").value;
+
+						cmm3=ans1.localeCompare(answers1[11]);	
+
+					}
+					else if(c==13){
+						ans1 = document.getElementById("aa3").value;
+
+						cmm3=ans1.localeCompare(answers1[12]);	
+
+					}
+					else if(c==14){
+						ans1 = document.getElementById("aa3").value;
+
+						cmm3=ans1.localeCompare(answers1[13]);	
+
+					}
+					else if(c==15){
+						ans1 = document.getElementById("aa3").value;
+
+						cmm3=ans1.localeCompare(answers1[14]);	
+
+					}
+				
+
+				}
+			}
+
+
+
+
+
+			function fa4(){
+
+				cmm4=5;			
+				if(check1==0){
+					if(d==1){
+						ans1 = document.getElementById("aa4").value;
+
+						cmm4=ans1.localeCompare(answers1[0]);	
+					}
+					else if(d==2){
+						ans1 = document.getElementById("aa4").value;
+
+						cmm4=ans1.localeCompare(answers1[1]);	
+
+					}
+					else if(d==3){
+						ans1 = document.getElementById("aa4").value;
+
+						cmm4=ans1.localeCompare(answers1[2]);	
+
+					}
+					else if(d==4){
+						ans1 = document.getElementById("aa4").value;
+
+						cmm4=ans1.localeCompare(answers1[3]);	
+
+					}
+					else if(d==5){
+						ans1 = document.getElementById("aa4").value;
+
+						cmm4=ans1.localeCompare(answers1[4]);	
+
+					}
+					else if(d==6){
+						ans1 = document.getElementById("aa4").value;
+
+						cmm4=ans1.localeCompare(answers1[5]);	
+
+					}
+					else if(d==7){
+						ans1 = document.getElementById("aa4").value;
+
+						cmm4=ans1.localeCompare(answers1[6]);	
+
+					}
+					else if(d==8){
+						ans1 = document.getElementById("aa4").value;
+
+						cmm4=ans1.localeCompare(answers1[7]);	
+
+					}
+					else if(d==9){
+						ans1 = document.getElementById("aa4").value;
+
+						cmm4=ans1.localeCompare(answers1[8]);	
+
+					}
+					else if(d==10){
+						ans1 = document.getElementById("aa4").value;
+
+						cmm4=ans1.localeCompare(answers1[9]);	
+
+					}
+					else if(d==11){
+						ans1 = document.getElementById("aa4").value;
+
+						cmm4=ans1.localeCompare(answers1[10]);	
+
+					}
+					else if(d==12){
+						ans1 = document.getElementById("aa4").value;
+
+						cmm4=ans1.localeCompare(answers1[11]);	
+
+					}
+					else if(d==13){
+						ans1 = document.getElementById("aa4").value;
+
+						cmm4=ans1.localeCompare(answers1[12]);	
+
+					}
+					else if(d==14){
+						ans1 = document.getElementById("aa4").value;
+
+						cmm4=ans1.localeCompare(answers1[13]);	
+
+					}
+					else if(d==15){
+						ans1 = document.getElementById("aa4").value;
+
+						cmm4=ans1.localeCompare(answers1[14]);	
+
+					}
+				
+
+				}
+
+			}
+
+
+
+
+
+
+
+			function fa5(){
+
+				cmm5=5;			
+				if(check1==0){
+					if(e==1){
+						ans1 = document.getElementById("aa5").value;
+
+						cmm5=ans1.localeCompare(answers1[0]);	
+
+					}
+					else if(e==2){
+						ans1 = document.getElementById("aa5").value;
+
+						cmm5=ans1.localeCompare(answers1[1]);	
+
+					}
+					else if(e==3){
+						ans1 = document.getElementById("aa5").value;
+
+						cmm5=ans1.localeCompare(answers1[2]);	
+
+					}
+					else if(e==4){
+						ans1 = document.getElementById("aa5").value;
+
+						cmm5=ans1.localeCompare(answers1[3]);	
+
+					}
+					else if(e==5){
+						ans1 = document.getElementById("aa5").value;
+
+						cmm5=ans1.localeCompare(answers1[4]);	
+
+					}
+					else if(e==6){
+						ans1 = document.getElementById("aa5").value;
+
+						cmm5=ans1.localeCompare(answers1[5]);	
+
+					}
+					else if(e==7){
+						ans1 = document.getElementById("aa5").value;
+
+						cmm5=ans1.localeCompare(answers1[6]);	
+
+					}
+					else if(e==8){
+						ans1 = document.getElementById("aa5").value;
+
+						cmm5=ans1.localeCompare(answers1[7]);	
+
+					}
+					else if(e==9){
+						ans1 = document.getElementById("aa5").value;
+
+						cmm5=ans1.localeCompare(answers1[8]);	
+
+					}
+					else if(e==10){
+						ans1 = document.getElementById("aa5").value;
+
+						cmm5=ans1.localeCompare(answers1[9]);	
+
+					}
+					else if(e==11){
+						ans1 = document.getElementById("aa5").value;
+
+						cmm5=ans1.localeCompare(answers1[10]);	
+													
+					}
+					else if(e==12){
+						ans1 = document.getElementById("aa5").value;
+
+						cmm5=ans1.localeCompare(answers1[11]);	
+
+					}
+					else if(e==13){
+						ans1 = document.getElementById("aa5").value;
+
+						cmm5=ans1.localeCompare(answers1[12]);	
+
+					}
+					else if(e==14){
+						ans1 = document.getElementById("aa5").value;
+
+						cmm5=ans1.localeCompare(answers1[13]);	
+
+					}
+					else if(e==15){
+						ans1 = document.getElementById("aa5").value;
+
+						cmm5=ans1.localeCompare(answers1[14]);	
+
+					}
+				
+
+				}
+
+			}
+
+ 
+
+
+
+			function fa6(){
+
+				cmm6=5;			
+				if(check1==0){
+					if(f==1){
+						ans1 = document.getElementById("aa6").value;
+
+						cmm6=ans1.localeCompare(answers1[0]);	
+
+					}
+					else if(f==2){
+						ans1 = document.getElementById("aa6").value;
+
+						cmm6=ans1.localeCompare(answers1[1]);	
+
+					}
+					else if(f==3){
+						ans1 = document.getElementById("aa6").value;
+
+						cmm6=ans1.localeCompare(answers1[2]);	
+
+					}
+					else if(f==4){
+						ans1 = document.getElementById("aa6").value;
+
+						cmm6=ans1.localeCompare(answers1[3]);	
+
+					}
+					else if(f==5){
+						ans1 = document.getElementById("aa6").value;
+
+						cmm6=ans1.localeCompare(answers1[4]);	
+
+					}
+					else if(f==6){
+						ans1 = document.getElementById("aa6").value;
+
+						cmm6=ans1.localeCompare(answers1[5]);	
+
+					}
+					else if(f==7){
+						ans1 = document.getElementById("aa6").value;
+
+						cmm6=ans1.localeCompare(answers1[6]);	
+
+					}
+					else if(f==8){
+						ans1 = document.getElementById("aa6").value;
+
+						cmm6=ans1.localeCompare(answers1[7]);	
+
+					}
+					else if(f==9){
+						ans1 = document.getElementById("aa6").value;
+
+						cmm6=ans1.localeCompare(answers1[8]);	
+
+					}
+					else if(f==10){
+						ans1 = document.getElementById("aa6").value;
+
+						cmm6=ans1.localeCompare(answers1[9]);	
+
+					}
+					else if(f==11){
+						ans1 = document.getElementById("aa6").value;
+
+						cmm6=ans1.localeCompare(answers1[10]);	
+
+					}
+					else if(f==12){
+						ans1 = document.getElementById("aa6").value;
+
+						cmm6=ans1.localeCompare(answers1[11]);	
+
+					}
+					else if(f==13){
+						ans1 = document.getElementById("aa6").value;
+
+						cmm6=ans1.localeCompare(answers1[12]);	
+
+					}
+					else if(f==14){
+						ans1 = document.getElementById("aa6").value;
+
+						cmm6=ans1.localeCompare(answers1[13]);	
+
+					}
+					else if(f==15){
+						ans1 = document.getElementById("aa6").value;
+
+						cmm6=ans1.localeCompare(answers1[14]);	
+
+					}
+				
+
+				}
+
+			}
+
+
+
+			function fa7(){
+
+				cmm7=5;			
+				if(check1==0){
+					if(g==1){
+						ans1 = document.getElementById("aa7").value;
+
+						cmm7=ans1.localeCompare(answers1[0]);	
+
+					}
+					else if(g==2){
+						ans1 = document.getElementById("aa7").value;
+
+						cmm7=ans1.localeCompare(answers1[1]);	
+
+					}
+					else if(g==3){
+						ans1 = document.getElementById("aa7").value;
+
+						cmm7=ans1.localeCompare(answers1[2]);	
+
+					}
+					else if(g==4){
+						ans1 = document.getElementById("aa7").value;
+
+						cmm7=ans1.localeCompare(answers1[3]);	
+
+					}
+					else if(g==5){
+						ans1 = document.getElementById("aa7").value;
+
+						cmm7=ans1.localeCompare(answers1[4]);	
+													
+					}
+					else if(g==6){
+						ans1 = document.getElementById("aa7").value;
+
+						cmm7=ans1.localeCompare(answers1[5]);	
+
+					}
+					else if(g==7){
+						ans1 = document.getElementById("aa7").value;
+
+						cmm7=ans1.localeCompare(answers1[6]);	
+
+					}
+					else if(g==8){
+						ans1 = document.getElementById("aa7").value;
+
+						cmm7=ans1.localeCompare(answers1[7]);	
+
+					}
+					else if(g==9){
+						ans1 = document.getElementById("aa7").value;
+
+						cmm7=ans1.localeCompare(answers1[8]);	
+
+					}
+					else if(g==10){
+						ans1 = document.getElementById("aa7").value;
+
+						cmm7=ans1.localeCompare(answers1[9]);	
+
+					}
+					else if(g==11){
+						ans1 = document.getElementById("aa7").value;
+
+						cmm7=ans1.localeCompare(answers1[10]);	
+
+					}
+					else if(g==12){
+						ans1 = document.getElementById("aa7").value;
+
+						cmm7=ans1.localeCompare(answers1[11]);	
+
+					}
+					else if(g==13){
+						ans1 = document.getElementById("aa7").value;
+
+						cmm7=ans1.localeCompare(answers1[12]);	
+
+					}
+					else if(g==14){
+						ans1 = document.getElementById("aa7").value;
+
+						cmm7=ans1.localeCompare(answers1[13]);	
+
+					}
+					else if(g==15){
+						ans1 = document.getElementById("aa7").value;
+
+						cmm7=ans1.localeCompare(answers1[14]);	
+
+					}
+				
+
+				}
+
+			}
+
+
+
+
+
+
+			function fa8(){
+
+				cmm8=5;			
+				if(check1==0){
+					if(h==1){
+						ans1 = document.getElementById("aa8").value;
+
+						cmm8=ans1.localeCompare(answers1[0]);	
+
+					}
+					else if(h==2){
+						ans1 = document.getElementById("aa8").value;
+
+						cmm8=ans1.localeCompare(answers1[1]);	
+
+					}
+					else if(h==3){
+						ans1 = document.getElementById("aa8").value;
+
+						cmm8=ans1.localeCompare(answers1[2]);	
+
+					}
+					else if(h==4){
+						ans1 = document.getElementById("aa8").value;
+
+						cmm8=ans1.localeCompare(answers1[3]);	
+
+					}
+					else if(h==5){
+						ans1 = document.getElementById("aa8").value;
+
+						cmm8=ans1.localeCompare(answers1[4]);	
+
+					}
+					else if(h==6){
+						ans1 = document.getElementById("aa8").value;
+
+						cmm8=ans1.localeCompare(answers1[5]);	
+
+					}
+					else if(h==7){
+						ans1 = document.getElementById("aa8").value;
+
+						cmm8=ans1.localeCompare(answers1[6]);	
+
+					}
+					else if(h==8){
+						ans1 = document.getElementById("aa8").value;
+
+						cmm8=ans1.localeCompare(answers1[7]);	
+
+					}
+					else if(h==9){
+						ans1 = document.getElementById("aa8").value;
+
+						cmm8=ans1.localeCompare(answers1[8]);	
+
+					}
+					else if(h==10){
+						ans1 = document.getElementById("aa8").value;
+
+						cmm8=ans1.localeCompare(answers1[9]);	
+
+					}
+					else if(h==11){
+						ans1 = document.getElementById("aa8").value;
+
+						cmm8=ans1.localeCompare(answers1[10]);	
+
+					}
+					else if(h==12){
+						ans1 = document.getElementById("aa8").value;
+
+						cmm8=ans1.localeCompare(answers1[11]);	
+
+					}
+					else if(h==13){
+						ans1 = document.getElementById("aa8").value;
+
+						cmm8=ans1.localeCompare(answers1[12]);	
+
+					}
+					else if(h==14){
+						ans1 = document.getElementById("aa8").value;
+
+						cmm8=ans1.localeCompare(answers1[13]);	
+
+					}
+					else if(h==15){
+						ans1 = document.getElementById("aa8").value;
+
+						cmm8=ans1.localeCompare(answers1[14]);	
+
+					}
+				
+
+				}
+
+			}
+
+
+
+
+
+
+
+			function fa9(){
+
+				cmm9=5;			
+				if(check1==0){
+					if(ii==1){
+						ans1 = document.getElementById("aa9").value;
+
+						cmm9=ans1.localeCompare(answers1[0]);	
+
+					}
+					else if(ii==2){
+						ans1 = document.getElementById("aa9").value;
+
+						cmm9=ans1.localeCompare(answers1[1]);	
+
+					}
+					else if(ii==3){
+						ans1 = document.getElementById("aa9").value;
+
+						cmm9=ans1.localeCompare(answers1[2]);	
+
+					}
+					else if(ii==4){
+						ans1 = document.getElementById("aa9").value;
+
+						cmm9=ans1.localeCompare(answers1[3]);	
+
+					}
+					else if(ii==5){
+						ans1 = document.getElementById("aa9").value;
+
+						cmm9=ans1.localeCompare(answers1[4]);	
+
+					}
+					else if(ii==6){
+						ans1 = document.getElementById("aa9").value;
+
+						cmm9=ans1.localeCompare(answers1[5]);	
+
+					}
+					else if(ii==7){
+						ans1 = document.getElementById("aa9").value;
+
+						cmm9=ans1.localeCompare(answers1[6]);	
+
+					}
+					else if(ii==8){
+						ans1 = document.getElementById("aa9").value;
+
+						cmm9=ans1.localeCompare(answers1[7]);	
+
+					}
+					else if(ii==9){
+						ans1 = document.getElementById("aa9").value;
+
+						cmm9=ans1.localeCompare(answers1[8]);	
+
+					}
+					else if(ii==10){
+						ans1 = document.getElementById("aa9").value;
+
+						cmm9=ans1.localeCompare(answers1[9]);	
+
+					}
+					else if(ii==11){
+						ans1 = document.getElementById("aa9").value;
+
+						cmm9=ans1.localeCompare(answers1[10]);	
+
+					}
+					else if(ii==12){
+						ans1 = document.getElementById("aa9").value;
+
+						cmm9=ans1.localeCompare(answers1[11]);	
+
+					}
+					else if(ii==13){
+						ans1 = document.getElementById("aa9").value;
+
+						cmm9=ans1.localeCompare(answers1[12]);	
+
+					}
+					else if(ii==14){
+						ans1 = document.getElementById("aa9").value;
+
+						cmm9=ans1.localeCompare(answers1[13]);	
+
+					}
+					else if(ii==15){
+						ans1 = document.getElementById("aa9").value;
+
+						cmm9=ans1.localeCompare(answers1[14]);	
+
+					}
+				
+
+				}
+
+			}
+
+
+
+			function fa10(){
+
+				cmm10=5;			
+				if(check1==0){
+					if(j==1){
+						ans1 = document.getElementById("aa10").value;
+
+						cmm10=ans1.localeCompare(answers1[0]);	
+
+
+					}
+					else if(j==2){
+						ans1 = document.getElementById("aa10").value;
+
+						cmm10=ans1.localeCompare(answers1[1]);	
+
+					}
+					else if(j==3){
+						ans1 = document.getElementById("aa10").value;
+
+						cmm10=ans1.localeCompare(answers1[2]);	
+
+					}
+					else if(j==4){
+						ans1 = document.getElementById("aa10").value;
+
+						cmm10=ans1.localeCompare(answers1[3]);	
+
+					}
+					else if(j==5){
+						ans1 = document.getElementById("aa10").value;
+
+						cmm10=ans1.localeCompare(answers1[4]);	
+
+					}
+					else if(j==6){
+						ans1 = document.getElementById("aa10").value;
+
+						cmm10=ans1.localeCompare(answers1[5]);	
+
+					}
+					else if(j==7){
+						ans1 = document.getElementById("aa10").value;
+
+						cmm10=ans1.localeCompare(answers1[6]);	
+
+					}
+					else if(j==8){
+						ans1 = document.getElementById("aa10").value;
+
+						cmm10=ans1.localeCompare(answers1[7]);	
+
+					}
+					else if(j==9){
+						ans1 = document.getElementById("aa10").value;
+
+						cmm10=ans1.localeCompare(answers1[8]);	
+
+					}
+					else if(j==10){
+						ans1 = document.getElementById("aa10").value;
+
+						cmm10=ans1.localeCompare(answers1[9]);	
+
+					}
+					else if(j==11){
+						ans1 = document.getElementById("aa10").value;
+
+						cmm10=ans1.localeCompare(answers1[10]);	
+
+					}
+					else if(j==12){
+						ans1 = document.getElementById("aa10").value;
+
+						cmm10=ans1.localeCompare(answers1[11]);	
+
+					}
+					else if(j==13){
+						ans1 = document.getElementById("aa10").value;
+
+						cmm10=ans1.localeCompare(answers1[12]);	
+
+					}
+					else if(j==14){
+						ans1 = document.getElementById("aa10").value;
+
+						cmm10=ans1.localeCompare(answers1[13]);	
+
+					}
+					else if(j==15){
+						ans1 = document.getElementById("aa10").value;
+
+						cmm10=ans1.localeCompare(answers1[14]);	
+
+					}
+				
+
+				}
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			function ft1(){
+				cmm=5;
+				if(check==0){
+
+					if(a==1){
+
+						ans1 = document.getElementById("at1").value;
+						cmm=ans1.localeCompare(answers1[0]);	
+
+					}
+					else if(a==2){
+						ans1 = document.getElementById("at1").value;
+
+						cmm=ans1.localeCompare(answers1[1]);	
+
+					}
+					else if(a==3){
+						ans1 = document.getElementById("at1").value;
+
+						cmm=ans1.localeCompare(answers1[2]);	
+
+					}
+					else if(a==4){
+						ans1 = document.getElementById("at1").value;
+
+						cmm=ans1.localeCompare(answers1[3]);	
+
+					}
+					else if(a==5){
+						ans1 = document.getElementById("at1").value;
+
+						cmm=ans1.localeCompare(answers1[4]);	
+					}
+					else if(a==6){
+						ans1 = document.getElementById("at1").value;
+
+						cmm=ans1.localeCompare(answers1[5]);	
+					}
+					else if(a==7){
+						ans1 = document.getElementById("at1").value;
+
+						cmm=ans1.localeCompare(answers1[6]);	
+					}
+					else if(a==8){
+						ans1 = document.getElementById("at1").value;
+
+						cmm=ans1.localeCompare(answers1[7]);	
+
+					}
+					else if(a==9){
+						ans1 = document.getElementById("at1").value;
+
+						cmm=ans1.localeCompare(answers1[8]);	
+
+					}
+					else if(a==10){
+						ans1 = document.getElementById("at1").value;
+
+						cmm=ans1.localeCompare(answers1[9]);	
+
+					}
+					else if(a==11){
+						ans1 = document.getElementById("at1").value;
+
+						cmm=ans1.localeCompare(answers1[10]);	
+
+					}
+					else if(a==12){
+						ans1 = document.getElementById("at1").value;
+
+						cmm=ans1.localeCompare(answers1[11]);	
+
+					}
+					else if(a==13){
+						ans1 = document.getElementById("at1").value;
+
+						cmm=ans1.localeCompare(answers1[12]);	
+
+														
+					}
+					else if(a==14){
+						ans1 = document.getElementById("at1").value;
+
+						cmm=ans1.localeCompare(answers1[13]);	
+
+					}
+					else if(a==15){
+						ans1 = document.getElementById("at1").value;
+
+						cmm=ans1.localeCompare(answers1[14]);	
+
+					}
+				}
+
+			}
+			function ft2(){
+
+				cmm2=5;			
+				if(check1==0){
+					if(b==1){
+						ans1 = document.getElementById("at2").value;
+
+						cmm2=ans1.localeCompare(answers1[0]);	
+
+					}
+					else if(b==2){
+						ans1 = document.getElementById("at2").value;
+
+						cmm2=ans1.localeCompare(answers1[1]);	
+
+					}
+					else if(b==3){
+						ans1 = document.getElementById("at2").value;
+
+						cmm2=ans1.localeCompare(answers1[2]);	
+
+					}
+					else if(b==4){
+						ans1 = document.getElementById("at2").value;
+
+						cmm2=ans1.localeCompare(answers1[3]);	
+
+					}
+					else if(b==5){
+						ans1 = document.getElementById("at2").value;
+
+						cmm2=ans1.localeCompare(answers1[4]);	
+
+					}
+					else if(b==6){
+						ans1 = document.getElementById("at2").value;
+
+						cmm2=ans1.localeCompare(answers1[5]);	
+
+					}
+					else if(b==7){
+						ans1 = document.getElementById("at2").value;
+
+						cmm2=ans1.localeCompare(answers1[6]);	
+
+					}
+					else if(b==8){
+						ans1 = document.getElementById("at2").value;
+
+						cmm2=ans1.localeCompare(answers1[7]);	
+
+					}
+					else if(b==9){
+						ans1 = document.getElementById("at2").value;
+
+						cmm2=ans1.localeCompare(answers1[8]);	
+
+					}
+					else if(b==10){
+						ans1 = document.getElementById("at2").value;
+
+						cmm2=ans1.localeCompare(answers1[9]);	
+
+					}
+					else if(b==11){
+						ans1 = document.getElementById("at2").value;
+
+						cmm2=ans1.localeCompare(answers1[10]);	
+
+					}
+					else if(b==12){
+						ans1 = document.getElementById("at2").value;
+
+						cmm2=ans1.localeCompare(answers1[11]);	
+
+					}
+					else if(b==13){
+						ans1 = document.getElementById("at2").value;
+
+						cmm2=ans1.localeCompare(answers1[12]);	
+
+					}
+					else if(b==14){
+						ans1 = document.getElementById("at2").value;
+
+						cmm2=ans1.localeCompare(answers1[13]);	
+
+					}
+					else if(b==15){
+						ans1 = document.getElementById("at2").value;
+
+						cmm2=ans1.localeCompare(answers1[14]);	
+
+					}
+				
+
+				}	
+			}
+
+
+
+
+
+			function ft3(){
+
+				cmm3=5;			
+				if(check1==0){
+					if(c==1){
+						ans1 = document.getElementById("at3").value;
+
+						cmm3=ans1.localeCompare(answers1[0]);	
+
+					}
+					else if(c==2){
+						ans1 = document.getElementById("at3").value;
+
+						cmm3=ans1.localeCompare(answers1[1]);	
+
+					}
+					else if(c==3){
+						ans1 = document.getElementById("at3").value;
+
+						cmm3=ans1.localeCompare(answers1[2]);	
+
+					}
+					else if(c==4){
+						ans1 = document.getElementById("at3").value;
+
+						cmm3=ans1.localeCompare(answers1[3]);	
+
+					}
+					else if(c==5){
+						ans1 = document.getElementById("at3").value;
+
+						cmm3=ans1.localeCompare(answers1[4]);	
+
+					}
+					else if(c==6){
+						ans1 = document.getElementById("at3").value;
+
+						cmm3=ans1.localeCompare(answers1[5]);	
+
+					}
+					else if(c==7){
+						ans1 = document.getElementById("at3").value;
+
+						cmm3=ans1.localeCompare(answers1[6]);	
+
+					}
+					else if(c==8){
+						ans1 = document.getElementById("at3").value;
+
+						cmm3=ans1.localeCompare(answers1[7]);	
+
+					}
+					else if(c==9){
+						ans1 = document.getElementById("at3").value;
+
+						cmm3=ans1.localeCompare(answers1[8]);	
+
+					}
+					else if(c==10){
+						ans1 = document.getElementById("at3").value;
+
+						cmm3=ans1.localeCompare(answers1[9]);	
+
+					}
+					else if(c==11){
+						ans1 = document.getElementById("at3").value;
+
+						cmm3=ans1.localeCompare(answers1[10]);	
+
+					}
+					else if(c==12){
+						ans1 = document.getElementById("at3").value;
+
+						cmm3=ans1.localeCompare(answers1[11]);	
+
+					}
+					else if(c==13){
+						ans1 = document.getElementById("at3").value;
+
+						cmm3=ans1.localeCompare(answers1[12]);	
+
+					}
+					else if(c==14){
+						ans1 = document.getElementById("at3").value;
+
+						cmm3=ans1.localeCompare(answers1[13]);	
+
+					}
+					else if(c==15){
+						ans1 = document.getElementById("at3").value;
+
+						cmm3=ans1.localeCompare(answers1[14]);	
+
+					}
+				
+
+				}
+			}
+
+
+
+
+
+			function ft4(){
+
+				cmm4=5;			
+				if(check1==0){
+					if(d==1){
+						ans1 = document.getElementById("at4").value;
+
+						cmm4=ans1.localeCompare(answers1[0]);	
+					}
+					else if(d==2){
+						ans1 = document.getElementById("at4").value;
+
+						cmm4=ans1.localeCompare(answers1[1]);	
+
+					}
+					else if(d==3){
+						ans1 = document.getElementById("at4").value;
+
+						cmm4=ans1.localeCompare(answers1[2]);	
+
+					}
+					else if(d==4){
+						ans1 = document.getElementById("at4").value;
+
+						cmm4=ans1.localeCompare(answers1[3]);	
+
+					}
+					else if(d==5){
+						ans1 = document.getElementById("at4").value;
+
+						cmm4=ans1.localeCompare(answers1[4]);	
+
+					}
+					else if(d==6){
+						ans1 = document.getElementById("at4").value;
+
+						cmm4=ans1.localeCompare(answers1[5]);	
+
+					}
+					else if(d==7){
+						ans1 = document.getElementById("at4").value;
+
+						cmm4=ans1.localeCompare(answers1[6]);	
+
+					}
+					else if(d==8){
+						ans1 = document.getElementById("at4").value;
+
+						cmm4=ans1.localeCompare(answers1[7]);	
+
+					}
+					else if(d==9){
+						ans1 = document.getElementById("at4").value;
+
+						cmm4=ans1.localeCompare(answers1[8]);	
+
+					}
+					else if(d==10){
+						ans1 = document.getElementById("at4").value;
+
+						cmm4=ans1.localeCompare(answers1[9]);	
+
+					}
+					else if(d==11){
+						ans1 = document.getElementById("at4").value;
+
+						cmm4=ans1.localeCompare(answers1[10]);	
+
+					}
+					else if(d==12){
+						ans1 = document.getElementById("at4").value;
+
+						cmm4=ans1.localeCompare(answers1[11]);	
+
+					}
+					else if(d==13){
+						ans1 = document.getElementById("at4").value;
+
+						cmm4=ans1.localeCompare(answers1[12]);	
+
+					}
+					else if(d==14){
+						ans1 = document.getElementById("at4").value;
+
+						cmm4=ans1.localeCompare(answers1[13]);	
+
+					}
+					else if(d==15){
+						ans1 = document.getElementById("at4").value;
+
+						cmm4=ans1.localeCompare(answers1[14]);	
+
+					}
+				
+
+				}
+
+			}
+
+
+
+
+
+
+
+			function ft5(){
+
+				cmm5=5;			
+				if(check1==0){
+					if(e==1){
+						ans1 = document.getElementById("at5").value;
+
+						cmm5=ans1.localeCompare(answers1[0]);	
+
+					}
+					else if(e==2){
+						ans1 = document.getElementById("at5").value;
+
+						cmm5=ans1.localeCompare(answers1[1]);	
+
+					}
+					else if(e==3){
+						ans1 = document.getElementById("at5").value;
+
+						cmm5=ans1.localeCompare(answers1[2]);	
+
+					}
+					else if(e==4){
+						ans1 = document.getElementById("at5").value;
+
+						cmm5=ans1.localeCompare(answers1[3]);	
+
+					}
+					else if(e==5){
+						ans1 = document.getElementById("at5").value;
+
+						cmm5=ans1.localeCompare(answers1[4]);	
+
+					}
+					else if(e==6){
+						ans1 = document.getElementById("at5").value;
+
+						cmm5=ans1.localeCompare(answers1[5]);	
+
+					}
+					else if(e==7){
+						ans1 = document.getElementById("at5").value;
+
+						cmm5=ans1.localeCompare(answers1[6]);	
+
+					}
+					else if(e==8){
+						ans1 = document.getElementById("at5").value;
+
+						cmm5=ans1.localeCompare(answers1[7]);	
+
+					}
+					else if(e==9){
+						ans1 = document.getElementById("at5").value;
+
+						cmm5=ans1.localeCompare(answers1[8]);	
+
+					}
+					else if(e==10){
+						ans1 = document.getElementById("at5").value;
+
+						cmm5=ans1.localeCompare(answers1[9]);	
+
+					}
+					else if(e==11){
+						ans1 = document.getElementById("at5").value;
+
+						cmm5=ans1.localeCompare(answers1[10]);	
+
+													
+					}
+					else if(e==12){
+						ans1 = document.getElementById("at5").value;
+
+						cmm5=ans1.localeCompare(answers1[11]);	
+
+					}
+					else if(e==13){
+						ans1 = document.getElementById("at5").value;
+
+						cmm5=ans1.localeCompare(answers1[12]);	
+
+					}
+					else if(e==14){
+						ans1 = document.getElementById("at5").value;
+
+						cmm5=ans1.localeCompare(answers1[13]);	
+
+					}
+					else if(e==15){
+						ans1 = document.getElementById("at5").value;
+
+						cmm5=ans1.localeCompare(answers1[14]);	
+
+					}
+				
+
+				}
+
+			}
+
+ 
+
+
+
+			function ft6(){
+
+				cmm6=5;			
+				if(check1==0){
+					if(f==1){
+						ans1 = document.getElementById("at6").value;
+
+						cmm6=ans1.localeCompare(answers1[0]);	
+
+					}
+					else if(f==2){
+						ans1 = document.getElementById("at6").value;
+
+						cmm6=ans1.localeCompare(answers1[1]);	
+
+					}
+					else if(f==3){
+						ans1 = document.getElementById("at6").value;
+
+						cmm6=ans1.localeCompare(answers1[2]);	
+
+					}
+					else if(f==4){
+						ans1 = document.getElementById("at6").value;
+
+						cmm6=ans1.localeCompare(answers1[3]);	
+
+					}
+					else if(f==5){
+						ans1 = document.getElementById("at6").value;
+
+						cmm6=ans1.localeCompare(answers1[4]);	
+
+					}
+					else if(f==6){
+						ans1 = document.getElementById("at6").value;
+
+						cmm6=ans1.localeCompare(answers1[5]);	
+
+					}
+					else if(f==7){
+						ans1 = document.getElementById("at6").value;
+
+						cmm6=ans1.localeCompare(answers1[6]);	
+
+					}
+					else if(f==8){
+						ans1 = document.getElementById("at6").value;
+
+						cmm6=ans1.localeCompare(answers1[7]);	
+
+					}
+					else if(f==9){
+						ans1 = document.getElementById("at6").value;
+
+						cmm6=ans1.localeCompare(answers1[8]);	
+
+					}
+					else if(f==10){
+						ans1 = document.getElementById("at6").value;
+
+						cmm6=ans1.localeCompare(answers1[9]);	
+
+					}
+					else if(f==11){
+						ans1 = document.getElementById("at6").value;
+
+						cmm6=ans1.localeCompare(answers1[10]);	
+
+					}
+					else if(f==12){
+						ans1 = document.getElementById("at6").value;
+
+						cmm6=ans1.localeCompare(answers1[11]);	
+
+					}
+					else if(f==13){
+						ans1 = document.getElementById("at6").value;
+
+						cmm6=ans1.localeCompare(answers1[12]);	
+
+					}
+					else if(f==14){
+						ans1 = document.getElementById("at6").value;
+
+						cmm6=ans1.localeCompare(answers1[13]);	
+
+					}
+					else if(f==15){
+						ans1 = document.getElementById("at6").value;
+
+						cmm6=ans1.localeCompare(answers1[14]);	
+
+					}
+				
+
+				}
+
+			}
+
+
+
+			function ft7(){
+
+				cmm7=5;			
+				if(check1==0){
+					if(g==1){
+						ans1 = document.getElementById("at7").value;
+
+						cmm7=ans1.localeCompare(answers1[0]);	
+
+					}
+					else if(g==2){
+						ans1 = document.getElementById("at7").value;
+
+						cmm7=ans1.localeCompare(answers1[1]);	
+
+					}
+					else if(g==3){
+						ans1 = document.getElementById("at7").value;
+
+						cmm7=ans1.localeCompare(answers1[2]);	
+
+					}
+					else if(g==4){
+						ans1 = document.getElementById("at7").value;
+
+						cmm7=ans1.localeCompare(answers1[3]);	
+
+					}
+					else if(g==5){
+						ans1 = document.getElementById("at7").value;
+
+						cmm7=ans1.localeCompare(answers1[4]);	
+													
+					}
+					else if(g==6){
+						ans1 = document.getElementById("at7").value;
+
+						cmm7=ans1.localeCompare(answers1[5]);	
+
+					}
+					else if(g==7){
+						ans1 = document.getElementById("at7").value;
+
+						cmm7=ans1.localeCompare(answers1[6]);	
+
+					}
+					else if(g==8){
+						ans1 = document.getElementById("at7").value;
+
+						cmm7=ans1.localeCompare(answers1[7]);	
+
+					}
+					else if(g==9){
+						ans1 = document.getElementById("at7").value;
+
+						cmm7=ans1.localeCompare(answers1[8]);	
+
+					}
+					else if(g==10){
+						ans1 = document.getElementById("at7").value;
+
+						cmm7=ans1.localeCompare(answers1[9]);	
+
+					}
+					else if(g==11){
+						ans1 = document.getElementById("at7").value;
+
+						cmm7=ans1.localeCompare(answers1[10]);	
+
+					}
+					else if(g==12){
+						ans1 = document.getElementById("at7").value;
+
+						cmm7=ans1.localeCompare(answers1[11]);	
+
+					}
+					else if(g==13){
+						ans1 = document.getElementById("at7").value;
+
+						cmm7=ans1.localeCompare(answers1[12]);	
+
+					}
+					else if(g==14){
+						ans1 = document.getElementById("at7").value;
+
+						cmm7=ans1.localeCompare(answers1[13]);	
+
+					}
+					else if(g==15){
+						ans1 = document.getElementById("at7").value;
+
+						cmm7=ans1.localeCompare(answers1[14]);	
+
+					}
+				
+
+				}
+
+			}
+
+
+
+
+
+
+			function ft8(){
+
+				cmm8=5;			
+				if(check1==0){
+					if(h==1){
+						ans1 = document.getElementById("at8").value;
+
+						cmm8=ans1.localeCompare(answers1[0]);	
+
+					}
+					else if(h==2){
+						ans1 = document.getElementById("at8").value;
+
+						cmm8=ans1.localeCompare(answers1[1]);	
+
+					}
+					else if(h==3){
+						ans1 = document.getElementById("at8").value;
+
+						cmm8=ans1.localeCompare(answers1[2]);	
+
+					}
+					else if(h==4){
+						ans1 = document.getElementById("at8").value;
+
+						cmm8=ans1.localeCompare(answers1[3]);	
+
+					}
+					else if(h==5){
+						ans1 = document.getElementById("at8").value;
+
+						cmm8=ans1.localeCompare(answers1[4]);	
+
+					}
+					else if(h==6){
+						ans1 = document.getElementById("at8").value;
+
+						cmm8=ans1.localeCompare(answers1[5]);	
+
+					}
+					else if(h==7){
+						ans1 = document.getElementById("at8").value;
+
+						cmm8=ans1.localeCompare(answers1[6]);	
+
+					}
+					else if(h==8){
+						ans1 = document.getElementById("at8").value;
+
+						cmm8=ans1.localeCompare(answers1[7]);	
+
+					}
+					else if(h==9){
+						ans1 = document.getElementById("at8").value;
+
+						cmm8=ans1.localeCompare(answers1[8]);	
+
+					}
+					else if(h==10){
+						ans1 = document.getElementById("at8").value;
+
+						cmm8=ans1.localeCompare(answers1[9]);	
+
+					}
+					else if(h==11){
+						ans1 = document.getElementById("at8").value;
+
+						cmm8=ans1.localeCompare(answers1[10]);	
+
+					}
+					else if(h==12){
+						ans1 = document.getElementById("at8").value;
+
+						cmm8=ans1.localeCompare(answers1[11]);	
+
+					}
+					else if(h==13){
+						ans1 = document.getElementById("at8").value;
+
+						cmm8=ans1.localeCompare(answers1[12]);	
+
+					}
+					else if(h==14){
+						ans1 = document.getElementById("at8").value;
+
+						cmm8=ans1.localeCompare(answers1[13]);	
+
+					}
+					else if(h==15){
+						ans1 = document.getElementById("at8").value;
+
+						cmm8=ans1.localeCompare(answers1[14]);	
+
+					}
+				
+
+				}
+
+			}
+
+
+
+
+
+
+
+			function ft9(){
+
+				cmm9=5;			
+				if(check1==0){
+					if(ii==1){
+						ans1 = document.getElementById("at9").value;
+
+						cmm9=ans1.localeCompare(answers1[0]);	
+
+					}
+					else if(ii==2){
+						ans1 = document.getElementById("at9").value;
+
+						cmm9=ans1.localeCompare(answers1[1]);	
+
+					}
+					else if(ii==3){
+						ans1 = document.getElementById("at9").value;
+
+						cmm9=ans1.localeCompare(answers1[2]);	
+
+					}
+					else if(ii==4){
+						ans1 = document.getElementById("at9").value;
+
+						cmm9=ans1.localeCompare(answers1[3]);	
+
+					}
+					else if(ii==5){
+						ans1 = document.getElementById("at9").value;
+
+						cmm9=ans1.localeCompare(answers1[4]);	
+
+					}
+					else if(ii==6){
+						ans1 = document.getElementById("at9").value;
+
+						cmm9=ans1.localeCompare(answers1[5]);	
+
+					}
+					else if(ii==7){
+						ans1 = document.getElementById("at9").value;
+
+						cmm9=ans1.localeCompare(answers1[6]);	
+
+					}
+					else if(ii==8){
+						ans1 = document.getElementById("at9").value;
+
+						cmm9=ans1.localeCompare(answers1[7]);	
+
+					}
+					else if(ii==9){
+						ans1 = document.getElementById("at9").value;
+
+						cmm9=ans1.localeCompare(answers1[8]);	
+
+					}
+					else if(ii==10){
+						ans1 = document.getElementById("at9").value;
+
+						cmm9=ans1.localeCompare(answers1[9]);	
+
+					}
+					else if(ii==11){
+						ans1 = document.getElementById("at9").value;
+
+						cmm9=ans1.localeCompare(answers1[10]);	
+
+					}
+					else if(ii==12){
+						ans1 = document.getElementById("at9").value;
+
+						cmm9=ans1.localeCompare(answers1[11]);	
+
+					}
+					else if(ii==13){
+						ans1 = document.getElementById("at9").value;
+
+						cmm9=ans1.localeCompare(answers1[12]);	
+
+					}
+					else if(ii==14){
+						ans1 = document.getElementById("at9").value;
+
+						cmm9=ans1.localeCompare(answers1[13]);	
+
+					}
+					else if(ii==15){
+						ans1 = document.getElementById("at9").value;
+
+						cmm9=ans1.localeCompare(answers1[14]);	
+
+					}
+				
+
+				}
+
+			}
+
+
+
+			function ft10(){
+
+				cmm10=5;			
+				if(check1==0){
+					if(j==1){
+						ans1 = document.getElementById("at10").value;
+
+						cmm10=ans1.localeCompare(answers1[0]);	
+
+
+					}
+					else if(j==2){
+						ans1 = document.getElementById("at10").value;
+
+						cmm10=ans1.localeCompare(answers1[1]);	
+
+					}
+					else if(j==3){
+						ans1 = document.getElementById("at10").value;
+
+						cmm10=ans1.localeCompare(answers1[2]);	
+
+					}
+					else if(j==4){
+						ans1 = document.getElementById("at10").value;
+
+						cmm10=ans1.localeCompare(answers1[3]);	
+
+					}
+					else if(j==5){
+						ans1 = document.getElementById("at10").value;
+
+						cmm10=ans1.localeCompare(answers1[4]);	
+
+					}
+					else if(j==6){
+						ans1 = document.getElementById("at10").value;
+
+						cmm10=ans1.localeCompare(answers1[5]);	
+
+					}
+					else if(j==7){
+						ans1 = document.getElementById("at10").value;
+
+						cmm10=ans1.localeCompare(answers1[6]);	
+
+					}
+					else if(j==8){
+						ans1 = document.getElementById("at10").value;
+
+						cmm10=ans1.localeCompare(answers1[7]);	
+
+					}
+					else if(j==9){
+						ans1 = document.getElementById("at10").value;
+
+						cmm10=ans1.localeCompare(answers1[8]);	
+
+					}
+					else if(j==10){
+						ans1 = document.getElementById("at10").value;
+
+						cmm10=ans1.localeCompare(answers1[9]);	
+
+					}
+					else if(j==11){
+						ans1 = document.getElementById("at10").value;
+
+						cmm10=ans1.localeCompare(answers1[10]);	
+
+					}
+					else if(j==12){
+						ans1 = document.getElementById("at10").value;
+
+						cmm10=ans1.localeCompare(answers1[11]);	
+
+					}
+					else if(j==13){
+						ans1 = document.getElementById("at10").value;
+
+						cmm10=ans1.localeCompare(answers1[12]);	
+
+					}
+					else if(j==14){
+						ans1 = document.getElementById("at10").value;
+
+						cmm10=ans1.localeCompare(answers1[13]);	
+
+					}
+					else if(j==15){
+						ans1 = document.getElementById("at10").value;
+
+						cmm10=ans1.localeCompare(answers1[14]);	
+
+					}
+				
+
+				}
+
+			}
+
+
+
+
+
+			function aaa1(){
+
+				   	ml1 = document.getElementById("mul1").value;
+					cl1=ml1.localeCompare(answers2[a-1]);
+				}	
+			function ab1(){
+
+				   	ml2 = document.getElementById("mul5").value;
+					cl2=ml2.localeCompare(answers2[b-1]);
+				}
+
+			function ac1(){
+				   	ml3 = document.getElementById("mul9").value;
+					cl3=ml3.localeCompare(answers2[c-1]);	
+				}
+
+
+			function ad1(){
+				   	ml4 = document.getElementById("mul13").value;
+					cl4=ml4.localeCompare(answers2[d-1]);	
+				}
+
+
+			function ae1(){
+				   	ml5 = document.getElementById("mul17").value;
+					cl5=ml5.localeCompare(answers2[e-1]);	
+				}
+
+
+
+			function af1(){
+				   	ml6 = document.getElementById("mul21").value;
+					cl6=ml6.localeCompare(answers2[f-1]);	
+				}
+
+			function ag1(){
+				   	ml7 = document.getElementById("mul25").value;
+					cl7=ml7.localeCompare(answers2[g-1]);	
+				}
+
+
+			function ah1(){
+				   	ml8 = document.getElementById("mul29").value;
+					cl8=ml8.localeCompare(answers2[h-1]);	
+				}
+
+
+			function ai1(){
+				   	ml9 = document.getElementById("mul33").value;
+					cl9=ml9.localeCompare(answers2[ii-1]);	
+				}
+
+			function aj1(){
+	
+				   	ml10 = document.getElementById("mul37").value;
+					cl10=ml10.localeCompare(answers2[j-1]);	
+				}
+
+
+
+
+
+
+
+
+
+
+			function aaa2(){
+
+				   	ml1 = document.getElementById("mul2").value;
+					cl1=ml1.localeCompare(answers2[a-1]);
+				}	
+
+			function ab2(){
+
+				   	ml2 = document.getElementById("mul6").value;
+					cl2=ml2.localeCompare(answers2[b-1]);
+				}	
+
+			function ac2(){
+
+				   	ml3 = document.getElementById("mul10").value;
+					cl3=ml3.localeCompare(answers2[c-1]);	
+				}	
+
+
+			function ad2(){
+
+				   	ml4 = document.getElementById("mul14").value;
+					cl4=ml4.localeCompare(answers2[d-1]);	
+				}	
+
+
+			function ae2(){
+
+				   	ml5 = document.getElementById("mul18").value;
+					cl5=ml5.localeCompare(answers2[e-1]);	
+				}	
+
+
+
+			function af2(){
+
+				   	ml6 = document.getElementById("mul22").value;
+					cl6=ml6.localeCompare(answers2[f-1]);	
+				}	
+
+			function ag2(){
+
+				   	ml7 = document.getElementById("mul26").value;
+					cl7=ml7.localeCompare(answers2[g-1]);	
+				}	
+
+			function ah2(){
+
+
+				   	ml8 = document.getElementById("mul30").value;
+					cl8=ml8.localeCompare(answers2[h-1]);	
+				}	
+
+
+			function ai2(){
+
+				   	ml9 = document.getElementById("mul34").value;
+					cl9=ml9.localeCompare(answers2[ii-1]);	
+				}	
+
+
+			function aj2(){
+				   	ml10 = document.getElementById("mul38").value;
+					cl10=ml10.localeCompare(answers2[j-1]);	
+				}	
+
+
+
+
+
+
+
+
+
+
+			function aaa3(){
+
+				   	ml1 = document.getElementById("mul3").value;
+					cl1=ml1.localeCompare(answers2[a-1]);
+				}	
+
+			function ab3(){
+
+				   	ml2 = document.getElementById("mul7").value;
+					cl2=ml2.localeCompare(answers2[b-1]);
+				}	
+
+			function ac3(){
+
+				   	ml3 = document.getElementById("mul11").value;
+					cl3=ml3.localeCompare(answers2[c-1]);	
+				}	
+
+
+			function ad3(){
+
+				   	ml4 = document.getElementById("mul15").value;
+					cl4=ml4.localeCompare(answers2[d-1]);	
+				}	
+
+
+			function ae3(){
+
+				   	ml5 = document.getElementById("mul19").value;
+					cl5=ml5.localeCompare(answers2[e-1]);	
+				}	
+
+
+			function af3(){
+
+
+				   	ml6 = document.getElementById("mul23").value;
+					cl6=ml6.localeCompare(answers2[f-1]);	
+				}	
+
+			function ag3(){
+
+				   	ml7 = document.getElementById("mul27").value;
+					cl7=ml7.localeCompare(answers2[g-1]);	
+				}	
+
+
+			function ah3(){
+
+				   	ml8 = document.getElementById("mul31").value;
+					cl8=ml8.localeCompare(answers2[h-1]);	
+				}	
+
+
+			function ai3(){
+
+				   	ml9 = document.getElementById("mul35").value;
+					cl9=ml9.localeCompare(answers2[ii-1]);	
+				}	
+
+
+			function aj3(){
+
+				   	ml10 = document.getElementById("mul39").value;
+					cl10=ml10.localeCompare(answers2[j-1]);	
+				}	
+
+
+
+
+
+
+
+
+
+
+			function aaa4(){
+
+				   	ml1 = document.getElementById("mul4").value;
+					cl1=ml1.localeCompare(answers2[a-1]);	
+				}	
+
+			function ab4(){
+
+
+				   	ml2 = document.getElementById("mul8").value;
+					cl2=ml2.localeCompare(answers2[b-1]);
+				}	
+
+			function ac4(){
+
+				   	ml3 = document.getElementById("mul12").value;
+					cl3=ml3.localeCompare(answers2[c-1]);	
+				}	
+
+
+			function ad4(){
+
+				   	ml4 = document.getElementById("mul16").value;
+					cl4=ml4.localeCompare(answers2[d-1]);	
+				}	
+
+
+			function ae4(){
+
+				   	ml5 = document.getElementById("mul20").value;
+					cl5=ml5.localeCompare(answers2[e-1]);	
+				}	
+
+
+
+			function af4(){
+
+				   	ml6 = document.getElementById("mul24").value;
+					cl6=ml6.localeCompare(answers2[f-1]);
+				}	
+	
+			function ag4(){
+
+				   	ml7 = document.getElementById("mul28").value;
+					cl7=ml7.localeCompare(answers2[g-1]);
+				}	
+	
+
+			function ah4(){
+
+				   	ml8 = document.getElementById("mul32").value;
+					cl8=ml8.localeCompare(answers2[h-1]);	
+				}	
+
+
+			function ai4(){
+
+				   	ml9 = document.getElementById("mul36").value;
+					cl9=ml9.localeCompare(answers2[ii-1]);	
+				}
+
+			function aj4(){
+
+				   	ml10 = document.getElementById("mul40").value;
+					cl10=ml10.localeCompare(answers2[j-1]);	
+
+
+				}
+
+
+
+
+
+
+
+			function nxt(){
+
+					if(cm==0){
+						if(aa!=1){
+							spp1=spp1+1;
+
+							score=score+1;
+							aa=1;
+
+						}
+						
+					}
+					if(cm2==0){
+						if(a2!=1){
+							spp1=spp1+1;
+
+							score=score+1;
+							a2=1;
+
+						}
+					}
+					if(cm3==0){
+						if(a3!=1){
+							spp1=spp1+1;
+
+							score=score+1;
+							a3=1;
+
+						}
+					}
+					if(cm4==0){
+						if(a4!=1){
+							spp1=spp1+1;
+
+							score=score+1;
+							a4=1;
+
+						}
+					}
+					if(cm5==0){
+						if(a5!=1){
+							spp1=spp1+1;
+
+							score=score+1;
+							a5=1;
+
+						}
+					}
+					if(cm6==0){
+						if(a6!=1){
+							spp1=spp1+1;
+
+							score=score+1;
+							a6=1;
+
+						}
+					}
+					if(cm7==0){
+						if(a7!=1){
+							spp1=spp1+1;
+
+							score=score+1;
+							a7=1;
+
+						}
+					}
+					if(cm8==0){
+						if(a8!=1){
+							spp1=spp1+1;
+
+							score=score+1;
+							a8=1;
+
+						}
+					}
+					if(cm9==0){
+						if(a9!=1){
+							spp1=spp1+1;
+
+							score=score+1;
+							a9=1;
+
+						}
+					}
+
+
+
+					if(cm10==0){
+						if(a10!=1){
+							spp1=spp1+1;
+
+							score=score+1;
+							a10=1;
+
+						}
+					}
+					document.getElementById("ccc1").style.backgroundColor = "#b9b7dc";
+					document.getElementById("ccc2").style.backgroundColor = "#b8e5fa";
+					document.getElementById("ccc3").style.backgroundColor = "#f8e986";
+					document.getElementById("ic2").style.backgroundColor = "#e79443";
+
+
+					document.getElementById("cc2").style.zIndex = "10";
+
+				
+
+					if(cmm==0){
+						if(aa1!=1){
+							spp2=spp2+1;
+
+							score=score+1;
+							aa1=1;
+						}
+
+					}
+					if(cmm2==0){
+						if(aa2!=1){
+							spp2=spp2+1;
+
+							score=score+1;
+							aa2=1;
+						}
+
+					}
+					if(cmm3==0){
+						if(aa3!=1){
+							spp2=spp2+1;
+
+							score=score+1;
+							aa3=1;
+						}
+
+					}
+					if(cmm4==0){
+						if(aa4!=1){
+							spp2=spp2+1;
+
+							score=score+1;
+							aa4=1;
+						}
+
+					}
+					if(cmm5==0){
+						if(aa5!=1){
+							spp2=spp2+1;
+
+							score=score+1;
+							aa5=1;
+						}
+
+					}
+					if(cmm6==0){
+						if(aa6!=1){
+							spp2=spp2+1;
+
+							score=score+1;
+							aa6=1;
+						}
+
+					}
+					if(cmm7==0){
+						if(aa7!=1){
+							spp2=spp2+1;
+
+							score=score+1;
+							aa7=1;
+						}
+
+					}
+					if(cmm8==0){
+						if(aa8!=1){
+							spp2=spp2+1;
+
+							score=score+1;
+							aa8=1;
+						}
+
+					}
+					if(cmm9==0){
+						if(aa9!=1){
+							spp2=spp2+1;
+
+							score=score+1;
+							aa9=1;
+						}
+
+					}
+					if(cmm10==0){
+						if(aa10!=1){
+							spp2=spp2+1;
+
+							score=score+1;
+							aa10=1;
+						}
+
+					}
+					document.getElementById("ccc4").style.backgroundColor = "#f8e986";
+					document.getElementById("ccc5").style.backgroundColor = "#b8e5fa";
+					document.getElementById("ccc6").style.backgroundColor = "#b9b7dc";
+
+					document.getElementById("ic3").style.backgroundColor = "#6366d7";
+
+					document.getElementById("cc3").style.zIndex = "15";
+
+
+					if(cl1==0){
+						if(aaa11!=1){
+							aaa11=1;
+
+							sp3=sp3+1;
+
+							score=score+1;
+						}
+						
+
+					}
+					if(cl2==0){
+						if(aaa12!=1){
+							aaa12=1;
+
+							sp3=sp3+1;
+
+							score=score+1;
+						}
+
+					}
+
+					if(cl3==0){
+						if(aaa13!=1){
+							aaa13=1;
+
+							sp3=sp3+1;
+
+							score=score+1;
+						}
+
+					}
+
+					if(cl4==0){
+						if(aaa14!=1){
+							aaa14=1;
+
+							sp3=sp3+1;
+
+							score=score+1;
+						}
+						
+
+					}
+
+					if(cl5==0){
+						if(aaa15!=1){
+							aaa15=1;
+
+							sp3=sp3+1;
+
+							score=score+1;
+						}
+						
+
+					}
+
+					if(cl6==0){
+						if(aaa16!=1){
+							aaa16=1;
+
+							sp3=sp3+1;
+
+							score=score+1;
+						}
+						
+
+					}
+
+					if(cl7==0){
+						if(aaa17!=1){
+							aaa17=1;
+
+							sp3=sp3+1;
+
+							score=score+1;
+						}
+						
+
+					}
+
+					if(cl8==0){
+						if(aaa18!=1){
+							aaa18=1;
+
+							sp3=sp3+1;
+
+							score=score+1;
+						}
+						
+
+					}
+
+					if(cl9==0){
+						if(aaa19!=1){
+							aaa19=1;
+
+							sp3=sp3+1;
+
+							score=score+1;
+						}
+						
+
+					}
+
+					if(cl10==0){
+						if(aaa20!=1){
+							aaa20=1;
+
+							sp3=sp3+1;
+
+							score=score+1;
+						}
+						
+
+					}
+
+
+
+
+
+
+					document.getElementById("cc4").style.zIndex = "20";
+
+					document.getElementById("cc5").style.zIndex = "22";
+					document.getElementById("cc6").style.zIndex = "24";
+					alert(fnem+", you are done taking the Marvel Quiz!!");
+
+					document.getElementById("s1").innerHTML= spp1+"/10";
+
+					document.getElementById("s2").innerHTML= spp2+"/10";
+
+					document.getElementById("s3").innerHTML= sp3+"/10";
+
+					document.getElementById("s4").innerHTML= score+"/30";
+
+
+			}
+
+
+
+		</script>
+
+	</head>
+	
+	<body onload="first()">
+		<header>
+			<nav>
+				<a href="../Homepage/homepage.html" class="navbut">Home</a>
+				<a href="../Game/trafficracer.html" class="navbut">Game</a>
+				<a href="quiz.html" class="navbut">Quiz</a>
+				<a href="../Survey/CsSurviy.html" class="navbut">Survey</a>
+				<a href="../About Us/aboutus.html" class="navbut">About Us</a>
+			</nav>
+		</header>
+		<a name="#top"></a>
+		<div class="indicator">
+			<div class="part1" style=" background-color: grey; " id="ic1"><h3 style="color:#fff;">Identification</h3></div>
+			<div class="part2"><span class="cir" id="ccc1"></span><span class="cir" id="ccc2"></span><span class="cir" id="ccc3"></span></div>
+			<div class="part1" style=" background-color: grey; " id="ic2"><h3 style="color:#fff;">True or False</h3></div>
+			<div class="part2"><span class="cir" id="ccc4"></span><span class="cir" id="ccc5"></span><span class="cir" id="ccc6"></span></div>
+			<div class="part1" style=" background-color: grey; " id="ic3"><h3 style="margin-top: 26%; color:#fff;">Multiple Choice</h3></div>
+
+
+
+		</div>
+		<div class="mc">
+			<div class="container" id="cun1">
+				<div class="items" id="q1"><p id="qq1"></p><form><input type="text" id="a1" onchange="f1()"></form></div>
+				<div class="items" id="q2"><p id="qq2"></p><form><input type="text" id="a2" onchange="f2()"></form></div>
+				<div class="items" id="q3"><p id="qq3"></p><form><input type="text" id="a3" onchange="f3()"></form></div>
+				<div class="items" id="q4"><p id="qq4"></p><form><input type="text" id="a4" onchange="f4()"></form></div>
+				<div class="items" id="q5"><p id="qq5"></p><form><input type="text" id="a5" onchange="f5()"></form></div>
+				<div class="items" id="q6"><p id="qq6"></p><form><input type="text" id="a6" onchange="f6()"></form></div>
+				<div class="items" id="q7"><p id="qq7"></p><form><input type="text" id="a7" onchange="f7()"></form></div>
+				<div class="items" id="q8"><p id="qq8"></p><form><input type="text" id="a8" onchange="f8()"></form></div>
+				<div class="items" id="q9"><p id="qq9"></p><form><input type="text" id="a9" onchange="f9()"></form></div>
+				<div class="items" id="q10"><p id="qq10"></p><form><input type="text" id="a10" onchange="f10()"></form></div>
+
+
+
+
+			</div>
+			<div class="container2" id="cc2">
+				<div class="items" id="qa1"><p id="qqa1"></p>
+					<form>
+						<input type="radio" name="answer" value="true" onclick ="ft1()" id="at1"><label>True</label><br>
+						<input type="radio" name="answer" value="false" onclick ="fa1()" id="aa1"><label>False</label>
+					</form>
+				</div>
+				<div class="items" id="qa2"><p id="qqa2"></p>
+					<form>
+						<input type="radio" name="answer" value="true" onclick ="ft2()" id="at2"><label>True</label><br>
+						<input type="radio" name="answer" value="false" onclick ="fa2()" id="aa2"><label>False</label>
+					</form>
+				</div>
+				<div class="items" id="qa3"><p id="qqa3"></p>
+					<form>
+						<input type="radio" name="answer" value="true" onclick ="ft3()" id="at3"><label>True</label><br>
+						<input type="radio" name="answer" value="false" onclick ="fa3()" id="aa3"><label>False</label>
+					</form>
+				</div>
+				<div class="items" id="qa4"><p id="qqa4"></p>
+					<form>
+						<input type="radio" name="answer" value="true" onclick ="ft4()" id="at4"><label>True</label><br>
+						<input type="radio" name="answer" value="false" onclick ="fa4()" id="aa4"><label>False</label>
+					</form>
+				</div>			
+				<div class="items" id="qa5"><p id="qqa5"></p>
+					<form>
+						<input type="radio" name="answer" value="true" onclick ="ft5()" id="at5"><label>True</label><br>
+						<input type="radio" name="answer" value="false" onclick ="fa5()" id="aa5"><label>False</label>
+					</form>
+				</div>
+				<div class="items" id="qa6"><p id="qqa6"></p>
+					<form>
+						<input type="radio" name="answer" value="true" onclick ="ft6()" id="at6"><label>True</label><br>
+						<input type="radio" name="answer" value="false" onclick ="fa6()" id="aa6"><label>False</label>
+					</form>
+				</div>			
+				<div class="items" id="qa7"><p id="qqa7"></p>
+					<form>
+						<input type="radio" name="answer" value="true" onclick ="ft7()" id="at7"><label>True</label><br>
+						<input type="radio" name="answer" value="false" onclick ="fa7()" id="aa7"><label>False</label>
+					</form>
+				</div>			
+				<div class="items" id="qa8"><p id="qqa8"></p>
+					<form>
+						<input type="radio" name="answer" value="true" onclick ="ft8()" id="at8"><label>True</label><br>
+						<input type="radio" name="answer" value="false" onclick ="fa8()" id="aa8"><label>False</label>
+					</form>
+				</div>
+				<div class="items" id="qa9"><p id="qqa9"></p>
+					<form>
+						<input type="radio" name="answer" value="true" onclick ="ft9()" id="at9"><label>True</label><br>
+						<input type="radio" name="answer" value="false" onclick ="fa9()" id="aa9"><label>False</label>
+					</form>
+				</div>			
+				<div class="items" id="qa10"><p id="qqa10"></p>
+					<form>
+						<input type="radio" name="answer" value="true" onclick ="ft10()" id="at10"><label>True</label><br>
+						<input type="radio" name="answer" value="false" onclick ="fa10()" id="aa10"><label>False</label>
+					</form>
+				</div>
+
+
+
+
+			</div>
+			<div class="container3" id="cc3">
+				<div class="items" id="qb1"><p id="qqb1"></p>
+					<form>
+						<input type="radio" name="answer1" value="a" onchange="aaa1()" id="mul1"><label id="m1"></label><br>
+						<input type="radio" name="answer1" value="b" onchange="aaa2()" id="mul2"><label id="m2"></label><br>
+						<input type="radio" name="answer1" value="c" onchange="aaa3()" id="mul3"><label id="m3"></label><br>
+						<input type="radio" name="answer1" value="d" onchange="aaa4()" id="mul4"><label id="m4"></label>
+
+
+					</form>
+				</div>
+				<div class="items" id="qb2"><p id="qqb2"></p>
+					<form>
+						<input type="radio" name="answer1" value="a" onchange="ab1()" id="mul5"><label id="m5"></label><br>
+						<input type="radio" name="answer1" value="b" onchange="ab2()" id="mul6"><label id="m6"></label><br>
+						<input type="radio" name="answer1" value="c" onchange="ab3()" id="mul7"><label id="m7"></label><br>
+						<input type="radio" name="answer1" value="d" onchange="ab4()" id="mul8"><label id="m8"></label>
+
+					</form>
+				</div>
+				<div class="items" id="qb3"><p id="qqb3"></p>
+					<form>
+						<input type="radio" name="answer1" value="a" onchange="ac1()" id="mul9"><label id="m9"></label><br>
+						<input type="radio" name="answer1" value="b" onchange="ac2()" id="mul10"><label id="m10"></label><br>
+						<input type="radio" name="answer1" value="c" onchange="ac3()" id="mul11"><label id="m11"></label><br>
+						<input type="radio" name="answer1" value="d" onchange="ac4()" id="mul12"><label id="m12"></label>
+					</form>
+				</div>
+				<div class="items" id="qb4"><p id="qqb4"></p>
+					<form>
+						<input type="radio" name="answer1" value="a" onchange="ad1()" id="mul13"><label id="m13"></label><br>
+						<input type="radio" name="answer1" value="b" onchange="ad2()" id="mul14"><label id="m14"></label><br>
+						<input type="radio" name="answer1" value="c" onchange="ad3()" id="mul15"><label id="m15"></label><br>
+						<input type="radio" name="answer1" value="d" onchange="ad4()" id="mul16"><label id="m16"></label>
+					</form>
+				</div>			
+				<div class="items" id="qb5"><p id="qqb5"></p>
+					<form>
+						<input type="radio" name="answer1" value="a" onchange="ae1()" id="mul17"><label id="m17"></label><br>
+						<input type="radio" name="answer1" value="b" onchange="ae2()" id="mul18"><label id="m18"></label><br>
+						<input type="radio" name="answer1" value="c" onchange="ae3()" id="mul19"><label id="m19"></label><br>
+						<input type="radio" name="answer1" value="d" onchange="ae4()" id="mul20"><label id="m20"></label>
+
+					</form>
+				</div>
+				<div class="items" id="qb6"><p id="qqb6"></p>
+					<form>
+						<input type="radio" name="answer1" value="a" onchange="af1()" id="mul21"><label id="m21"></label><br>
+						<input type="radio" name="answer1" value="b" onchange="af2()" id="mul22"><label id="m22"></label><br>
+						<input type="radio" name="answer1" value="c" onchange="af3()" id="mul23"><label id="m23"></label><br>
+						<input type="radio" name="answer1" value="d" onchange="af4()" id="mul24"><label id="m24"></label>
+					</form>
+				</div>			
+				<div class="items" id="qb7"><p id="qqb7"></p>
+					<form>
+						<input type="radio" name="answer1" value="a" onchange="ag1()" id="mul25"><label id="m25"></label><br>
+						<input type="radio" name="answer1" value="b" onchange="ag2()" id="mul26"><label id="m26"></label><br>
+						<input type="radio" name="answer1" value="c" onchange="ag3()" id="mul27"><label id="m27"></label><br>
+						<input type="radio" name="answer1" value="d" onchange="ag4()" id="mul28"><label id="m28"></label>
+					</form>
+				</div>			
+				<div class="items" id="qb8"><p id="qqb8"></p>
+					<form>
+						<input type="radio" name="answer1" value="a" onchange="ah1()" id="mul29"><label id="m29"></label><br>
+						<input type="radio" name="answer1" value="b" onchange="ah2()" id="mul30"><label id="m30"></label><br>
+						<input type="radio" name="answer1" value="c" onchange="ah3()" id="mul31"><label id="m31"></label><br>
+						<input type="radio" name="answer1" value="d" onchange="ah4()" id="mul32"><label id="m32"></label>
+					</form>
+				</div>
+				<div class="items" id="qb9"><p id="qqb9"></p>
+					<form>
+						<input type="radio" name="answer1" value="a" onchange="ai1()" id="mul33"><label id="m33"></label><br>
+						<input type="radio" name="answer1" value="b" onchange="ai2()" id="mul34"><label id="m34"></label><br>
+						<input type="radio" name="answer1" value="c" onchange="ai3()" id="mul35"><label id="m35"></label><br>
+						<input type="radio" name="answer1" value="d" onchange="ai4()" id="mul36"><label id="m36"></label>
+					</form>
+				</div>			
+				<div class="items" id="qb10"><p id="qqb10"></p>
+					<form>
+						<input type="radio" name="answer1" value="a" onchange="aj1()" id="mul37"><label id="m37"></label><br>
+						<input type="radio" name="answer1" value="b" onchange="aj2()" id="mul38"><label id="m38"></label><br>
+						<input type="radio" name="answer1" value="c" onchange="aj3()" id="mul39"><label id="m39"></label><br>
+						<input type="radio" name="answer1" value="d" onchange="aj4()" id="mul40"><label id="m40"></label>
+					</form>
+				</div>
+
+
+
+
+			</div>
+			<div class="container4" id="cc4">
+					<div class="container5" id="cc5">
+						<div class="g1" id="cc6">
+							<h2> Identification </h2>
+							<h1 id="s1" style="text-align: center;"> </h1>
+						</div>
+						<div class="g1" id="cc6">
+							<h2> True or False </h2>
+							<h1 id="s2" style="text-align: center;"> </h1>
+
+
+
+						</div>
+						<div class="g1" id="cc6">
+							<h2> Multiple Choice </h2>
+							<h1 id="s3" style="text-align: center;"> </h1>
+
+
+
+						</div>
+						<div class="g1 id="cc6"">
+							<h2> Total </h2>
+							<h1 id="s4" style="text-align: center;"> </h1>
+
+
+						</div>
+
+
+					</div>
+
+					<div class="container5" id="cc6" style="top: 8%;">
+						<img src="end.gif" width=100%; height=100%;>
+
+					</div>
+
+
+			</div>
+			<div class="container0" id="cc0">
+				<div class="examdata" id="cc6" style="top: 1%;">
+					<form>
+						<label style="margin-left: 20px;">First Name:</label><input type="text" onchange="fname()" id="fn" placeholder="Renzo" style=" margin-top: 4%; margin-left:30px;"><br>	
+						<label style="margin-left: 20px;">Last Name:</label><input type="text" onchange="lname()" id="ln" placeholder="Roa" style="margin-left: 32px; margin-top: 2%;"><br>
+						<label style="margin-left: 20px;">Middle Name:</label><input type="text" onchange="mname()" id="mn" placeholder="Lauzon" style="margin-left: 15px; margin-top: 2%;"><br>
+						<label style="margin-left: 20px;">Age:</label><input type="Number" Min="7" onchange="agee()" id="age" style="margin-left: 81px; margin-top: 2%;">
+					</form>
+
+						<button onclick="sh()" style=" position: absolute; margin-left: 60%; margin-top: -10.5%; height: 40px; width: 150px;"> SUBMIT DATA </button>
+						
+				</div>
+			</div>
+
+
+		</div>
+		<form>
+			<br>
+			<a href="#top"><input type="button" value="DONE" onclick="nxt()" style=" margin-left:45.5%; width: 130px; height: 30px;"></a>
+
+	
+		</form>
+		<br>
+		<footer>
+			<h3 style="text-align: center; color: white; font: 1em DIN Next W01 Regular,Trebuchet MS,Helvetica,Arial,sans-serif; margin-top: 2%;"> &copy Copyright 2019 |  All Rights Reserved</h3>
+		</footer>
+		<script>
+			fnem,lnem,mnem,ager,x1=0,x2=0,x3=0;
+
+			function fname(){
+				fnem=document.getElementById("fn").value;
+				fnem=fnem.trim();
+				if(fnem.localeCompare(" ")==0){
+					alert("Invalid First Name");
+
+				}
+				else{
+					x1=1;
+				}
+
+			}
+			function lname(){
+				lnem=document.getElementById("ln").value;
+				lnem=lnem.trim();
+				if(lnem.localeCompare(" ")==0){
+					alert("Invalid Last Name");
+
+				}
+				else{
+					x2=1;
+				}
+
+
+
+			}
+			function mname(){
+				mnem=document.getElementById("mn").value;
+				mnem=mnem.trim();
+				if(mnem.localeCompare(" ")==0){
+					alert("Invalid Mddle Name");
+
+				}
+				else{
+					x3=1;
+				}
+
+
+
+			}
+			function agee(){
+				ager=document.getElementById("age").value;
+
+			}
+			function sh(){
+				if((x1==1)&&(x2==1)&&(x3==1)){
+					alert("First Name: "+fnem);
+					alert("Last Name: "+lnem);
+					alert("Middle Name: "+mnem);
+					alert("Age: "+ager);
+					document.getElementById("cun1").style.zIndex ="10";
+					document.getElementById("ic1").style.backgroundColor = "#392185";
+
+
+				}
+
+
+			}
+
+
+		</script>
+
+
+		
+	</body>
+</html>

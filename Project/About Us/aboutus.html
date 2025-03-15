@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<style>
+		body{
+			background-color: #22262a;
+		}
+		#container{
+			position: relative;
+			top: 15%;
+		}
+		#bigbox{
+			position: relative;
+			width: 270px;
+			height: 420px;
+			background-color: #e62429;
+			overflow: hidden;
+			float: left;
+			left: 1%;
+			margin-left: 10%;
+		}
+		#bigbox:hover{
+			z-index: 10;
+		}
+		#boxdown{
+			position: absolute;
+			width: 100%;
+			height: 40%;
+			background-color: #151515;
+			color: white;
+			z-index:0;
+		}
+		#boxdown:before {
+			content: "";
+			position: absolute;
+			z-index:-1;
+			top: 0;  left: 0;  right: 0;  bottom: 0;
+			background: #e62429;
+			transform: scaleY(0);
+			transform-origin: 50% 0%;
+			transition: transform .3s ease-out;
+		}
+		#boxdown:hover:before{
+			transform: scaleY(1);
+		}
+		#names{
+			font-family: 'Oswald', sans-serif;
+			font-size: 16px;
+			font-weight: 600;
+			letter-spacing: 1px;
+			margin-left: 13px;
+		}
+		#quote1, #quote2, #quote3{
+			font-family: 'Oswald', sans-serif;
+			font-size: 12px;
+			letter-spacing: 1px;
+			color: black;
+			margin-left: 13px;
+			margin-top: 30px;
+			text-align: center;
+			transition: .3s ease-out;
+		}
+		#textbot1, #textbot2, #textbot3{
+			font-family: 'Oswald', sans-serif;
+			font-size: 12px;
+			letter-spacing: 1px;
+			margin-left: 13px;
+			margin-top: 45px;
+			color: #c3c3c3;
+			transition: .3s ease-out;
+		}
+		#pics{
+			transition: transform .2s;
+			
+		}
+		#pics:hover{
+			transform: scale(1.1);
+		}
+		.navbut {
+			font: 1em DIN Next W01 Regular,Trebuchet MS,Helvetica,Arial,sans-serif;
+			display: inline-block;
+			padding: 1em;
+			margin: 1em;
+			text-decoration: none;
+			color: #f8fbfa;
+		    background-image: linear-gradient(#f43f3f, #f43f3f), linear-gradient(transparent, transparent);
+		    background-size: 0 5px, auto;
+			background-repeat: no-repeat;
+			background-position: center bottom;
+			transition: all .2s ease-out;
+		}
+		.navbut:hover {
+			background-size: 100% 5px, auto;
+		}
+		nav{
+			margin: auto;
+			background-color: #22262a;
+			height: 64px;
+			width: 90%;
+			border-bottom: 2px solid white;
+		}
+		#bodycontain{
+			margin: auto;
+			background-color: #212934;
+			height: 600px;
+			width: 90%;
+			border-bottom: 2px solid white;
+		}
+		footer{
+			margin: auto;
+			background-color: #22262a;
+			height: 64px;
+			width: 90%;d
+		}
+		
+	</style>
+</head>
+<body>
+	<header>
+			<nav>
+				<a href="../Homepage/homepage.html" class="navbut">Home</a>
+				<a href="../Game/trafficracer.html" class="navbut">Game</a>
+				<a href="../Quiz/quiz.html" class="navbut">Quiz</a>
+				<a href="../Survey/CsSurviy.html" class="navbut">Survey</a>
+				<a href="../About Us/aboutus.html" class="navbut">About Us</a>
+			</nav>
+	</header>
+	<div id="bodycontain">
+		<div id="container">
+			<div id="bigbox">
+				<img id="pics" src="Bryan.png" style="width: 100%; height: 60%;">
+				<div id="boxdown" onmousemove="quote1color()" onmouseleave="quotecolor1()">
+					<h2 id="names">
+					BRYAN DELA CRUZ
+					</h2>
+					<p id="quote1">
+					"To be the best, <br>you have to face the worst."
+					</p>
+					<p id="textbot1">
+					QUIZZER
+					</p>
+				</div>
+			</div>
+			<div id="bigbox">
+				<img id="pics" src="Dustin.png" style="width: 100%; height: 60%;">
+				<div id="boxdown" onmousemove="quote2color()" onmouseleave="quotecolor2()">
+					<h2 id="names">
+					DUSTIN AGNER
+					</h2>
+					<p id="quote2">
+					"Always hope for the best and think positive to achieve your goals."
+					</p>
+					<p id="textbot2">
+					GAMER
+					</p>
+				</div>
+			</div>
+			<div id="bigbox">
+				<img id="pics" src="Jairo.png" style="width: 100%; height: 60%;">
+				<div id="boxdown" onmousemove="quote3color()" onmouseleave="quotecolor3()">
+					<h2 id="names">
+					JAIRO JAROPOJOP
+					</h2>
+					<p id="quote3">
+					"When life gives you lemons,<br> you gotta make lemonade."
+					</p>
+					<p id="textbot3">
+					SURVEYOR
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+			<h3 style="text-align: center; color: white; font: 1em DIN Next W01 Regular,Trebuchet MS,Helvetica,Arial,sans-serif;"> &copy Copyright 2019 |  All Rights Reserved</h3>
+	</footer>
+	<script>
+		function quote1color(){
+			document.getElementById("quote1").style.color="white";
+			document.getElementById("textbot1").style.color="white";
+		}
+		function quotecolor1(){
+			document.getElementById("quote1").style.color="black";
+			document.getElementById("textbot1").style.color="#c3c3c3";
+		}
+		function quote2color(){
+			document.getElementById("quote2").style.color="white";
+			document.getElementById("textbot2").style.color="white";
+		}
+		function quotecolor2(){
+			document.getElementById("quote2").style.color="black";
+			document.getElementById("textbot2").style.color="#c3c3c3";
+		}
+		function quote3color(){
+			document.getElementById("quote3").style.color="white";
+			document.getElementById("textbot3").style.color="white";
+		}
+		function quotecolor3(){
+			document.getElementById("quote3").style.color="black";
+			document.getElementById("textbot3").style.color="#c3c3c3";
+		}
+	</script>
+</body>
+</html>
